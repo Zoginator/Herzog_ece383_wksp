@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri Jan 23 07:11:21 2026
-# Process ID         : 11656
+# Start of session at: Thu Jan 22 20:54:32 2026
+# Process ID         : 29576
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw4
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3548 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\hw4\HW4.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent13340 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\hw4\HW4.xpr
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw4/vivado.log
 # Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw4\vivado.jou
 # Running On         : C27-5CG3121G96
@@ -19,8 +19,17 @@
 # Host memory        : 16442 MB
 # Swap memory        : 7247 MB
 # Total Virtual      : 23690 MB
-# Available Virtual  : 8848 MB
+# Available Virtual  : 6042 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw4/HW4.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw4/HW4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+open_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1083.430 ; gain = 39.570
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 22 22:13:58 2026...
