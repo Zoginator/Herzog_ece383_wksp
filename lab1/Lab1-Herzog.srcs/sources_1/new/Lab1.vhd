@@ -56,7 +56,23 @@ architecture structure of Lab1 is
 begin
    
 -- Add numeric steppers for time and voltage trigger
-
+    stepper_1 : numeric_stepper port map(
+        clk     => clk,
+        reset_n => reset,  
+        en      => btn,
+        up      
+        down    
+        q       => volt_trigger_value;
+    );
+    
+    stepper_2 : numeric_stepper port map(
+        clk     => clk,
+        reset_n => reset,  
+        en      => btn,
+        up      
+        down    
+        q       => volt_trigger_value;
+    );
 -- Assign trigger.t and trigger.v
        	
 -- Instantiate video

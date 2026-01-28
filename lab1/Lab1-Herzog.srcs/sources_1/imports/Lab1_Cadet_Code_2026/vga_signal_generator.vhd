@@ -77,10 +77,10 @@ begin
         if (reset_n = '0') then
             v_sync_is_low <= true;
             v_blank_is_low <= false;
-        elsif (current_pos.row >= 0) and (current_pos.row < 478) then
+        elsif (current_pos.row >= 0) and (current_pos.row < 479) then
             v_sync_is_low <= false;
             v_blank_is_low <= true;
-        elsif (current_pos.row >= 478) and (current_pos.row < 489) then
+        elsif (current_pos.row >= 479) and (current_pos.row < 489) then
             v_sync_is_low <= false;
             v_blank_is_low <= false;  
         elsif (current_pos.row >= 489) and (current_pos.row < 491) then

@@ -1,0 +1,918 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Jan 27 07:14:35 2026
+# Process ID         : 24988
+# Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent24940 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.xpr
+# Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/vivado.log
+# Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1\vivado.jou
+# Running On         : C27-5CG3121G96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 23690 MB
+# Available Virtual  : 8844 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+IINFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1126.828 ; gain = 81.371
+updateINFO: [Common 17-206] Exiting Vivalaunch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'instructor_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'instructor_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj instructor_tb_vlog.prj"
+"xvhdl --incr --relax -prj instructor_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1176.613 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot instructor_tb_behav xil_defaultlib.instructor_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot instructor_tb_behav xil_defaultlib.instructor_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1176.613 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "instructor_tb_behav -key {Behavioral:sim_1:Functional:instructor_tb} -tclbatch {instructor_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+source instructor_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+Note: Testing h_sync
+Time: 100 ns  Iteration: 0  Process: /instructor_tb/test_process  File: C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sim_1/imports/Downloads/instructor_tb.vhd
+Note: Testing v_sync
+Time: 64 us  Iteration: 1  Process: /instructor_tb/test_process  File: C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sim_1/imports/Downloads/instructor_tb.vhd
+Note: Testing blank
+Time: 33600040 ns  Iteration: 1  Process: /instructor_tb/test_process  File: C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sim_1/imports/Downloads/instructor_tb.vhd
+xsim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1183.586 ; gain = 6.973
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'instructor_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:28 . Memory (MB): peak = 1183.586 ; gain = 6.973
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+import_files -fileset sim_1 -norecurse C:/Users/C27Soren.Herzog/Downloads/vga_log_tb.vhd
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+set_property top vga_log_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+update_compile_order -fileset sim_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vga_log_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_log_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_log_tb_vlog.prj"
+"xvhdl --incr --relax -prj vga_log_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'color_mapper'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sim_1/imports/Downloads/vga_log_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_log_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.ece383_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=7...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=5...]
+Compiling architecture vga_signal_generator_arch of entity xil_defaultlib.vga_signal_generator [vga_signal_generator_default]
+Compiling architecture color_mapper_arch of entity xil_defaultlib.color_mapper [color_mapper_default]
+Compiling architecture tb of entity xil_defaultlib.vga_log_tb
+Built simulation snapshot vga_log_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_log_tb_behav -key {Behavioral:sim_1:Functional:vga_log_tb} -tclbatch {vga_log_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+WARNING: Simulation object /instructor_tb/clk was not found in the design.
+WARNING: Simulation object /instructor_tb/reset_n was not found in the design.
+WARNING: Simulation object /instructor_tb/position was not found in the design.
+WARNING: Simulation object /instructor_tb/position.row was not found in the design.
+WARNING: Simulation object /instructor_tb/position.col was not found in the design.
+WARNING: Simulation object /instructor_tb/vga was not found in the design.
+WARNING: Simulation object /instructor_tb/h_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/v_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/blank was not found in the design.
+WARNING: Simulation object /instructor_tb/clk_period was not found in the design.
+source vga_log_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2312.258 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_log_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 2312.258 ; gain = 0.000
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 29072 KB (Peak: 29072 KB), Simulation CPU Usage: 13609 ms
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vga_log_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_log_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_log_tb_vlog.prj"
+"xvhdl --incr --relax -prj vga_log_tb_vhdl.prj"
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_log_tb_behav -key {Behavioral:sim_1:Functional:vga_log_tb} -tclbatch {vga_log_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+WARNING: Simulation object /instructor_tb/clk was not found in the design.
+WARNING: Simulation object /instructor_tb/reset_n was not found in the design.
+WARNING: Simulation object /instructor_tb/position was not found in the design.
+WARNING: Simulation object /instructor_tb/position.row was not found in the design.
+WARNING: Simulation object /instructor_tb/position.col was not found in the design.
+WARNING: Simulation object /instructor_tb/vga was not found in the design.
+WARNING: Simulation object /instructor_tb/h_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/v_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/blank was not found in the design.
+WARNING: Simulation object /instructor_tb/clk_period was not found in the design.
+source vga_log_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 2312.258 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:16 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_log_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:25 . Memory (MB): peak = 2312.258 ; gain = 0.000
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 28328 KB (Peak: 28328 KB), Simulation CPU Usage: 13984 ms
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vga_log_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_log_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_log_tb_vlog.prj"
+"xvhdl --incr --relax -prj vga_log_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'color_mapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '7' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.ece383_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=7...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=5...]
+Compiling architecture vga_signal_generator_arch of entity xil_defaultlib.vga_signal_generator [vga_signal_generator_default]
+Compiling architecture color_mapper_arch of entity xil_defaultlib.color_mapper [color_mapper_default]
+Compiling architecture tb of entity xil_defaultlib.vga_log_tb
+Built simulation snapshot vga_log_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_log_tb_behav -key {Behavioral:sim_1:Functional:vga_log_tb} -tclbatch {vga_log_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+WARNING: Simulation object /instructor_tb/clk was not found in the design.
+WARNING: Simulation object /instructor_tb/reset_n was not found in the design.
+WARNING: Simulation object /instructor_tb/position was not found in the design.
+WARNING: Simulation object /instructor_tb/position.row was not found in the design.
+WARNING: Simulation object /instructor_tb/position.col was not found in the design.
+WARNING: Simulation object /instructor_tb/vga was not found in the design.
+WARNING: Simulation object /instructor_tb/h_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/v_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/blank was not found in the design.
+WARNING: Simulation object /instructor_tb/clk_period was not found in the design.
+source vga_log_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+run: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 2312.258 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:18 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_log_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:34 . Memory (MB): peak = 2312.258 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 28316 KB (Peak: 28316 KB), Simulation CPU Usage: 15593 ms
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vga_log_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_log_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_log_tb_vlog.prj"
+"xvhdl --incr --relax -prj vga_log_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sources_1/imports/Lab1_Cadet_Code_2026/color_mapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'color_mapper'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '5' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.ece383_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=7...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=5...]
+Compiling architecture vga_signal_generator_arch of entity xil_defaultlib.vga_signal_generator [vga_signal_generator_default]
+Compiling architecture color_mapper_arch of entity xil_defaultlib.color_mapper [color_mapper_default]
+Compiling architecture tb of entity xil_defaultlib.vga_log_tb
+Built simulation snapshot vga_log_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_log_tb_behav -key {Behavioral:sim_1:Functional:vga_log_tb} -tclbatch {vga_log_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+WARNING: Simulation object /instructor_tb/clk was not found in the design.
+WARNING: Simulation object /instructor_tb/reset_n was not found in the design.
+WARNING: Simulation object /instructor_tb/position was not found in the design.
+WARNING: Simulation object /instructor_tb/position.row was not found in the design.
+WARNING: Simulation object /instructor_tb/position.col was not found in the design.
+WARNING: Simulation object /instructor_tb/vga was not found in the design.
+WARNING: Simulation object /instructor_tb/h_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/v_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/blank was not found in the design.
+WARNING: Simulation object /instructor_tb/clk_period was not found in the design.
+source vga_log_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 2312.258 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_log_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:27 . Memory (MB): peak = 2312.258 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 28320 KB (Peak: 28320 KB), Simulation CPU Usage: 15093 ms
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'vga_log_tb'
+WARNING: [Vivado 12-13340] Unable to auto find GCC executables from simulator install path! (path not set)
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/Xilinx/Vivado/2024.2/tps/boost_1_72_0'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'C:/Xilinx/Vivado/2024.2/data/xsim/xsim.ini' copied to run dir:'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'vga_log_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj vga_log_tb_vlog.prj"
+"xvhdl --incr --relax -prj vga_log_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.srcs/sim_1/imports/Downloads/vga_log_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'vga_log_tb'
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-69] 'compile' step finished in '6' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2024.2.0
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot vga_log_tb_behav xil_defaultlib.vga_log_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_textio
+Compiling package xil_defaultlib.ece383_pkg
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=7...]
+Compiling architecture behavioral of entity xil_defaultlib.counter [\counter(num_bits=10,max_value=5...]
+Compiling architecture vga_signal_generator_arch of entity xil_defaultlib.vga_signal_generator [vga_signal_generator_default]
+Compiling architecture color_mapper_arch of entity xil_defaultlib.color_mapper [color_mapper_default]
+Compiling architecture tb of entity xil_defaultlib.vga_log_tb
+Built simulation snapshot vga_log_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "vga_log_tb_behav -key {Behavioral:sim_1:Functional:vga_log_tb} -tclbatch {vga_log_tb.tcl} -view {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/instructor_tb_behav.wcfg
+WARNING: Simulation object /instructor_tb/clk was not found in the design.
+WARNING: Simulation object /instructor_tb/reset_n was not found in the design.
+WARNING: Simulation object /instructor_tb/position was not found in the design.
+WARNING: Simulation object /instructor_tb/position.row was not found in the design.
+WARNING: Simulation object /instructor_tb/position.col was not found in the design.
+WARNING: Simulation object /instructor_tb/vga was not found in the design.
+WARNING: Simulation object /instructor_tb/h_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/v_sync was not found in the design.
+WARNING: Simulation object /instructor_tb/blank was not found in the design.
+WARNING: Simulation object /instructor_tb/clk_period was not found in the design.
+source vga_log_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 40ms
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 2312.258 ; gain = 0.000
+xsim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:19 . Memory (MB): peak = 2312.258 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'vga_log_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 40ms
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:28 . Memory (MB): peak = 2312.258 ; gain = 0.000
+close_sim
+INFO: xsimkernel Simulation Memory Usage: 28328 KB (Peak: 28328 KB), Simulation CPU Usage: 15796 ms
+INFO: [Simtcl 6-16] Simulation closed
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\numeric_stepper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\imports\Lab1_Cadet_Code_2026\ece383_pkg.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sim_1\imports\Downloads\vga_log_tb.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.srcs\sources_1\new\Lab1.vhd:]
+ERROR: [Common 17-180] Spawn failed: No error
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 27 09:28:11 2026...
