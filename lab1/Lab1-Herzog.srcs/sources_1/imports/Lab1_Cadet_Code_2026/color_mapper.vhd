@@ -20,8 +20,8 @@ architecture color_mapper_arch of color_mapper is
 
 signal trigger_color : color_t := YELLOW;
 signal grid_color : color_t := WHITE;
-signal ch1_color : color_t := GREEN;
-signal ch2_color : color_t := YELLOW;
+signal ch1_color : color_t := YELLOW;
+signal ch2_color : color_t := GREEN;
 signal background_color : color_t := BLACK; 
 -- Add other colors you want to use here
 

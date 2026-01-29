@@ -72,7 +72,7 @@ port
   clk_out2          : out    std_logic;
   clk_out3          : out    std_logic;
   -- Status and control signals
-  reset             : in     std_logic;
+  resetn             : in     std_logic;
   clk_in1           : in     std_logic
  );
 end component;
@@ -88,7 +88,7 @@ your_instance_name : clk_wiz_0
    clk_out2 => clk_out2,
    clk_out3 => clk_out3,
   -- Status and control signals                
-   reset => reset,
+   resetn => resetn,
    -- Clock in ports
    clk_in1 => clk_in1
  );

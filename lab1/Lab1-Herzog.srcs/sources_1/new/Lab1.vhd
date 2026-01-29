@@ -43,44 +43,76 @@ end Lab1;
 
 architecture structure of Lab1 is
 
-    constant CENTER : integer := 0;
-    constant DOWN : integer := 1;
-    constant LEFT : integer := 2;
+    constant CENTER : integer := 4;
+    constant DOWN : integer := 2;
+    constant LEFT : integer := 1;
     constant RIGHT : integer := 3;
-    constant UP : integer := 4;
+    constant UP : integer := 0;
 
     signal trigger: trigger_t;
 	signal pixel: pixel_t;
 	signal ch1, ch2: channel_t;
 	signal time_trigger_value, volt_trigger_value : signed(10 downto 0);
+	--signal w_tmds, w_tmdsb : STD_LOGIC_VECTOR (3 downto 0);
+	--signal w_btn : STD_LOGIC_VECTOR (4 downto 0);
+	
 begin
    
 -- Add numeric steppers for time and voltage trigger
-    stepper_1 : numeric_stepper port map(
+    stepper_t : numeric_stepper 
+    generic map(
+        num_bits  => 11,
+        max_value => 300,
+        min_value => -300,
+        delta     => 5
+    )
+    port map(
         clk     => clk,
         reset_n => reset,  
-        en      => btn,
-        up      
-        down    
-        q       => volt_trigger_value;
+        en      => '1',
+        up      => btn(RIGHT),
+        down    => btn(LEFT),
+        q       => time_trigger_value
     );
     
-    stepper_2 : numeric_stepper port map(
+    stepper_v : numeric_stepper 
+    generic map(
+        num_bits  => 11,
+        max_value => 200,
+        min_value => -200,
+        delta     => 5
+    )
+    port map(
         clk     => clk,
         reset_n => reset,  
-        en      => btn,
-        up      
-        down    
-        q       => volt_trigger_value;
+        en      => '1',
+        up      => btn(DOWN),
+        down    => btn(UP),
+        q       => volt_trigger_value
     );
+    
 -- Assign trigger.t and trigger.v
+    trigger.t <= unsigned(time_trigger_value + 320);
+    trigger.v <= unsigned(volt_trigger_value + 220);
        	
 -- Instantiate video
- 
+    video_main : video port map(
+            clk     => clk,
+            reset_n => reset,
+            tmds    => tmds,
+            tmdsb   => tmdsb,
+            trigger => trigger,
+            position => pixel.coordinate,
+            ch1     => ch1,
+            ch2     => ch2
+    );
 -- Determine if ch1 and or ch2 are active
+ch1.active <= '1' when (pixel.coordinate.row = pixel.coordinate.col) else '0';
+ch2.active <= '1' when (pixel.coordinate.row = (440-pixel.coordinate.col)) else '0';
 
 -- Connect board hardware to signals
-begin
-
+ch1.en <= sw(0);
+ch2.en <= sw(1);
+--reset  <= reset_n;
 
 end structure;

@@ -2,7 +2,7 @@
 // Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-// Date        : Wed Jan 21 08:16:55 2026
+// Date        : Wed Jan 28 10:36:19 2026
 // Host        : C27-5CG3121G96 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
 //               c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.v
@@ -18,38 +18,38 @@ module clk_wiz_0
    (clk_out1,
     clk_out2,
     clk_out3,
-    reset,
+    resetn,
     clk_in1);
   output clk_out1;
   output clk_out2;
   output clk_out3;
-  input reset;
+  input resetn;
   input clk_in1;
 
   (* IBUF_LOW_PWR *) (* RTL_KEEP = "yes" *) wire clk_in1;
   wire clk_out1;
   wire clk_out2;
   wire clk_out3;
-  (* RTL_KEEP = "yes" *) wire reset;
+  (* RTL_KEEP = "yes" *) wire resetn;
 
   clk_wiz_0_clk_wiz inst
        (.clk_in1(clk_in1),
         .clk_out1(clk_out1),
         .clk_out2(clk_out2),
         .clk_out3(clk_out3),
-        .reset(reset));
+        .resetn(resetn));
 endmodule
 
 module clk_wiz_0_clk_wiz
    (clk_out1,
     clk_out2,
     clk_out3,
-    reset,
+    resetn,
     clk_in1);
   output clk_out1;
   output clk_out2;
   output clk_out3;
-  input reset;
+  input resetn;
   input clk_in1;
 
   wire clk_in1;
@@ -62,7 +62,8 @@ module clk_wiz_0_clk_wiz
   wire clk_out3_clk_wiz_0;
   wire clkfbout_buf_clk_wiz_0;
   wire clkfbout_clk_wiz_0;
-  wire reset;
+  wire reset_high;
+  wire resetn;
   wire NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED;
   wire NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED;
@@ -187,7 +188,12 @@ module clk_wiz_0_clk_wiz
         .PSEN(1'b0),
         .PSINCDEC(1'b0),
         .PWRDWN(1'b0),
-        .RST(reset));
+        .RST(reset_high));
+  LUT1 #(
+    .INIT(2'h1)) 
+    mmcm_adv_inst_i_1
+       (.I0(resetn),
+        .O(reset_high));
 endmodule
 `ifndef GLBL
 `define GLBL

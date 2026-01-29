@@ -10,7 +10,7 @@ entity numeric_stepper is
     num_bits  : integer := 8;
     max_value : integer := 127;
     min_value : integer := -128;
-    delta     : integer := 10
+    delta     : integer := 1
   );
   port (
     clk     : in  std_logic;
@@ -37,9 +37,9 @@ begin
                 
             elsif (en = '1') then
                 if (up = '1' and not (prev_up = '1' or process_q >= max_value)) then
-                    process_q <= process_q + TO_SIGNED(1,num_bits);
+                    process_q <= process_q + TO_SIGNED(delta, num_bits);
                 elsif (down = '1' and not (prev_down = '1' or process_q <= min_value)) then
-                    process_q <= process_q - TO_SIGNED(1,num_bits);  
+                    process_q <= process_q - TO_SIGNED(delta, num_bits);  
                 end if;   
             end if;
             

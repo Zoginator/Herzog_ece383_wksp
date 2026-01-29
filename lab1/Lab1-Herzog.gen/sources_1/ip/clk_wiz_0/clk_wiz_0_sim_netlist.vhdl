@@ -2,7 +2,7 @@
 -- Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
--- Date        : Wed Jan 21 08:16:55 2026
+-- Date        : Wed Jan 28 10:36:19 2026
 -- Host        : C27-5CG3121G96 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.gen/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl
@@ -20,7 +20,7 @@ entity clk_wiz_0_clk_wiz is
     clk_out1 : out STD_LOGIC;
     clk_out2 : out STD_LOGIC;
     clk_out3 : out STD_LOGIC;
-    reset : in STD_LOGIC;
+    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
 end clk_wiz_0_clk_wiz;
@@ -32,6 +32,7 @@ architecture STRUCTURE of clk_wiz_0_clk_wiz is
   signal clk_out3_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_buf_clk_wiz_0 : STD_LOGIC;
   signal clkfbout_clk_wiz_0 : STD_LOGIC;
+  signal reset_high : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBOUTB_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKFBSTOPPED_UNCONNECTED : STD_LOGIC;
   signal NLW_mmcm_adv_inst_CLKINSTOPPED_UNCONNECTED : STD_LOGIC;
@@ -173,7 +174,15 @@ mmcm_adv_inst: unisim.vcomponents.MMCME2_ADV
       PSEN => '0',
       PSINCDEC => '0',
       PWRDWN => '0',
-      RST => reset
+      RST => reset_high
+    );
+mmcm_adv_inst_i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"1"
+    )
+        port map (
+      I0 => resetn,
+      O => reset_high
     );
 end STRUCTURE;
 library IEEE;
@@ -185,7 +194,7 @@ entity clk_wiz_0 is
     clk_out1 : out STD_LOGIC;
     clk_out2 : out STD_LOGIC;
     clk_out3 : out STD_LOGIC;
-    reset : in STD_LOGIC;
+    resetn : in STD_LOGIC;
     clk_in1 : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
@@ -200,6 +209,6 @@ inst: entity work.clk_wiz_0_clk_wiz
       clk_out1 => clk_out1,
       clk_out2 => clk_out2,
       clk_out3 => clk_out3,
-      reset => reset
+      resetn => resetn
     );
 end STRUCTURE;
