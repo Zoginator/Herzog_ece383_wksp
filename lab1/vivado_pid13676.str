@@ -153,3 +153,44 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // Tcl Message: Scanning sources... Finished scanning sources 
 // Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 
 // [Engine Memory]: 840 MB (+10213kb) [00:00:24]
+// Tcl Message: open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1148.684 ; gain = 99.102 
+// Project name: Lab1-Herzog; location: C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1; part: xc7a200tsbg484-1
+dismissDialog("Open Project"); // bh (Open Project Progress)
+// [GUI Memory]: 156 MB (+11519kb) [00:00:27]
+// Tcl Message: update_compile_order -fileset sources_1 
+// Elapsed time: 24 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd)]", 1, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd)]", 1, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Elapsed time: 213 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd), video_main : video(structure) (video.vhdl)]", 4); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd), video_main : video(structure) (video.vhdl), mmcm_adv_inst_display_clocks : clk_wiz_0 (clk_wiz_0.xci)]", 5, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Lab1(structure) (Lab1.vhd), video_main : video(structure) (video.vhdl), mmcm_adv_inst_display_clocks : clk_wiz_0 (clk_wiz_0.xci)]", 5, false, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tsbg484-1 
+// [Engine Memory]: 1,028 MB (+152906kb) [00:04:32]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,028 MB. GUI used memory: 80 MB. Current time: 1/29/26, 11:13:10 AM MST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,028 MB. GUI used memory: 80 MB. Current time: 1/29/26, 11:13:36 AM MST
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/m': 38s
+// WARNING: HEventQueue.dispatchEvent() is taking  2034 ms.
+// Elapsed time: 40 seconds
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+// [Engine Memory]: 1,152 MB (+76174kb) [00:05:10]
+// [GUI Memory]: 169 MB (+5021kb) [00:11:45]
+// Elapsed time: 476 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel", "Re-customize IP"); // a (RDIResource.BaseDialog_CANCEL)
+dismissDialog("Re-customize IP"); // m (dialog0)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 85 MB. Current time: 1/29/26, 11:43:40 AM MST
+// WARNING: HEventQueue.dispatchEvent() is taking  4793072 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1152 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 85 MB. Current time: 1/29/26, 1:15:12 PM MST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1365 ms. Increasing delay to 4095 ms.
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1367 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1304 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1620 ms.
+// Elapsed time: 7758 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 9); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 10); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+// [GUI Memory]: 190 MB (+13732kb) [02:28:16]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,152 MB. GUI used memory: 64 MB. Current time: 1/29/26, 1:45:09 PM MST

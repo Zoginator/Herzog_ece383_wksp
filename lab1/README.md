@@ -1,7 +1,7 @@
 # Lab 1: VGA synchronization REPORT
 
-## introduction
-For this lab, I was tasked with writing a vga controller in VDHL and implementing it onto an FPGA development board. I then used this VGA controller to display an oscilloscope with two signals, a white with hashes, and moveable trigger indicators as shown below.
+## Introduction
+For this lab, I was tasked with writing a vga controller in VDHL and implementing it onto an FPGA development board. I then used this VGA controller to display an oscilloscope with two signals, a white with hashes, and moveable trigger indicators as shown below. The final implementation would display the interactable oscilloscope grid, triggers, and signals on a monitor through the HDMI output on the board.
 
 ![oscilloscope display](images/ColorMapperOutput.png)
 
