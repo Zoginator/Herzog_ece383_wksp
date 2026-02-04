@@ -1,0 +1,102 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Tue Feb  3 15:07:53 2026
+# Process ID         : 17064
+# Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent6344 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\hw7\HW7.xpr
+# Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/vivado.log
+# Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7\vivado.jou
+# Running On         : C27-5CG3121G96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 7516 MB
+# Total Virtual      : 23958 MB
+# Available Virtual  : 7713 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/HW7.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source hw07_tb.tcl
+current_wave_config {Untitled 1}
+add_wave {{/hw07_tb/uut1/state}} 
+close_sim
+launch_simulation
+launch_simulation
+source hw07_tb.tcl
+current_wave_config {Untitled 2}
+add_wave {{/hw07_tb/uut1/state}} 
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+add_files -fileset sim_1 -norecurse C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+set_property xsim.view C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg [get_filesets sim_1]
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+current_wave_config {hw07_tb_behav.wcfg}
+add_wave {{/hw07_tb/uut1/Q}} 
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+current_wave_config {hw07_tb_behav.wcfg}
+add_wave {{/hw07_tb/uut1/cw}} 
+current_wave_config {hw07_tb_behav.wcfg}
+add_wave {{/hw07_tb/uut1/Q}} 
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+current_wave_config {hw07_tb_behav.wcfg}
+add_wave {{/hw07_tb/uut1/w_Q}} 
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+current_wave_config {hw07_tb_behav.wcfg}
+add_wave {{/hw07_tb/Q}} 
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+save_wave_config {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg}
+close_sim
+launch_simulation
+launch_simulation
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/hw7/hw07_tb_behav.wcfg
+source hw07_tb.tcl
+close_sim

@@ -31,3 +31,5 @@ INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/dat
 open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1148.684 ; gain = 99.102
 update_compile_order -fileset sources_1
 INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:15:31 2026...
