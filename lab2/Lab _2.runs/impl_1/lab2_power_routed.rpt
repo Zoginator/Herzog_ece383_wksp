@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Feb 17 07:53:08 2026
+| Date             : Tue Feb 17 08:26:24 2026
 | Host             : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab2_power_routed.rpt -pb lab2_power_summary_routed.pb -rpx lab2_power_routed.rpx
 | Design           : lab2
@@ -53,12 +53,12 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.006 |       10 |       --- |             --- |
-| Slice Logic    |     0.002 |     1724 |       --- |             --- |
-|   LUT as Logic |     0.001 |      752 |    133800 |            0.56 |
+| Slice Logic    |     0.002 |     1723 |       --- |             --- |
+|   LUT as Logic |     0.002 |      750 |    133800 |            0.56 |
 |   Register     |    <0.001 |      545 |    267600 |            0.20 |
 |   CARRY4       |    <0.001 |       98 |     33450 |            0.29 |
 |   Others       |     0.000 |       56 |       --- |             --- |
-| Signals        |     0.001 |     1098 |       --- |             --- |
+| Signals        |     0.001 |     1100 |       --- |             --- |
 | Block RAM      |     0.004 |      2.5 |       365 |            0.68 |
 | MMCM           |     0.228 |        2 |        10 |           20.00 |
 | I/O            |     0.139 |       31 |       285 |           10.88 |
