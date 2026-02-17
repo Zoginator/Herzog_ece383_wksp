@@ -103,10 +103,10 @@ begin
     ch1.current_sample <= make_unsigned(ch1.incoming_sample);
     ch2.current_sample <= make_unsigned(ch2.incoming_sample);
     -- Send the unsigned current sample to the BRAM
-    ch1.to_bram <= ch1.current_sample when (exsel = '1') else
-                   exLBus             when (exsel = '0');
-    ch2.to_bram <= ch2.current_sample when (exsel = '1') else
-                   exLBus             when (exsel = '0');
+    ch1.to_bram <= ch1.current_sample when (exsel = '0') else
+                   exLBus             when (exsel = '1');
+    ch2.to_bram <= ch2.current_sample when (exsel = '0') else
+                   exLBus             when (exsel = '1');
 	
     -- Need logic for the FLAG register
 	
@@ -196,7 +196,7 @@ Audio_Codec : Audio_Codec_Wrapper
 
 	reset <= not reset_n; --invert reset signal
 	
-	write_address <= unsigned(exWrAddr) when (exSel = '0') else --MUX for WRAADR BRAM input
+	write_address <= unsigned(exWrAddr) when (exSel = '1') else --MUX for WRAADR BRAM input
 	                 writeCntr;
 	
 	leftChannelMemory : BRAM_SDP_MACRO
