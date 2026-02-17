@@ -28,7 +28,7 @@ use work.ece383_pkg.all;
     sw: out std_logic_vector(2 downto 0);
     cw: in std_logic_vector (2 downto 0);
     btn: in    STD_LOGIC_VECTOR(4 downto 0);
-    switch: in    STD_LOGIC_VECTOR(3 downto 0);
+    switch: in    STD_LOGIC_VECTOR(7 downto 0);
     exWrAddr: in std_logic_vector(9 downto 0);
     exWen, exSel: in std_logic;
     Lbus_out, Rbus_out: out std_logic_vector(15 downto 0);
@@ -85,25 +85,31 @@ begin
 	--  Buffer a copy of the sample memory to look for positive trigger crossing
 	--  "Loop back" digitized audio input to the output to confirm interface is working
 	-------------------------------------------------------------------------------
---	process (clk)
---	begin
---		if (rising_edge(clk)) then
---			if reset_n = '0' then
---				-- Add code here
---			elsif(sw_ready = '1') then
---				-- Add code here
---			end if;
---		end if;
---	end process;
+	process (clk)
+	begin
+    	if (rising_edge(clk)) then
+			if reset_n = '0' then
+				ch1.incoming_sample <= (others => '0'); -- set surrent sample to starting value
+				ch2.incoming_sample <= (others => '0'); -- set surrent sample to starting value
+			elsif(sw_ready = '1') then
+				ch1.incoming_sample <= ch1.from_ac(17 downto 2); -- feed audio signal as the incoming sample
+				ch2.incoming_sample <= ch2.from_ac(17 downto 2); -- feed audio signal as the incoming sample
+			end if;
+		end if;
+	end process;
 
     -- Convert Signed sample from Codec into an unsigned value
     
     ch1.current_sample <= make_unsigned(ch1.incoming_sample);
+    ch2.current_sample <= make_unsigned(ch2.incoming_sample);
     -- Send the unsigned current sample to the BRAM
-    ch1.to_bram <= ch1.current_sample; --else exLBus
+    ch1.to_bram <= ch1.current_sample when (exsel = '1') else
+                   exLBus             when (exsel = '0');
+    ch2.to_bram <= ch2.current_sample when (exsel = '1') else
+                   exLBus             when (exsel = '0');
 	
     -- Need logic for the FLAG register
-	-- Add code here
+	
 	
     ------------------------------------------------------------------------------
 	-- If a button has been pressed then increment of decrement the trigger time and Volt
@@ -120,8 +126,17 @@ begin
 	-- What range of addresses does it need to span?  Should it start at zero or something else?
 	-- How high should it count?  Will it go to its start value on reset or load?
 	-------------------------------------------------------------------------------
-	-- Add code here.  Use a previously built counter.
-	
+	address_counter : counter
+	generic map(
+	   num_bits  => 10,
+	   max_value => 1023 ) -- effects if the screen is scrolling, max 1024
+	port map(
+	   clk      => clk,
+	   reset_n  => reset_n,
+	   ctrl     => cw_counter_control(0),
+	   roll     => sw_last_address,   
+       Q        => writeCntr
+	   );
 	-------------------------------------------------------------------------------
 	-- Triggering Logic: A positive crossing of the trigger occurs when the previous value is 
 	--	less than the trigger and the current value is greater than or equal to
@@ -156,9 +171,8 @@ begin
 
 -- Audio Codec stuff goes here
 
-is_live <= '0'; --  '0' simulate audio; '1' live audio
-                  -- should a switch go here?
-                  
+is_live <= switch(IS_LIVE_SWITCH); --  '0' simulate audio; '1' live audio
+
 
 Audio_Codec : Audio_Codec_Wrapper
     Port map ( clk => clk,
@@ -180,7 +194,10 @@ Audio_Codec : Audio_Codec_Wrapper
 
     -- BRAM stuff goes here
 
-	reset <= not reset_n;
+	reset <= not reset_n; --invert reset signal
+	
+	write_address <= unsigned(exWrAddr) when (exSel = '0') else --MUX for WRAADR BRAM input
+	                 writeCntr;
 	
 	leftChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -266,13 +283,13 @@ Audio_Codec : Audio_Codec_Wrapper
             RDEN => '1',                    -- read enable
             REGCE => '1',                   -- 1-bit input read output register enable
             DI => ch1.to_bram,                   -- Input data port, width defined by WRITE_WIDTH parameter
-            WE => "00",                     -- Input write enable, width defined by write port depth
-            WRADDR => "0000000000",   -- Input write address, width defined by write port depth
-            WRCLK => '0',                   -- 1-bit input write clock
-            WREN => '0');              -- 1-bit input write port enable
+            WE => "11",                     -- Input write enable, width defined by write port depth
+            WRADDR => STD_LOGIC_VECTOR(write_address),   -- Input write address, width defined by write port depth
+            WRCLK => clk,                   -- 1-bit input write clock
+            WREN => '1');              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
-
+    
 		
 	rightChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -357,11 +374,11 @@ Audio_Codec : Audio_Codec_Wrapper
             RST => reset,                 -- active high reset
             RDEN => '1',                    -- read enable
             REGCE => '1',                   -- 1-bit input read output register enable
-            DI => ch1.current_sample,                   -- Input data port, width defined by WRITE_WIDTH parameter
-            WE => "00",                     -- Input write enable, width defined by write port depth
-            WRADDR => "0000000000",                -- Input write address, width defined by write port depth
-            WRCLK => '0',                   -- 1-bit input write clock
-            WREN => '0');                -- 1-bit input write port enable
+            DI => ch2.to_bram,                   -- Input data port, width defined by WRITE_WIDTH parameter
+            WE => "11",                     -- Input write enable, width defined by write port depth
+            WRADDR => STD_LOGIC_VECTOR(write_address),                -- Input write address, width defined by write port depth
+            WRCLK => clk,                   -- 1-bit input write clock
+            WREN => '1');                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;

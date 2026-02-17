@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Tue Feb 10 09:32:02 2026
+| Date             : Tue Feb 17 07:53:08 2026
 | Host             : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command          : report_power -file lab2_power_routed.rpt -pb lab2_power_summary_routed.pb -rpx lab2_power_routed.rpx
 | Design           : lab2
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.514        |
+| Total On-Chip Power (W)  | 0.522        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.374        |
+| Dynamic (W)              | 0.381        |
 | Device Static (W)        | 0.140        |
 | Effective TJA (C/W)      | 3.3          |
 | Max Ambient (C)          | 83.3         |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |     0.004 |       10 |       --- |             --- |
-| Slice Logic    |    <0.001 |     1055 |       --- |             --- |
-|   LUT as Logic |    <0.001 |      536 |    133800 |            0.40 |
-|   CARRY4       |    <0.001 |       80 |     33450 |            0.24 |
-|   Register     |    <0.001 |      234 |    267600 |            0.09 |
-|   Others       |     0.000 |       30 |       --- |             --- |
-| Signals        |    <0.001 |      586 |       --- |             --- |
-| Block RAM      |     0.002 |        1 |       365 |            0.27 |
+| Clocks         |     0.006 |       10 |       --- |             --- |
+| Slice Logic    |     0.002 |     1724 |       --- |             --- |
+|   LUT as Logic |     0.001 |      752 |    133800 |            0.56 |
+|   Register     |    <0.001 |      545 |    267600 |            0.20 |
+|   CARRY4       |    <0.001 |       98 |     33450 |            0.29 |
+|   Others       |     0.000 |       56 |       --- |             --- |
+| Signals        |     0.001 |     1098 |       --- |             --- |
+| Block RAM      |     0.004 |      2.5 |       365 |            0.68 |
 | MMCM           |     0.228 |        2 |        10 |           20.00 |
-| I/O            |     0.138 |       18 |       285 |            6.32 |
+| I/O            |     0.139 |       31 |       285 |           10.88 |
 | Static Power   |     0.140 |          |           |                 |
-| Total          |     0.514 |          |           |                 |
+| Total          |     0.522 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,9 +73,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.040 |       0.009 |      0.032 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.047 |       0.015 |      0.032 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.157 |       0.127 |      0.031 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.046 |       0.041 |      0.005 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.047 |       0.042 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -126,17 +126,17 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+-----------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| Clock                                                     | Domain                                                                   | Constraint (ns) |
-+-----------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
-| clk_out1_clk_wiz_0                                        | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0 |            40.0 |
-| clk_out1_clk_wiz_1                                        | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out1_clk_wiz_1     |            81.4 |
-| clk_out2_clk_wiz_0                                        | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0 |             8.0 |
-| clk_out2_clk_wiz_1                                        | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2_clk_wiz_1     |            20.0 |
-| clkfbout_clk_wiz_0                                        | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkfbout_clk_wiz_0 |            10.0 |
-| clkfbout_clk_wiz_1                                        | datapath/Audio_Codec/audiocodec_master_clock/inst/clkfbout_clk_wiz_1     |            10.0 |
-| datapath/Audio_Codec/audiocodec_master_clock/inst/clk_in1 | clk_IBUF                                                                 |            10.0 |
-+-----------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
+| Clock                                                         | Domain                                                                   | Constraint (ns) |
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
+| clk_out1_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0 |            40.0 |
+| clk_out1_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out1_clk_wiz_1     |            81.4 |
+| clk_out2_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2_clk_wiz_0 |             8.0 |
+| clk_out2_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clk_out2_clk_wiz_1     |            20.0 |
+| clkfbout_clk_wiz_0                                            | datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clkfbout_clk_wiz_0 |            10.0 |
+| clkfbout_clk_wiz_1                                            | datapath/Audio_Codec/audiocodec_master_clock/inst/clkfbout_clk_wiz_1     |            10.0 |
+| datapath/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 | clk_IBUF_BUFG                                                            |            10.0 |
++---------------------------------------------------------------+--------------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -148,15 +148,18 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| lab2                               |     0.374 |
-|   datapath                         |     0.369 |
-|     Audio_Codec                    |     0.124 |
+| lab2                               |     0.381 |
+|   datapath                         |     0.372 |
+|     Audio_Codec                    |     0.125 |
 |       audiocodec_master_clock      |     0.123 |
-|     leftChannelMemory              |     0.001 |
-|     rightChannelMemory             |     0.001 |
+|     leftChannelMemory              |     0.002 |
+|     rightChannelMemory             |     0.002 |
 |     video_inst                     |     0.242 |
-|       inst_dvid                    |     0.002 |
+|       inst_dvid                    |     0.001 |
 |       mmcm_adv_inst_display_clocks |     0.107 |
+|   oled                             |     0.003 |
+|     Example                        |     0.002 |
+|     Initialize                     |     0.001 |
 +------------------------------------+-----------+
 
 

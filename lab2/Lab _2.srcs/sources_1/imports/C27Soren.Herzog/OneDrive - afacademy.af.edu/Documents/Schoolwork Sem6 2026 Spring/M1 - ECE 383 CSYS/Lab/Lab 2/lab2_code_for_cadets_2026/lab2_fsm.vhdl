@@ -28,8 +28,8 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
---	type state_type is NEED_SOMETHING_HERE;
---	signal state: state_type;
+	type state_type is (WRITE, HOLD);
+	signal state: state_type;
 
 begin
 
@@ -40,20 +40,25 @@ begin
 	state_proces: process(clk)  
 	begin
 		if (rising_edge(clk)) then
---			if (reset_n = '0') then 
---				state <= NEED_SOMETHING_HERE;
---			else 
---				case state is
---					when NEED_SOMETHING_HERE
---				end case;
---			end if;
+			if (reset_n = '0') then 
+				state <= HOLD;
+			else 
+				case state is
+					when HOLD =>
+			           state <= WRITE when sw(0) = '1' else
+			                    HOLD;
+			        when WRITE =>
+			             state <= HOLD;					
+				end case;
+			end if;
 		end if;
 	end process;
 
 	-------------------------------------------------------------------------------
 	--  CW output table
 	--		CW		meaning
-	--		
+	cw <= "111" when state = WRITE else
+	      "110";		
 	-------------------------------------------------------------------------------
 	
 	-- NEED_SOMETHING_HERE
