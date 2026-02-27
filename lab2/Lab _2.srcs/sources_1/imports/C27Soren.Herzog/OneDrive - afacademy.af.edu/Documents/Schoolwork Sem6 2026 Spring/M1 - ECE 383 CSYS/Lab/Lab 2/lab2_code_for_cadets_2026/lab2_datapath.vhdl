@@ -120,7 +120,7 @@ begin
 				flagQ <= '0';
 		    elsif (sw_ready = '0' and flagClear = '1') then
 		        flagQ <= '0';
-		    elsif (sw_ready = '1' and clear '0') then
+		    elsif (sw_ready = '1' and flagClear = '0') then
 		        flagQ <= '1';
 				
 			end if;
