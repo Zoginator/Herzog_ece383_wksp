@@ -34,7 +34,8 @@ use work.ece383_pkg.all;
     Lbus_out, Rbus_out: out std_logic_vector(15 downto 0);
     exLbus, exRbus: in std_logic_vector(15 downto 0);
     flagQ: out std_logic;   
-    flagClear: in std_logic); 
+    flagClear: in std_logic);
+     
 end lab2_datapath;
 
 architecture lab2_datapath_arch of lab2_datapath is
@@ -63,6 +64,7 @@ architecture lab2_datapath_arch of lab2_datapath is
     
     signal cw_counter_control: std_logic_vector(1 downto 0);
     signal cw_write_en: std_logic := '0';
+    signal mux_wrENB: std_logic;
     
     
     signal counter_reset : std_logic;
@@ -94,6 +96,8 @@ begin
 			elsif(sw_ready = '1') then
 				ch1.incoming_sample <= ch1.from_ac(17 downto 2); -- feed audio signal as the incoming sample
 				ch2.incoming_sample <= ch2.from_ac(17 downto 2); -- feed audio signal as the incoming sample
+				ch1.to_ac <= ch1.from_ac;
+				ch2.to_ac <= ch2.from_ac;
 			end if;
 		end if;
 	end process;
@@ -108,8 +112,20 @@ begin
     ch2.to_bram <= ch2.current_sample when (exsel = '0') else
                    exLBus             when (exsel = '1');
 	
-    -- Need logic for the FLAG register
-	
+    -- logic for the FLAG register
+	process (clk)
+	begin
+    	if (rising_edge(clk)) then
+			if reset_n = '0' then
+				flagQ <= '0';
+		    elsif (sw_ready = '0' and flagClear = '1') then
+		        flagQ <= '0';
+		    elsif (sw_ready = '1' and clear '0') then
+		        flagQ <= '1';
+				
+			end if;
+		end if;
+	end process;
 	
     ------------------------------------------------------------------------------
 	-- If a button has been pressed then increment of decrement the trigger time and Volt
@@ -118,8 +134,41 @@ begin
 	------------------------------------------------------------------------------
     
     -- Add 2 numeric steppers
-	trigger.t <= TO_UNSIGNED(220, 11); -- change to steppers later
-	trigger.v <= TO_UNSIGNED(320, 11);
+    stepper_t : numeric_stepper 
+    generic map(
+        num_bits  => 11,
+        max_value => 300,
+        min_value => -300,
+        delta     => 5
+    )
+    port map(
+        clk     => clk,
+        reset_n => reset_n,  
+        en      => '1',
+        up      => btn(RIGHT),
+        down    => btn(LEFT),
+        q       => num_stepper_t
+    );
+    
+    stepper_v : numeric_stepper 
+    generic map(
+        num_bits  => 11,
+        max_value => 200,
+        min_value => -200,
+        delta     => 5
+    )
+    port map(
+        clk     => clk,
+        reset_n => reset_n,  
+        en      => '1',
+        up      => btn(DOWN),
+        down    => btn(UP),
+        q       => num_stepper_v
+    );
+    
+-- Assign trigger.t and trigger.v
+    trigger.t <= unsigned(num_stepper_t + 320);
+    trigger.v <= unsigned(num_stepper_v + 220);
 	
 	-------------------------------------------------------------------------------
 	-- Address counter for RAM
@@ -143,15 +192,15 @@ begin
 	-- the trigger.  Set the status word to alert the FSM that it should start 
 	-- recording the samples.
 	-------------------------------------------------------------------------------		
---	trig_detect : trigger_detector
---    port map (
---        clk  => clk,
---        reset_n => reset_n,
---        threshold => ,
---        ready => sw_ready,
---        monitored_signal => ,
---        crossed_trigger => sw_trigger
---    );
+	trig_detect : trigger_detector
+    port map (
+        clk  => clk,
+        reset_n => reset_n,
+        threshold => trigger.v, --need to adjust using apply_offset
+        ready => sw_ready,
+        monitored_signal => unsigned(ch1.current_sample(15 downto 7)),
+        crossed_trigger => sw_trigger
+    );
 	
 	-------------------------------------------------------------------------------
 	-- Instantiate the video driver from Lab1 - should integrate smoothly
@@ -197,7 +246,12 @@ Audio_Codec : Audio_Codec_Wrapper
 	reset <= not reset_n; --invert reset signal
 	
 	write_address <= unsigned(exWrAddr) when (exSel = '1') else --MUX for WRAADR BRAM input
-	                 writeCntr;
+	                 writeCntr + 20; --20 offset for trigger to work properly
+	
+	--mux for write enable 
+	mux_wrENB <= exWen when (exSel = '1') else
+	             cw_write_en;                
+	
 	
 	leftChannelMemory : BRAM_SDP_MACRO
 		generic map (
@@ -286,7 +340,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE => "11",                     -- Input write enable, width defined by write port depth
             WRADDR => STD_LOGIC_VECTOR(write_address),   -- Input write address, width defined by write port depth
             WRCLK => clk,                   -- 1-bit input write clock
-            WREN => '1');              -- 1-bit input write port enable
+            WREN => mux_wrENB);              -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     
@@ -378,7 +432,7 @@ Audio_Codec : Audio_Codec_Wrapper
             WE => "11",                     -- Input write enable, width defined by write port depth
             WRADDR => STD_LOGIC_VECTOR(write_address),                -- Input write address, width defined by write port depth
             WRCLK => clk,                   -- 1-bit input write clock
-            WREN => '1');                -- 1-bit input write port enable
+            WREN => mux_wrENB);                -- 1-bit input write port enable
             -- End of BRAM_SDP_MACRO_inst instantiation
 
     sw(0) <= sw_ready;

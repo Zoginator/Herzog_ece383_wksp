@@ -80,16 +80,20 @@ read_verilog -library xil_defaultlib {{C:/Users/C27Soren.Herzog/ece383/Herzog_ec
 read_vhdl -library xil_defaultlib {
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/Lab2_OLED.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/ascii_rom.vhd}
+  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/HW7/button_debounce.vhdl}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/imports/new/counter.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/delay.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/dvid.vhdl}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/ece383_pkg.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/i2s_ctl.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/lab2_datapath.vhdl}
+  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/HW7/lec10.vhdl}
+  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/imports/Lab1_Cadet_Code_2026/numeric_stepper.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/oled_ex.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/oled_init.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/Lab2_OLED/spi_ctrl.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/tdms.vhdl}
+  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/trigger_detector.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/lab2.vhd}
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {

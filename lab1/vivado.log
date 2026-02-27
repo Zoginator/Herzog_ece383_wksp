@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu Jan 29 11:08:08 2026
-# Process ID         : 13676
+# Start of session at: Thu Feb 19 07:21:27 2026
+# Process ID         : 25676
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent16136 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10836 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab1\Lab1-Herzog.xpr
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/vivado.log
 # Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1\vivado.jou
 # Running On         : C27-5CG3121G96
@@ -17,9 +17,9 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16442 MB
-# Swap memory        : 7516 MB
-# Total Virtual      : 23958 MB
-# Available Virtual  : 5797 MB
+# Swap memory        : 7247 MB
+# Total Virtual      : 23690 MB
+# Available Virtual  : 8795 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab1/Lab1-Herzog.xpr
@@ -28,8 +28,7 @@ Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1148.684 ; gain = 99.102
+open_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 1140.820 ; gain = 104.641
 update_compile_order -fileset sources_1
-INFO: [Device 21-403] Loading part xc7a200tsbg484-1
 exit
-INFO: [Common 17-206] Exiting Vivado at Thu Jan 29 14:15:31 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 19 07:29:09 2026...

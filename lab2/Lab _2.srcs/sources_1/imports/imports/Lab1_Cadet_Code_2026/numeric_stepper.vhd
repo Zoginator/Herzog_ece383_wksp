@@ -26,8 +26,33 @@ architecture numeric_stepper_arch of numeric_stepper is
     signal process_q : signed(num_bits-1 downto 0) := to_signed(0,num_bits);
     signal prev_up, prev_down : std_logic := '0';
     signal is_increment, is_decrement : boolean := false;
+    signal debounced_up, debounced_down : std_logic := '0';
+    
+    COMPONENT button_debounce
+		Port(	clk: in  STD_LOGIC;
+				reset : in  STD_LOGIC;
+				button: in STD_LOGIC;
+				action: out STD_LOGIC);
+    END COMPONENT; 
+    
     
 begin
+
+up_debounce: button_debounce 
+	PORT MAP (
+          clk => clk,
+          reset => reset_n,
+		  button => up,
+		  action => debounced_up
+        );
+        
+down_debounce: button_debounce 
+	PORT MAP (
+          clk => clk,
+          reset => reset_n,
+		  button => down,
+		  action => debounced_down
+        );
     
     process(clk)
     begin
@@ -36,15 +61,15 @@ begin
                 process_q <= TO_SIGNED(0,num_bits);
                 
             elsif (en = '1') then
-                if (up = '1' and not (prev_up = '1' or process_q >= max_value)) then
+                if (debounced_up = '1' and not (prev_up = '1' or process_q >= max_value)) then
                     process_q <= process_q + TO_SIGNED(delta, num_bits);
-                elsif (down = '1' and not (prev_down = '1' or process_q <= min_value)) then
+                elsif (debounced_down = '1' and not (prev_down = '1' or process_q <= min_value)) then
                     process_q <= process_q - TO_SIGNED(delta, num_bits);  
                 end if;   
             end if;
             
-            prev_up <= up;
-            prev_down <= down;   
+            prev_up <= debounced_up;
+            prev_down <= debounced_down;   
                      
         end if;
     end process;

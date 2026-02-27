@@ -47,6 +47,7 @@ architecture Behavioral of counter is
     
     signal rollCombo : STD_LOGIC;
     signal processQ : unsigned(num_bits-1 downto 0);
+    
 
 begin
 

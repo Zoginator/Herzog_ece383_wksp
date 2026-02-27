@@ -28,8 +28,8 @@ end lab2_fsm;
 
 architecture Behavioral of lab2_fsm is
 
-	type state_type is (WRITE, HOLD);
-	signal state: state_type;
+	type state_type is (WAIT_TRIG, WRITE, HOLD);
+	signal state: state_type := WAIT_TRIG;
 
 begin
 
@@ -41,14 +41,17 @@ begin
 	begin
 		if (rising_edge(clk)) then
 			if (reset_n = '0') then 
-				state <= HOLD;
+				state <= WAIT_TRIG;
 			else 
 				case state is
+				    when WAIT_TRIG =>
+				       state <= HOLD when (sw(2) = '1');
 					when HOLD =>
 			           state <= WRITE when sw(0) = '1' else
 			                    HOLD;
 			        when WRITE =>
-			             state <= HOLD;					
+			             state <= WAIT_TRIG when (sw(1) = '1') else
+			                      HOLD;					
 				end case;
 			end if;
 		end if;
