@@ -110,7 +110,7 @@ begin
     ch1.to_bram <= ch1.current_sample when (exsel = '0') else
                    exLBus             when (exsel = '1');
     ch2.to_bram <= ch2.current_sample when (exsel = '0') else
-                   exLBus             when (exsel = '1');
+                   exRBus             when (exsel = '1');
 	
     -- logic for the FLAG register
 	process (clk)
