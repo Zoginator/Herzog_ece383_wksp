@@ -57,6 +57,7 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 4
+set_param xicom.use_bs_reader 1
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a200tsbg484-1
 
@@ -81,6 +82,10 @@ read_vhdl -library xil_defaultlib {
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/video components/counter.vhd}
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level0_BRAM_Pair.vhd
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/tdms.vhdl}
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/Level_BRAM_Pair.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/picoblaze/kcpsm6.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/KCPSM6/NES_Controller_ROM.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd

@@ -17,3 +17,9 @@ set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN AB2   IOSTANDARD TMDS_33     } [get_ports { tmdsb[2] }]; #IO_L8N_T1_34 Sch=hdmi_tx_n[2] # Green
 set_property src_info {type:XDC file:1 line:89 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN AB3   IOSTANDARD TMDS_33     } [get_ports { tmds[2] }]; #IO_L8P_T1_34 Sch=hdmi_tx_p[2]
+set_property src_info {type:XDC file:1 line:109 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN AB22 IOSTANDARD LVCMOS33} [get_ports latch]
+set_property src_info {type:XDC file:1 line:110 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN AB21 IOSTANDARD LVCMOS33} [get_ports pulse]
+set_property src_info {type:XDC file:1 line:111 export:INPUT save:INPUT read:READ} [current_design]
+set_property -dict {PACKAGE_PIN AB20 IOSTANDARD LVCMOS33} [get_ports data]

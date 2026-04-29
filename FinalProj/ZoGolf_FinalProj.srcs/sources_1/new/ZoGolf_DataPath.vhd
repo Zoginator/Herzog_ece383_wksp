@@ -42,8 +42,12 @@ entity ZoGolf_DataPath is
     Port ( 
     clk : in  STD_LOGIC;
 	reset_n : in  STD_LOGIC;
-	tmds : out  STD_LOGIC_VECTOR (3 downto 0);
-    tmdsb : out  STD_LOGIC_VECTOR (3 downto 0) );
+	tmds : out STD_LOGIC_VECTOR (3 downto 0);
+    tmdsb : out STD_LOGIC_VECTOR (3 downto 0); 
+    --NES_buttons : out STD_LOGIC_VECTOR(7 downto 0);
+    latch : out STD_LOGIC; --NES
+    pulse : out STD_LOGIC; --NES
+    data : in STD_LOGIC);  --NES
     --flagQ: out std_logic;   
     --flagClear: in std_logic;
     --sw : out std_logic_vector(1 downto 0));
@@ -53,11 +57,22 @@ end ZoGolf_DataPath;
 
 architecture ZoGolf_Datapath_arch of ZoGolf_DataPath is
 
+component NES_Controller is
+    Port ( clk : in STD_LOGIC;
+           reset_n : in STD_LOGIC;
+           buttons : out STD_LOGIC_VECTOR (7 downto 0);
+           latch : out STD_LOGIC;
+           pulse : out STD_LOGIC;
+           data : in STD_LOGIC);
+end component;
+
     signal sw_ready: std_logic;
     signal sw_last_address: std_logic;
     
     signal BRAM_DO : STD_LOGIC_VECTOR(3 downto 0);
     signal BRAM_pos_sel : STD_LOGIC_VECTOR(12 downto 0);
+    
+    signal w_NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
     
     signal PS2_coord : STD_LOGIC_VECTOR(19 downto 0);
     signal ball_reg : STD_LOGIC_VECTOR(19 downto 0);
@@ -91,6 +106,7 @@ begin
             position    => position,
             BRAM_pos    => BRAM_pos_sel,
             BRAM_in     => BRAM_DO,
+            NES_buttons => w_NES_buttons,
             ball_pos    => ball_reg,
 		    mouse_pos   => PS2_coord,
 		    level_select => level_reg);
@@ -103,6 +119,14 @@ begin
            position  => BRAM_pos_sel,
            data_out  => BRAM_DO);
 
+-- NES controller 
+NES_inst :NES_Controller Port map( 
+           clk      => clk,
+           reset_n  => reset_n,
+           buttons  => w_NES_buttons,
+           latch    => latch,
+           pulse    => pulse,
+           data     => data);
 
     --sw(0) <= sw_ready;
     --sw(1) <= sw_last_address; --needed?
@@ -110,6 +134,7 @@ begin
     
     
    --TEMPORARY NULLIFIED PORTS
+   --NES_buttons <= w_NES_buttons;
    PS2_coord <= "00000000000000000000";
    ball_reg <= "00000000000000000000";
    level_reg <= "0000";

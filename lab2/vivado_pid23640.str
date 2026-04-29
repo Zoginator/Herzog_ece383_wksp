@@ -211,3 +211,44 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ece383_
 selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "lab2_datapath.vhdl", 1); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
 // HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 91 MB. Current time: 4/29/26, 1:20:37 PM MDT
 // HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 73 MB. Current time: 4/29/26, 1:50:37 PM MDT
+// Elapsed time: 3165 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Sources, clk_wiz_1, IP, clk_wiz_1]", 38, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Block Sources, clk_wiz_1, IP, clk_wiz_1, Verilog Header]", 40, true, false, false, false, false, true); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// TclEventType: LOAD_FEATURE
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a200tsbg484-1 
+// WARNING: HEventQueue.dispatchEvent() is taking  1409 ms.
+dismissDialog("Re-customize IP"); // C (Re-customize IP Progress)
+// Elapsed time: 21 seconds
+selectTab(PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE, (HResource) null, "Output Clocks", 2); // cK (PAResourceTtoZ.XPG_TabbedPane_TABBED_PANE)
+// Elapsed time: 10 seconds
+dismissDialog("Re-customize IP"); // m (dialog0)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 83 MB. Current time: 4/29/26, 2:20:37 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 83 MB. Current time: 4/29/26, 2:50:38 PM MDT
+// Elapsed time: 2644 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "ece383_pkg.vhd", 2); // o (PlanAheadTabBaseWorkspace_JideTabbedPane)
+selectCodeEditor("ece383_pkg.vhd", 454, 264); // ae (ece383_pkg.vhd)
+selectCodeEditor("ece383_pkg.vhd", 173, 262); // ae (ece383_pkg.vhd)
+selectCodeEditor("ece383_pkg.vhd", 485, 264); // ae (ece383_pkg.vhd)
+// Elapsed time: 24 seconds
+selectCodeEditor("ece383_pkg.vhd", 159, 303); // ae (ece383_pkg.vhd)
+// Elapsed time: 78 seconds
+selectCodeEditor("ece383_pkg.vhd", 327, 350); // ae (ece383_pkg.vhd)
+// Elapsed time: 15 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_INSERT_TAB, "Hierarchy", 0); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, PAResourceEtoH.FileSetView_ADD_TAB, "Libraries", 2); // g (PAResourceEtoH.FileSetView_TABBED_PANE, SourcesView)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, VHDL, xil_defaultlib, ece383_pkg.vhd]", 12, false); // E (PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE)
+selectMoreButton(PAResourceQtoS.SrcFilePropPanels_TYPE, (String) null); // s (PAResourceQtoS.SrcFilePropPanels_TYPE)
+selectComboBox(PAResourceQtoS.SrcFileTypeComboBox_SOURCE_FILE_TYPE, "SrcFileTypeComboBox", "VHDL 2008", 4); // aZ (PAResourceQtoS.SrcFileTypeComboBox_SOURCE_FILE_TYPE, SrcFileTypeComboBox)
+selectButton(RDIResource.BaseDialog_OK, "OK", "Set Type"); // a (RDIResource.BaseDialog_OK)
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: set_property file_type {VHDL 2008} [get_files  {{C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab2/Lab _2.srcs/sources_1/imports/C27Soren.Herzog/OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Lab/Lab 2/lab2_code_for_cadets_2026/ece383_pkg.vhd}}] 
+dismissDialog("Set Type"); // X (dialog1)
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:35m:40s
+// TclEventType: FILE_SET_CHANGE
+// Elapsed Time for: 'PAResourceItoN.MsgLongTask_MESSAGE_LONG_TASK/L.f': 02h:35m:44s
+// Tcl Message: update_compile_order -fileset sources_1 
+selectCodeEditor("ece383_pkg.vhd", 367, 304); // ae (ece383_pkg.vhd)
+selectCodeEditor("ece383_pkg.vhd", 412, 290); // ae (ece383_pkg.vhd)
+selectCodeEditor("ece383_pkg.vhd", 390, 310); // ae (ece383_pkg.vhd)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,033 MB. GUI used memory: 84 MB. Current time: 4/29/26, 3:20:38 PM MDT

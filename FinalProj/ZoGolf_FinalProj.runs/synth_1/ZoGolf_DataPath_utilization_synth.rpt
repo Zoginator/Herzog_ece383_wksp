@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr 29 15:24:00 2026
+| Date         : Wed Apr 29 16:44:41 2026
 | Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file ZoGolf_DataPath_utilization_synth.rpt -pb ZoGolf_DataPath_utilization_synth.pb
 | Design       : ZoGolf_DataPath
@@ -28,18 +28,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+------------+-----------+-------+
-|        Site Type        | Used | Fixed | Prohibited | Available | Util% |
-+-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |  111 |     0 |          0 |    134600 |  0.08 |
-|   LUT as Logic          |  111 |     0 |          0 |    134600 |  0.08 |
-|   LUT as Memory         |    0 |     0 |          0 |     46200 |  0.00 |
-| Slice Registers         |  107 |     0 |          0 |    269200 |  0.04 |
-|   Register as Flip Flop |  107 |     0 |          0 |    269200 |  0.04 |
-|   Register as Latch     |    0 |     0 |          0 |    269200 |  0.00 |
-| F7 Muxes                |    0 |     0 |          0 |     67300 |  0.00 |
-| F8 Muxes                |    0 |     0 |          0 |     33650 |  0.00 |
-+-------------------------+------+-------+------------+-----------+-------+
++----------------------------+------+-------+------------+-----------+-------+
+|          Site Type         | Used | Fixed | Prohibited | Available | Util% |
++----------------------------+------+-------+------------+-----------+-------+
+| Slice LUTs*                |  274 |     0 |          0 |    134600 |  0.20 |
+|   LUT as Logic             |  250 |     0 |          0 |    134600 |  0.19 |
+|   LUT as Memory            |   24 |     0 |          0 |     46200 |  0.05 |
+|     LUT as Distributed RAM |   24 |     0 |            |           |       |
+|     LUT as Shift Register  |    0 |     0 |            |           |       |
+| Slice Registers            |  240 |     0 |          0 |    269200 |  0.09 |
+|   Register as Flip Flop    |  240 |     0 |          0 |    269200 |  0.09 |
+|   Register as Latch        |    0 |     0 |          0 |    269200 |  0.00 |
+| F7 Muxes                   |    0 |     0 |          0 |     67300 |  0.00 |
+| F8 Muxes                   |    0 |     0 |          0 |     33650 |  0.00 |
++----------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 Warning! LUT value is adjusted to account for LUT combining.
 Warning! For any ECO changes, please run place_design if there are unplaced instances
@@ -59,8 +61,8 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
-| 5     |          Yes |         Set |            - |
-| 102   |          Yes |       Reset |            - |
+| 0     |          Yes |         Set |            - |
+| 240   |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -70,9 +72,9 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------------+------+-------+------------+-----------+-------+
 |     Site Type     | Used | Fixed | Prohibited | Available | Util% |
 +-------------------+------+-------+------------+-----------+-------+
-| Block RAM Tile    |    2 |     0 |          0 |       365 |  0.55 |
-|   RAMB36/FIFO*    |    2 |     0 |          0 |       365 |  0.55 |
-|     RAMB36E1 only |    2 |       |            |           |       |
+| Block RAM Tile    |    3 |     0 |          0 |       365 |  0.82 |
+|   RAMB36/FIFO*    |    3 |     0 |          0 |       365 |  0.82 |
+|     RAMB36E1 only |    3 |       |            |           |       |
 |   RAMB18          |    0 |     0 |          0 |       730 |  0.00 |
 +-------------------+------+-------+------------+-----------+-------+
 * Note: Each Block RAM Tile only has one FIFO logic available and therefore can accommodate only one FIFO36E1 or one FIFO18E1. However, if a FIFO18E1 occupies a Block RAM Tile, that tile can still accommodate a RAMB18E1
@@ -95,7 +97,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-----------------------------+------+-------+------------+-----------+-------+
 |          Site Type          | Used | Fixed | Prohibited | Available | Util% |
 +-----------------------------+------+-------+------------+-----------+-------+
-| Bonded IOB                  |   10 |     0 |          0 |       285 |  3.51 |
+| Bonded IOB                  |   13 |     0 |          0 |       285 |  4.56 |
 | Bonded IPADs                |    0 |     0 |          0 |        14 |  0.00 |
 | Bonded OPADs                |    0 |     0 |          0 |         8 |  0.00 |
 | PHY_CONTROL                 |    0 |     0 |          0 |        10 |  0.00 |
@@ -121,7 +123,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +------------+------+-------+------------+-----------+-------+
 |  Site Type | Used | Fixed | Prohibited | Available | Util% |
 +------------+------+-------+------------+-----------+-------+
-| BUFGCTRL   |    0 |     0 |          0 |        32 |  0.00 |
+| BUFGCTRL   |    1 |     0 |          0 |        32 |  3.13 |
 | BUFIO      |    0 |     0 |          0 |        40 |  0.00 |
 | MMCME2_ADV |    0 |     0 |          0 |        10 |  0.00 |
 | PLLE2_ADV  |    0 |     0 |          0 |        10 |  0.00 |
@@ -137,7 +139,7 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +-------------+------+-------+------------+-----------+-------+
 |  Site Type  | Used | Fixed | Prohibited | Available | Util% |
 +-------------+------+-------+------------+-----------+-------+
-| BSCANE2     |    0 |     0 |          0 |         4 |  0.00 |
+| BSCANE2     |    1 |     0 |          0 |         4 | 25.00 |
 | CAPTUREE2   |    0 |     0 |          0 |         1 |  0.00 |
 | DNA_PORT    |    0 |     0 |          0 |         1 |  0.00 |
 | EFUSE_USR   |    0 |     0 |          0 |         1 |  0.00 |
@@ -155,21 +157,26 @@ Warning! For any ECO changes, please run place_design if there are unplaced inst
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |  102 |        Flop & Latch |
-| LUT6     |   31 |                 LUT |
-| LUT3     |   31 |                 LUT |
-| LUT2     |   28 |                 LUT |
-| LUT5     |   23 |                 LUT |
-| LUT4     |   14 |                 LUT |
+| FDRE     |  240 |        Flop & Latch |
+| LUT6     |  145 |                 LUT |
+| LUT5     |   80 |                 LUT |
+| LUT3     |   47 |                 LUT |
+| LUT2     |   31 |                 LUT |
+| LUT4     |   27 |                 LUT |
+| RAMD32   |   24 |  Distributed Memory |
+| CARRY4   |   13 |          CarryLogic |
 | LUT1     |    9 |                 LUT |
+| RAMS32   |    8 |  Distributed Memory |
+| RAMD64E  |    8 |  Distributed Memory |
 | OBUFDS   |    8 |                  IO |
-| FDSE     |    5 |        Flop & Latch |
 | ODDR     |    4 |                  IO |
 | INV      |    4 |                 LUT |
-| CARRY4   |    3 |          CarryLogic |
-| RAMB36E1 |    2 |        Block Memory |
-| IBUF     |    2 |                  IO |
+| RAMB36E1 |    3 |        Block Memory |
+| IBUF     |    3 |                  IO |
+| OBUF     |    2 |                  IO |
 | DSP48E1  |    1 |    Block Arithmetic |
+| BUFG     |    1 |               Clock |
+| BSCANE2  |    1 |              Others |
 +----------+------+---------------------+
 
 
