@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1777477155" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ZoGolf_DataPath.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1777497773" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ZoGolf_DataPath.dcp">
   <File Type="PA-TCL" Name="ZoGolf_DataPath.tcl"/>
   <File Type="REPORTS-TCL" Name="ZoGolf_DataPath_reports.tcl"/>
   <File Type="RDS-RDS" Name="ZoGolf_DataPath.vds"/>
@@ -11,6 +11,20 @@
   <File Type="VDS-TIMING-PB" Name="ZoGolf_DataPath_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/code/video components/ece383_pkg.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Final Project/code/video components/ece383_pkg.vhd"/>
+        <Attr Name="ImportTime" Val="1769009171"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BRAM_Level_Selector.vhd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/imports/video components/counter.vhd">
       <FileInfo>
         <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Final Project/code/video components/counter.vhd"/>
@@ -19,10 +33,8 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
-    <File Path="$PSRCDIR/sources_1/imports/code/video components/ece383_pkg.vhd">
+    <File Path="$PSRCDIR/sources_1/new/level0_BRAM_Pair.vhd">
       <FileInfo>
-        <Attr Name="ImportPath" Val="$PPRDIR/../../../OneDrive - afacademy.af.edu/Documents/Schoolwork Sem6 2026 Spring/M1 - ECE 383 CSYS/Final Project/code/video components/ece383_pkg.vhd"/>
-        <Attr Name="ImportTime" Val="1769009171"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
@@ -69,6 +81,13 @@
     </File>
     <File Path="$PSRCDIR/sources_1/new/ZoGolf_DataPath.vhd">
       <FileInfo SFType="VHDL2008">
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Level_BRAM_Pair.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

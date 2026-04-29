@@ -5,11 +5,11 @@ SW Build: 5239630 on Fri Nov 08 22:35:27 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 IP Build: 5239520 on Sun Nov 10 16:12:51 MST 2024
 
-Process ID (PID): 5160
+Process ID (PID): 7920
 License: Customer
 Mode: GUI Mode
 
-Current time: 	Wed Apr 29 09:30:22 MDT 2026
+Current time: 	Wed Apr 29 15:18:59 MDT 2026
 Time zone: 	Mountain Standard Time (America/Denver)
 
 OS: Windows 11
@@ -20,7 +20,7 @@ Available processors (cores): 16
 Screen size: 1920x1200
 Local screen bounds: x = 0, y = 0, width = 1920, height = 1140
 Screen resolution (DPI): 125
-Available screens: 1
+Available screens: 3
 Default font: family=Segoe UI,name=Segoe UI,style=plain,size=15
 Scale size: 19
 OS font scaling: 125%
@@ -52,13 +52,13 @@ Vivado layouts directory: C:/Users/C27Soren.Herzog/AppData/Roaming/Xilinx/Vivado
 PlanAhead jar file: 	C:/Xilinx/Vivado/2024.2/lib/classes/planAhead.jar
 Vivado log file: 	C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/vivado.log
 Vivado journal file: 	C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/vivado.jou
-Engine tmp dir: 	C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/.Xil/Vivado-5160-C27-5CG3121G96
+Engine tmp dir: 	C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/.Xil/Vivado-7920-C27-5CG3121G96
 Non-Default Parameters:	[]
 
 Xilinx & AMD Environment Variables
 --------------------------------------------------------------------------------------------
 RDI_APPROOT: C:/Xilinx/Vivado/2024.2
-RDI_ARGS:  -gui_launcher_event rodinguilauncherevent9464 "C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\ZoGolf_FinalProj.xpr"
+RDI_ARGS:  -gui_launcher_event rodinguilauncherevent14056 "C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\ZoGolf_FinalProj.xpr"
 RDI_ARGS_FUNCTION: RDI_EXEC_DEFAULT
 RDI_BASEROOT: C:/Xilinx/Vivado
 RDI_BINDIR: C:/Xilinx/Vivado/2024.2/bin
@@ -86,7 +86,7 @@ RDI_PYTHON3_VERSION: 3.8.3
 RDI_PYTHONHOME: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3
 RDI_PYTHONPATH: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\bin;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib;C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib\site-packages
 RDI_PYTHON_LD_LIBPATH: C:/Xilinx/Vivado/2024.2\tps\win64\python-3.8.3\lib
-RDI_SESSION_INFO: C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj:C27-5CG3121G96-Wed04-29-2026_9-29-39.64
+RDI_SESSION_INFO: C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj:C27-5CG3121G96-Wed04-29-2026_15-18-23.84
 RDI_SHARED_DATA: C:/Xilinx/SharedData/2024.2/data
 RDI_TPS_ROOT: C:/Xilinx/Vivado/2024.2/tps/win64
 RDI_USE_JDK21: True
@@ -104,7 +104,7 @@ _RDI_CWD: C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj
 
 GUI allocated memory:	512 MB
 GUI max memory:		4,072 MB
-Engine allocated memory: 765 MB
+Engine allocated memory: 834 MB
 
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
@@ -118,7 +118,7 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: DEBUG_PROBE_SET_CHANGE
 // TclEventType: FLOW_ADDED
 // Tcl Message: open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.xpr 
-// HMemoryUtils.trashcanNow. Engine heap size: 781 MB. GUI used memory: 74 MB. Current time: 4/29/26, 9:30:23 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 835 MB. GUI used memory: 72 MB. Current time: 4/29/26, 3:19:00 PM MDT
 // TclEventType: MSGMGR_MOVEMSG
 // TclEventType: FILE_SET_CHANGE
 // TclEventType: FILE_SET_NEW
@@ -144,14 +144,9 @@ Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 // TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
 // TclEventType: COMPOSITE_FILE_CHANGE
 // TclEventType: PROJECT_NEW
-// [GUI Memory]: 143 MB (+147226kb) [00:00:42]
-// [Engine Memory]: 924 MB (+816990kb) [00:00:42]
-// WARNING: HEventQueue.dispatchEvent() is taking  5303 ms.
+// [GUI Memory]: 133 MB (+137316kb) [00:00:26]
+// [Engine Memory]: 929 MB (+822966kb) [00:00:26]
+// WARNING: HEventQueue.dispatchEvent() is taking  3091 ms.
 // Tcl Message: open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.xpr 
 // Tcl Message: Scanning sources... Finished scanning sources 
-// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
-// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 
-// [Engine Memory]: 970 MB (+612kb) [00:00:46]
-// WARNING: HEventQueue.dispatchEvent() is taking  1032 ms.
-// HMemoryUtils.trashcanNow. Engine heap size: 1,005 MB. GUI used memory: 79 MB. Current time: 4/29/26, 9:30:47 AM MDT
-// Tcl Message: open_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1283.277 ; gain = 196.207 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'. 

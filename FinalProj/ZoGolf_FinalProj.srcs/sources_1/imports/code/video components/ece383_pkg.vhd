@@ -96,7 +96,8 @@ package ece383_pkg is
    component color_mapper is
    Port ( color : out color_t;
            position: in coordinate_t;
-		   level_map: in std_logic_vector(15 downto 0); -- BRAM interfacce port
+           BRAM_pos : out std_logic_vector(12 downto 0);
+		   level_map: in std_logic_vector(3 downto 0); -- BRAM interfacce port
 		   ball_pos: in std_logic_vector(19 downto 0);
 		   mouse_pos: in std_logic_vector(19 downto 0);
 		   level_select: in std_logic_vector(3 downto 0));		
@@ -109,18 +110,37 @@ package ece383_pkg is
             tmds : out  STD_LOGIC_VECTOR (3 downto 0);
             tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
             position: out coordinate_t;
-            BRAM_in : in STD_LOGIC_VECTOR (15 downto 0);
+            BRAM_pos : out std_logic_vector(12 downto 0);
+            BRAM_in : in STD_LOGIC_VECTOR (3 downto 0);
             ball_pos: in std_logic_vector(19 downto 0);
 		    mouse_pos: in std_logic_vector(19 downto 0);
 		    level_select: in std_logic_vector(3 downto 0));
-	end component;	  
+	end component;
 	
+	-------- LEVEL BRAM COMPONENT DECLARATIONS ----------------	  
+
+component BRAM_Level_Selector is
+    Port ( clk : in STD_LOGIC;
+           reset_n : in STD_LOGIC;
+           level_sel : in STD_LOGIC_VECTOR (3 downto 0);
+           position : in STD_LOGIC_VECTOR(12 downto 0);
+           data_out : out STD_LOGIC_VECTOR (3 downto 0));
+end component;
+
+component level0_BRAM_Pair is
+    Port ( clk : in STD_LOGIC;
+           reset_n : in STD_LOGIC;
+           position : in STD_LOGIC_VECTOR(12 downto 0);
+           data_out : out STD_LOGIC_VECTOR(3 downto 0));
+end component;
 	
   
   --= FUNCTIONS ==-
   function Get_Red(rgb : std_logic_vector(23 downto 0)) return std_logic_vector;
   function Get_Green(rgb : std_logic_vector(23 downto 0)) return std_logic_vector;
   function Get_Blue(rgb : std_logic_vector(23 downto 0)) return std_logic_vector;
+  function coords_to_BRAM_address(coord: coordinate_t) return STD_LOGIC_VECTOR;
+  
   
 end package ece383_pkg;
 
@@ -146,5 +166,21 @@ package body ece383_pkg is
   begin
       return rgb(7 downto 0); -- Blue slice
   end function;
+  
+   -- converts a coordinate type to a 13 bit number for BRAM address
+ function coords_to_BRAM_address(coord: coordinate_t) return STD_LOGIC_VECTOR is
+    variable col : unsigned(9 downto 0);
+    variable row : unsigned(9 downto 0);
+    variable mult_res : unsigned(17 downto 0);
+    variable final_res : unsigned(17 downto 0);
+    variable trunc_res : std_logic_vector(12 downto 0);
+ begin
+    col := unsigned(coord.col);
+    row := unsigned(coord.row);
+    mult_res := row * to_unsigned(120,8);
+    final_res := mult_res + ("00000000" & col(9 downto 2));
+    trunc_res := std_logic_vector(final_res(12 downto 0));
+    return trunc_res;
+ end function;
 
 end package body ece383_pkg;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Wed Apr 29 09:45:14 2026
+| Date         : Wed Apr 29 15:26:04 2026
 | Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ZoGolf_DataPath_methodology_drc_routed.rpt -pb ZoGolf_DataPath_methodology_drc_routed.pb -rpx ZoGolf_DataPath_methodology_drc_routed.rpx
 | Design       : ZoGolf_DataPath
@@ -23,12 +23,50 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 0
-+------+----------+-------------+--------+
-| Rule | Severity | Description | Checks |
-+------+----------+-------------+--------+
-+------+----------+-------------+--------+
+             Checks found: 7
++-----------+------------------+------------------------------------------------------------------+--------+
+| Rule      | Severity         | Description                                                      | Checks |
++-----------+------------------+------------------------------------------------------------------+--------+
+| TIMING-17 | Critical Warning | Non-clocked sequential cell                                      | 5      |
+| TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin                        | 1      |
+| CKLD-2    | Warning          | Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads | 1      |
++-----------+------------------+------------------------------------------------------------------+--------+
 
 2. REPORT DETAILS
 -----------------
+TIMING-17#1 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/BottomHalfMemory/level_selctor_inst/inst_level0/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_cooolgate_en_gate_1_cooolDelFlop/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#2 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#3 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#4 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#5 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-27#1 Critical Warning
+Invalid primary clock on hierarchical pin  
+A primary clock video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1 is created on an inappropriate internal pin video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1. It is not recommended to create a primary clock on a hierarchical pin when its driver pin has a fanout connected to multiple clock pins
+Related violations: <none>
+
+CKLD-2#1 Warning
+Clock Net has IO Driver, not a Clock Buf, and/or non-Clock loads  
+Clock net clk_IBUF is directly driven by an IO rather than a Clock Buffer or may be an IO driving a mix of Clock Buffer and non-Clock loads. This connectivity should be reviewed and corrected as appropriate. Driver(s): clk_IBUF_inst/O, level_selctor_inst/clk, video_inst/clk
+Related violations: <none>
+
 

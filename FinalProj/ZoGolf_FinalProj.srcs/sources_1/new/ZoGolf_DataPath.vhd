@@ -24,7 +24,9 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 use work.ece383_pkg.ALL;
 library UNIMACRO;
-use UNIMACRO.vcomponents.all;	
+use UNIMACRO.vcomponents.all;
+library UNISIM;
+use UNISIM.VComponents.all;	
 use work.ece383_pkg.all;
 
 -- Uncomment the following library declaration if using
@@ -54,7 +56,9 @@ architecture ZoGolf_Datapath_arch of ZoGolf_DataPath is
     signal sw_ready: std_logic;
     signal sw_last_address: std_logic;
     
-    signal BRAM_DO : STD_LOGIC_VECTOR(15 downto 0);
+    signal BRAM_DO : STD_LOGIC_VECTOR(3 downto 0);
+    signal BRAM_pos_sel : STD_LOGIC_VECTOR(12 downto 0);
+    
     signal PS2_coord : STD_LOGIC_VECTOR(19 downto 0);
     signal ball_reg : STD_LOGIC_VECTOR(19 downto 0);
     signal level_reg : STD_LOGIC_Vector(3 downto 0);
@@ -77,6 +81,7 @@ begin
 --			end if;
 --		end if;
 --	end process;
+
 	
 	video_inst : video port map(
 	        clk         => clk,
@@ -84,13 +89,25 @@ begin
             tmds        => tmds,
             tmdsb       => tmdsb,
             position    => position,
+            BRAM_pos    => BRAM_pos_sel,
             BRAM_in     => BRAM_DO,
             ball_pos    => ball_reg,
 		    mouse_pos   => PS2_coord,
 		    level_select => level_reg);
+		    
+		    
+    level_selctor_inst : BRAM_Level_Selector Port map( 
+           clk       => clk,
+           reset_n   => reset_n,
+           level_sel => level_reg,
+           position  => BRAM_pos_sel,
+           data_out  => BRAM_DO);
+
 
     --sw(0) <= sw_ready;
     --sw(1) <= sw_last_address; --needed?
+  
+    
     
    --TEMPORARY NULLIFIED PORTS
    PS2_coord <= "00000000000000000000";

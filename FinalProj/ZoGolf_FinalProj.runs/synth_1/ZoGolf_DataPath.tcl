@@ -76,8 +76,10 @@ set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
 read_vhdl -library xil_defaultlib {
-  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/video components/counter.vhd}
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/ece383_pkg.vhd}
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd
+  {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/video components/counter.vhd}
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level0_BRAM_Pair.vhd
   {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/tdms.vhdl}
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
