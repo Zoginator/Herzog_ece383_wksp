@@ -14,15 +14,15 @@ entity color_mapper is
            BRAM_pos : out std_logic_vector(12 downto 0);
 		   level_map: in std_logic_vector(3 downto 0); -- BRAM interfacce port
 		   NES_buttons : in STD_LOGIC_VECTOR(7 downto 0);
-		   ball_pos: in std_logic_vector(19 downto 0);
-		   mouse_pos: in std_logic_vector(19 downto 0);
+		   ball_pos: in std_logic_vector(15 downto 0);
+		   mouse_pos: in std_logic_vector(15 downto 0);
 		   level_select: in std_logic_vector(3 downto 0));
 end color_mapper;
 
 architecture color_mapper_arch of color_mapper is
 
 signal ball_color : color_t := WHITE;
-signal Cursor_color : color_t := BLUE;
+signal CURSOR_COLOR : color_t := BLUE;
 signal NES_PRESSED : color_t := BLUE; 
 signal NES_OFF : color_t := RED;  
 -- Add other colors you want to use here
@@ -31,8 +31,9 @@ signal BRAM_color_code : color_t;
 
 -- NES button indicators
 signal NES_right, NES_left, NES_up, NES_down, NES_start, NES_select, NES_B, NES_A : std_logic;
+signal is_cursor : std_logic;
 
-
+signal cursor_x, cursor_y : unsigned(9 downto 0);
 
 begin
 
@@ -60,7 +61,14 @@ NES_B <= '1' when ((position.row >= 400) and  (position.row <= 403)) and
                           else '0';
 NES_A <= '1' when ((position.row >= 400) and  (position.row <= 403)) and
                           ((position.col >= 562) and  (position.col <= 565))
-                          else '0';                                                                                                                                  
+                          else '0';
+                          
+-- PS2 Mouse cursor  
+cursor_x <= unsigned("00" & mouse_pos(7 downto 0));
+cursor_Y <= unsigned("00" & mouse_pos(15 downto 8));
+
+is_cursor <= '1' when ((position.row/4 = cursor_y) and (position.col/4 = cursor_x)) else
+             '0';                                                                                                                            
 -- coordinate to BRAM position converter
 BRAM_pos <= coords_to_BRAM_address(position);
 
@@ -72,7 +80,8 @@ BRAM_COLOR_CODE <= WHITE when (level_map = "0000") else
                    -- add more values post testing
                    
 -- Use your booleans to choose the color
-color <= BRAM_COLOR_CODE when (position.col < 480) else
+color <= CURSOR_COLOR when (is_cursor) else
+         BRAM_COLOR_CODE when (position.col < 480) else
          NES_PRESSED when ((NES_right and NES_buttons(0)) or
                           (NES_left   and NES_buttons(1)) or
                           (NES_down   and NES_buttons(2)) or

@@ -47,7 +47,11 @@ entity ZoGolf_DataPath is
     --NES_buttons : out STD_LOGIC_VECTOR(7 downto 0);
     latch : out STD_LOGIC; --NES
     pulse : out STD_LOGIC; --NES
-    data : in STD_LOGIC);  --NES
+    data : in STD_LOGIC;  --NES
+    ps2_clk     : inout std_logic;
+    ps2_data    : inout std_logic);
+    --mouse_pos   : out std_logic_vector(15 downto 0);
+    --ball_pos : in std_logic_vector(15 downto 0);
     --flagQ: out std_logic;   
     --flagClear: in std_logic;
     --sw : out std_logic_vector(1 downto 0));
@@ -66,6 +70,14 @@ component NES_Controller is
            data : in STD_LOGIC);
 end component;
 
+component PS2_mouse_decoder is
+    Port ( clk : in std_logic;
+           reset_n : in std_logic;
+           PS2_clk : inout std_logic;
+           PS2_data : inout std_logic;
+           mouse_coords : out STD_LOGIC_VECTOR(15 downto 0)); -- 15 to 8 is y, 0 to 0 is x
+end component;
+
     signal sw_ready: std_logic;
     signal sw_last_address: std_logic;
     
@@ -74,8 +86,8 @@ end component;
     
     signal w_NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
     
-    signal PS2_coord : STD_LOGIC_VECTOR(19 downto 0);
-    signal ball_reg : STD_LOGIC_VECTOR(19 downto 0);
+    signal PS2_coords : STD_LOGIC_VECTOR(15 downto 0) := "0000000000000000";
+    signal ball_reg : STD_LOGIC_VECTOR(15 downto 0);
     signal level_reg : STD_LOGIC_Vector(3 downto 0);
     
     signal position : coordinate_t;
@@ -108,7 +120,7 @@ begin
             BRAM_in     => BRAM_DO,
             NES_buttons => w_NES_buttons,
             ball_pos    => ball_reg,
-		    mouse_pos   => PS2_coord,
+		    mouse_pos   => PS2_coords,
 		    level_select => level_reg);
 		    
 		    
@@ -131,12 +143,17 @@ NES_inst :NES_Controller Port map(
     --sw(0) <= sw_ready;
     --sw(1) <= sw_last_address; --needed?
   
-    
+ PS2_decoder_inst : PS2_mouse_decoder port map(
+        clk => clk,
+        reset_n => reset_n,
+        PS2_clk => PS2_clk,
+        PS2_data => PS2_data,
+        mouse_coords => PS2_coords);
     
    --TEMPORARY NULLIFIED PORTS
    --NES_buttons <= w_NES_buttons;
-   PS2_coord <= "00000000000000000000";
-   ball_reg <= "00000000000000000000";
+   --PS2_coords <= "0000000000000000";
+   ball_reg <= "0000000000000000";
    level_reg <= "0000";
    
     

@@ -100,8 +100,8 @@ package ece383_pkg is
            BRAM_pos : out std_logic_vector(12 downto 0);
 		   level_map: in std_logic_vector(3 downto 0); -- BRAM interfacce port
 		   NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
-		   ball_pos: in std_logic_vector(19 downto 0);
-		   mouse_pos: in std_logic_vector(19 downto 0);
+		   ball_pos: in std_logic_vector(15 downto 0);
+		   mouse_pos: in std_logic_vector(15 downto 0);
 		   level_select: in std_logic_vector(3 downto 0));		
    end component;
    
@@ -115,8 +115,8 @@ package ece383_pkg is
             BRAM_pos : out std_logic_vector(12 downto 0);
             BRAM_in : in STD_LOGIC_VECTOR (3 downto 0);
             NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
-            ball_pos: in std_logic_vector(19 downto 0);
-		    mouse_pos: in std_logic_vector(19 downto 0);
+            ball_pos: in std_logic_vector(15 downto 0);
+		    mouse_pos: in std_logic_vector(15 downto 0);
 		    level_select: in std_logic_vector(3 downto 0));
 	end component;
 	
@@ -143,6 +143,8 @@ end component;
   function Get_Green(rgb : std_logic_vector(23 downto 0)) return std_logic_vector;
   function Get_Blue(rgb : std_logic_vector(23 downto 0)) return std_logic_vector;
   function coords_to_BRAM_address(coord: coordinate_t) return STD_LOGIC_VECTOR;
+  function PS2_to_position(PS2_bytes : std_logic_vector(23 downto 0); 
+                           last_pos : std_logic_vector(15 downto 0)) return std_logic_vector;
   
   
 end package ece383_pkg;
@@ -185,5 +187,32 @@ package body ece383_pkg is
     trunc_res := std_logic_vector(final_res(12 downto 0));
     return trunc_res;
  end function;
+ 
+  -- converts PS2 mouse output into a 20 bit coordinate value
+  function PS2_to_position(PS2_bytes : std_logic_vector(23 downto 0);
+                           last_pos : std_logic_vector(15 downto 0)) return std_logic_vector is
+    variable del_x : signed(8 downto 0);
+    variable del_y : signed(8 downto 0);
+    variable last_x: signed(8 downto 0);
+    variable last_y: signed(8 downto 0);
+    variable new_x: signed(8 downto 0);
+    variable new_y: signed(8 downto 0);
+    variable new_pos : std_logic_vector(15 downto 0);
+  begin
+    del_x := signed(PS2_bytes(20) & PS2_bytes(15 downto 8)); 
+    del_y := signed(PS2_bytes(21) & PS2_bytes(7 downto 0)); 
+    last_x := signed('0' & last_pos(7 downto 0));
+    last_y := signed('0' & last_pos(15 downto 8));
+    new_x := last_x + shift_right(del_x,1); -- scaling down the delta while preserving sign
+    if (new_x(8) = '1') then new_x := to_signed(0,9); 
+    elsif (new_x > 119) then new_x := to_signed(119,9); 
+    end if;
+    new_y := last_y - shift_right(del_y,1);
+    if (new_y(8) = '1') then new_y := to_signed(0,9); 
+    elsif (new_y > 119) then new_y := to_signed(119,9); 
+    end if;
+    new_pos := std_logic_vector(new_y(7 downto 0) & new_x(7 downto 0));
+    return new_pos;
+  end function;
 
 end package body ece383_pkg;

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date             : Wed Apr 29 16:46:49 2026
+| Date             : Fri May  1 07:27:23 2026
 | Host             : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command          : report_power -file ZoGolf_DataPath_power_routed.rpt -pb ZoGolf_DataPath_power_summary_routed.pb -rpx ZoGolf_DataPath_power_routed.rpx
 | Design           : ZoGolf_DataPath
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.387        |
+| Total On-Chip Power (W)  | 0.392        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.247        |
+| Dynamic (W)              | 0.252        |
 | Device Static (W)        | 0.140        |
 | Effective TJA (C/W)      | 3.3          |
 | Max Ambient (C)          | 83.7         |
@@ -53,20 +53,20 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.004 |        6 |       --- |             --- |
-| Slice Logic              |     0.001 |      665 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      234 |    133800 |            0.17 |
+| Slice Logic              |     0.002 |      959 |       --- |             --- |
+|   LUT as Logic           |     0.001 |      346 |    133800 |            0.26 |
 |   LUT as Distributed RAM |    <0.001 |       24 |     46200 |            0.05 |
-|   Register               |    <0.001 |      239 |    267600 |            0.09 |
-|   CARRY4                 |    <0.001 |       13 |     33450 |            0.04 |
+|   CARRY4                 |    <0.001 |       23 |     33450 |            0.07 |
+|   Register               |    <0.001 |      369 |    267600 |            0.14 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       45 |       --- |             --- |
-| Signals                  |     0.002 |      532 |       --- |             --- |
-| Block RAM                |    <0.001 |        3 |       365 |            0.82 |
+|   Others                 |     0.000 |       52 |       --- |             --- |
+| Signals                  |     0.002 |      759 |       --- |             --- |
+| Block RAM                |     0.004 |        3 |       365 |            0.82 |
 | MMCM                     |     0.106 |        1 |        10 |           10.00 |
 | DSPs                     |    <0.001 |        1 |       740 |            0.14 |
-| I/O                      |     0.134 |       13 |       285 |            4.56 |
+| I/O                      |     0.134 |       15 |       285 |            5.26 |
 | Static Power             |     0.140 |          |           |                 |
-| Total                    |     0.387 |          |           |                 |
+| Total                    |     0.392 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.040 |       0.009 |      0.031 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.044 |       0.013 |      0.031 |       NA    | Unspecified | NA         |
 | Vccaux    |       1.800 |     0.089 |       0.059 |      0.031 |       NA    | Unspecified | NA         |
 | Vcco33    |       3.300 |     0.045 |       0.040 |      0.005 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -148,10 +148,16 @@ Table of Contents
 +----------------------------------+-----------+
 | Name                             | Power (W) |
 +----------------------------------+-----------+
-| ZoGolf_DataPath                  |     0.247 |
-|   NES_inst                       |     0.005 |
-|     processor                    |     0.004 |
+| ZoGolf_DataPath                  |     0.252 |
+|   NES_inst                       |     0.004 |
+|     processor                    |     0.003 |
 |     program_rom                  |     0.001 |
+|   PS2_decoder_inst               |     0.002 |
+|     inst_PS2_mouse               |     0.001 |
+|   level_selctor_inst             |     0.004 |
+|     inst_level0                  |     0.004 |
+|       BottomHalfMemory           |     0.002 |
+|       TopHalfMemory              |     0.002 |
 |   video_inst                     |     0.242 |
 |     inst_dvid                    |     0.001 |
 |     mmcm_adv_inst_display_clocks |     0.107 |

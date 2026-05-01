@@ -17,8 +17,8 @@ entity video is
             BRAM_pos : out std_logic_vector(12 downto 0);
             BRAM_in : in STD_LOGIC_VECTOR (3 downto 0);
             NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
-            ball_pos: in std_logic_vector(19 downto 0);
-		    mouse_pos: in std_logic_vector(19 downto 0);
+            ball_pos: in std_logic_vector(15 downto 0);
+		    mouse_pos: in std_logic_vector(15 downto 0);
 		    level_select: in std_logic_vector(3 downto 0));
 end video;
 

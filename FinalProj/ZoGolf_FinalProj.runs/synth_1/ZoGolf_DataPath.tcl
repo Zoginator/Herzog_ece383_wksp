@@ -86,6 +86,10 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/picoblaze/kcpsm6.vhd
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/KCPSM6/NES_Controller_ROM.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_mouse.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_transceiver.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/debounce.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd
