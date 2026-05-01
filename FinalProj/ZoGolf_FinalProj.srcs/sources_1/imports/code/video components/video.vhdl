@@ -14,7 +14,7 @@ entity video is
             tmds : out  STD_LOGIC_VECTOR (3 downto 0);
             tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
             position: out coordinate_t;
-            BRAM_pos : out std_logic_vector(12 downto 0);
+            BRAM_pos : out std_logic_vector(13 downto 0);
             BRAM_in : in STD_LOGIC_VECTOR (3 downto 0);
             NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
             ball_pos: in std_logic_vector(15 downto 0);

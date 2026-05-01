@@ -48,3 +48,5 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 availab
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
 open_project: Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1398.855 ; gain = 313.898
 update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May  1 07:35:12 2026...

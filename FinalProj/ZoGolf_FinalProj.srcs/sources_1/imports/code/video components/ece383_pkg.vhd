@@ -47,10 +47,12 @@ package ece383_pkg is
   constant WHITE : color_t := x"FFFFFF";
   constant BLACK : color_t := x"000000";
   constant RED : color_t := x"FF0000";
-  constant GREEN : color_t := x"00FF00";
+  constant GREEN : color_t := x"00940d";
   constant BLUE : color_t := x"0000FF";
   constant YELLOW : color_t := x"FFFE0E";
   constant BEIGE : color_t := x"F5F5DC";
+  constant GRAY : color_t := x"AAAAAA";
+  constant D_GREEN : color_t := x"013220";
   
   
   --= COMPONENTS =--
@@ -97,7 +99,7 @@ package ece383_pkg is
    component color_mapper is
    Port ( color : out color_t;
            position: in coordinate_t;
-           BRAM_pos : out std_logic_vector(12 downto 0);
+           BRAM_pos : out std_logic_vector(13 downto 0);
 		   level_map: in std_logic_vector(3 downto 0); -- BRAM interfacce port
 		   NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
 		   ball_pos: in std_logic_vector(15 downto 0);
@@ -112,7 +114,7 @@ package ece383_pkg is
             tmds : out  STD_LOGIC_VECTOR (3 downto 0);
             tmdsb : out  STD_LOGIC_VECTOR (3 downto 0);
             position: out coordinate_t;
-            BRAM_pos : out std_logic_vector(12 downto 0);
+            BRAM_pos : out std_logic_vector(13 downto 0);
             BRAM_in : in STD_LOGIC_VECTOR (3 downto 0);
             NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
             ball_pos: in std_logic_vector(15 downto 0);
@@ -126,14 +128,21 @@ component BRAM_Level_Selector is
     Port ( clk : in STD_LOGIC;
            reset_n : in STD_LOGIC;
            level_sel : in STD_LOGIC_VECTOR (3 downto 0);
-           position : in STD_LOGIC_VECTOR(12 downto 0);
+           position : in STD_LOGIC_VECTOR(13 downto 0);
            data_out : out STD_LOGIC_VECTOR (3 downto 0));
 end component;
 
 component level0_BRAM_Pair is
     Port ( clk : in STD_LOGIC;
            reset_n : in STD_LOGIC;
-           position : in STD_LOGIC_VECTOR(12 downto 0);
+           position : in STD_LOGIC_VECTOR(13 downto 0);
+           data_out : out STD_LOGIC_VECTOR(3 downto 0));
+end component;
+
+component level1_BRAM_Pair is
+    Port ( clk : in STD_LOGIC;
+           reset_n : in STD_LOGIC;
+           position : in STD_LOGIC_VECTOR(13 downto 0);
            data_out : out STD_LOGIC_VECTOR(3 downto 0));
 end component;
 	
@@ -178,13 +187,14 @@ package body ece383_pkg is
     variable row : unsigned(9 downto 0);
     variable mult_res : unsigned(17 downto 0);
     variable final_res : unsigned(17 downto 0);
-    variable trunc_res : std_logic_vector(12 downto 0);
+    variable trunc_res : std_logic_vector(13 downto 0);
  begin
     col := unsigned(coord.col);
     row := unsigned(coord.row);
+    row := shift_right(row,2);
     mult_res := row * to_unsigned(120,8);
     final_res := mult_res + ("00000000" & col(9 downto 2));
-    trunc_res := std_logic_vector(final_res(12 downto 0));
+    trunc_res := std_logic_vector(final_res(13 downto 0));
     return trunc_res;
  end function;
  

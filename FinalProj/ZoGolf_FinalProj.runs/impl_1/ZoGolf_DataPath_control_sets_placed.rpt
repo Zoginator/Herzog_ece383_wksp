@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri May  1 07:26:08 2026
+| Date         : Fri May  1 12:33:34 2026
 | Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file ZoGolf_DataPath_control_sets_placed.rpt
 | Design       : ZoGolf_DataPath
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |    32 |
-|    Minimum number of control sets                        |    32 |
+| Total control sets                                       |    33 |
+|    Minimum number of control sets                        |    33 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   103 |
+| Unused register locations in slices containing registers |   111 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,12 +39,12 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |    32 |
-| >= 0 to < 4        |     2 |
+| Total control sets |    33 |
+| >= 0 to < 4        |     3 |
 | >= 4 to < 6        |     4 |
 | >= 6 to < 8        |     6 |
-| >= 8 to < 10       |     6 |
-| >= 10 to < 12      |     3 |
+| >= 8 to < 10       |     7 |
+| >= 10 to < 12      |     2 |
 | >= 12 to < 14      |     1 |
 | >= 14 to < 16      |     2 |
 | >= 16              |     8 |
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |             150 |           38 |
+| No           | No                    | No                     |             158 |           50 |
 | No           | No                    | Yes                    |              10 |            5 |
-| No           | Yes                   | No                     |              40 |           17 |
+| No           | Yes                   | No                     |              49 |           25 |
 | Yes          | No                    | No                     |              62 |           16 |
-| Yes          | No                    | Yes                    |              24 |            4 |
-| Yes          | Yes                   | No                     |              83 |           25 |
+| Yes          | No                    | Yes                    |              24 |            7 |
+| Yes          | Yes                   | No                     |              82 |           27 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,37 +74,38 @@ Table of Contents
 |                              Clock Signal                             |                                            Enable Signal                                            |                                            Set/Reset Signal                                            | Slice Load Count | Bel Load Count | Bels / Slice |
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 |  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                                     |                                                                                                        |                1 |              1 |         1.00 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |                                                                                                     | video_inst/Inst_vga_signal_gen/h_counter/processQ[8]_i_1__0_n_0                                        |                1 |              1 |         1.00 |
 |  clk_IBUF_BUFG                                                        | NES_inst/processor/flag_enable                                                                      | NES_inst/processor/internal_reset                                                                      |                1 |              2 |         2.00 |
-|  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                                     | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int[7]_i_1_n_0 |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/FSM_sequential_state_reg[1]      |                                                                                                        |                2 |              4 |         2.00 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/E[0]                             |                                                                                                        |                1 |              4 |         4.00 |
-|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/FSM_sequential_state_reg[1]      |                                                                                                        |                1 |              4 |         4.00 |
+|  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/CLK       |                                                                                                     | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.control_dout_int[7]_i_1_n_0 |                1 |              4 |         4.00 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/FSM_sequential_state_reg[1]      | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/ps2_word[8]_i_1_n_0                                  |                1 |              5 |         5.00 |
 |  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2                |                                                                                                     | video_inst/inst_dvid/shift_red[9]_i_1_n_0                                                              |                3 |              6 |         2.00 |
 |  clk_IBUF_BUFG                                                        |                                                                                                     | NES_inst/processor/internal_reset                                                                      |                3 |              6 |         2.00 |
-|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/mouse_position[14]_i_2_n_0                                                         | PS2_decoder_inst/mouse_position[14]_i_1_n_0                                                            |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/mouse_position[14]_i_2_n_0                                                         | PS2_decoder_inst/mouse_position[14]_i_1_n_0                                                            |                3 |              6 |         2.00 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/mouse_position[14]_i_2_n_0                                                         | PS2_decoder_inst/mouse_position[6]_i_1_n_0                                                             |                2 |              6 |         3.00 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/packet_byte_reg[1]_0                              |                                                                                                        |                1 |              7 |         7.00 |
-|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/packet_byte_reg[1]_1                              |                                                                                                        |                2 |              7 |         3.50 |
-|  clk_IBUF_BUFG                                                        |                                                                                                     | NES_inst/program_rom/instruction[7]                                                                    |                3 |              8 |         2.67 |
-|  clk_IBUF_BUFG                                                        | NES_inst/processor/spm_enable                                                                       |                                                                                                        |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG                                                        | NES_inst/processor/E[0]                                                                             |                                                                                                        |                3 |              8 |         2.67 |
+|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/packet_byte_reg[1]_1                              |                                                                                                        |                1 |              7 |         7.00 |
+|  clk_IBUF_BUFG                                                        |                                                                                                     | NES_inst/program_rom/instruction[7]                                                                    |                4 |              8 |         2.00 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/ps2_code[7]_i_1_n_0                               | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/reset_n_0                                            |                2 |              8 |         4.00 |
-|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/sel                              | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/counter_set                         |                3 |              9 |         3.00 |
+|  clk_IBUF_BUFG                                                        | NES_inst/processor/spm_enable                                                                       |                                                                                                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                                        | NES_inst/processor/E[0]                                                                             |                                                                                                        |                2 |              8 |         4.00 |
+|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/sel                              | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/counter_set                         |                2 |              9 |         4.50 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_data/counter_out_reg[8]              | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_data/counter_set                        |                2 |              9 |         4.50 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                | video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[7]_1[0]                                       | video_inst/Inst_vga_signal_gen/h_counter/SR[0]                                                         |                3 |             10 |         3.33 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                | video_inst/Inst_vga_signal_gen/h_counter/E[0]                                                       | video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[6]_0[0]                                          |                3 |             10 |         3.33 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                | video_inst/Inst_vga_signal_gen/h_counter/processQ0                                                  | video_inst/Inst_vga_signal_gen/h_counter/processQ[8]_i_1__0_n_0                                        |                3 |              9 |         3.00 |
 |  clk_IBUF_BUFG                                                        |                                                                                                     | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/reset_n_0                                            |                5 |             10 |         2.00 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                | video_inst/Inst_vga_signal_gen/h_counter/E[0]                                                       | video_inst/Inst_vga_signal_gen/h_counter/SR[0]                                                         |                5 |             10 |         2.00 |
 |  clk_IBUF_BUFG                                                        | NES_inst/processor/WE                                                                               | NES_inst/processor/internal_reset                                                                      |                3 |             12 |         4.00 |
-|  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift                                    |                                                                                                        |                3 |             14 |         4.67 |
 |  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/timer0                           | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/debounce_ps2_clk/tx_ena_reg                          |                5 |             14 |         2.80 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |                                                                                                     | video_inst/Inst_vga_signal_gen/blank                                                                   |                7 |             16 |         2.29 |
-|  clk_IBUF_BUFG                                                        | NES_inst/processor/WE                                                                               |                                                                                                        |                2 |             16 |         8.00 |
+|  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift                                    |                                                                                                        |                4 |             14 |         3.50 |
 |  clk_IBUF_BUFG                                                        | NES_inst/processor/register_enable                                                                  |                                                                                                        |                2 |             16 |         8.00 |
-|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/E[0]                                              | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/reset_n_0                                            |                2 |             16 |         8.00 |
+|  clk_IBUF_BUFG                                                        | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/E[0]                                              | PS2_decoder_inst/inst_PS2_mouse/ps2_transceiver_0/reset_n_0                                            |                5 |             16 |         3.20 |
+|  clk_IBUF_BUFG                                                        | NES_inst/processor/WE                                                                               |                                                                                                        |                2 |             16 |         8.00 |
 |  NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.jtag_din_int[17]_i_1_n_0 |                                                                                                        |                5 |             18 |         3.60 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2                |                                                                                                     |                                                                                                        |                5 |             34 |         6.80 |
-|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |                                                                                                     |                                                                                                        |               11 |             41 |         3.73 |
-|  clk_IBUF_BUFG                                                        |                                                                                                     |                                                                                                        |               21 |             74 |         3.52 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |                                                                                                     | video_inst/Inst_vga_signal_gen/SR[0]                                                                   |               13 |             24 |         1.85 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2                |                                                                                                     |                                                                                                        |                8 |             34 |         4.25 |
+|  video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |                                                                                                     |                                                                                                        |               17 |             49 |         2.88 |
+|  clk_IBUF_BUFG                                                        |                                                                                                     |                                                                                                        |               24 |             74 |         3.08 |
 +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+------------------+----------------+--------------+
 
 

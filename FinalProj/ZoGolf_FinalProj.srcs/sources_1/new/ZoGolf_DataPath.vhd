@@ -44,17 +44,16 @@ entity ZoGolf_DataPath is
 	reset_n : in  STD_LOGIC;
 	tmds : out STD_LOGIC_VECTOR (3 downto 0);
     tmdsb : out STD_LOGIC_VECTOR (3 downto 0); 
-    --NES_buttons : out STD_LOGIC_VECTOR(7 downto 0);
+--    NES_buttons : out STD_LOGIC_VECTOR(7 downto 0);
     latch : out STD_LOGIC; --NES
     pulse : out STD_LOGIC; --NES
     data : in STD_LOGIC;  --NES
     ps2_clk     : inout std_logic;
     ps2_data    : inout std_logic);
-    --mouse_pos   : out std_logic_vector(15 downto 0);
-    --ball_pos : in std_logic_vector(15 downto 0);
-    --flagQ: out std_logic;   
-    --flagClear: in std_logic;
-    --sw : out std_logic_vector(1 downto 0));
+--    mouse_pos   : out std_logic_vector(15 downto 0);
+--    level_sel : in std_logic_vector(3 downto 0);
+--    ball_pos : in std_logic_vector(15 downto 0);
+--    sw : out std_logic_vector(1 downto 0));
 end ZoGolf_DataPath;
 
 
@@ -78,11 +77,11 @@ component PS2_mouse_decoder is
            mouse_coords : out STD_LOGIC_VECTOR(15 downto 0)); -- 15 to 8 is y, 0 to 0 is x
 end component;
 
-    signal sw_ready: std_logic;
+    signal sw_frame: std_logic;
     signal sw_last_address: std_logic;
     
     signal BRAM_DO : STD_LOGIC_VECTOR(3 downto 0);
-    signal BRAM_pos_sel : STD_LOGIC_VECTOR(12 downto 0);
+    signal BRAM_pos_sel : STD_LOGIC_VECTOR(13 downto 0);
     
     signal w_NES_buttons : STD_LOGIC_VECTOR(7 downto 0);
     
@@ -94,15 +93,15 @@ end component;
     
 begin
 
--- logic for the FLAG register
+ --logic for the FLAG register
 --	process (clk)
 --	begin
 --    	if (rising_edge(clk)) then
 --			if reset_n = '0' then
 --				flagQ <= '0';
---		    elsif (sw_ready = '0' and flagClear = '1') then
+--		    elsif (sw_frame = '0' and flagClear = '1') then
 --		        flagQ <= '0';
---		    elsif (sw_ready = '1' and flagClear = '0') then
+--		    elsif (sw_frame = '1' and flagClear = '0') then
 --		        flagQ <= '1';
 				
 --			end if;
@@ -151,10 +150,15 @@ NES_inst :NES_Controller Port map(
         mouse_coords => PS2_coords);
     
    --TEMPORARY NULLIFIED PORTS
-   --NES_buttons <= w_NES_buttons;
-   --PS2_coords <= "0000000000000000";
-   ball_reg <= "0000000000000000";
-   level_reg <= "0000";
+--   NES_buttons <= w_NES_buttons;
+--   mouse_pos <= PS2_coords;
+   ball_reg <= ("01100110" & "00011011");
+   level_reg <= "0001";--level_sel;
    
+--   sw(0) <= sw_frame;
+--   sw(1) <= '0'; --unused
+   
+--   sw_frame <= '1' when (position.row = 479) else
+--               '0';
     
 end ZoGolf_Datapath_arch;

@@ -90,6 +90,7 @@ read_vhdl -library xil_defaultlib {
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_mouse.vhd
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_transceiver.vhd
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/debounce.vhd
+  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level1_BRAM_Pair.vhd
 }
 read_vhdl -vhdl2008 -library xil_defaultlib {
   C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd
