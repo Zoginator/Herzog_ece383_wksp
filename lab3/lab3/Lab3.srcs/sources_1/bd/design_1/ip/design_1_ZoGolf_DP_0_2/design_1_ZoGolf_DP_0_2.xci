@@ -4,7 +4,7 @@
     "xci_name": "design_1_ZoGolf_DP_0_2",
     "cell_name": "ZoGolf_DP_0",
     "component_reference": "xilinx.com:user:ZoGolf_DP:1.0",
-    "ip_revision": "4",
+    "ip_revision": "7",
     "gen_directory": "../../../../../../Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2",
     "parameters": {
       "component_parameters": {
@@ -33,7 +33,7 @@
       },
       "runtime_parameters": {
         "IPCONTEXT": [ { "value": "IP_Integrator" } ],
-        "IPREVISION": [ { "value": "4" } ],
+        "IPREVISION": [ { "value": "7" } ],
         "MANAGED": [ { "value": "TRUE" } ],
         "OUTPUTDIR": [ { "value": "../../../../../../Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],

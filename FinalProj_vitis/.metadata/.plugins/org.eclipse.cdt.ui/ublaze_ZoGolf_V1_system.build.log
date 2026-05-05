@@ -1,0 +1,8 @@
+11:13:36 **** Clean-only build of configuration Debug for project ublaze_ZoGolf_V1_system ****
+make clean 
+rm -rf ./_sds
+rm -rf package
+rm -f system.bif
+
+11:13:37 Build Finished (took 215ms)
+

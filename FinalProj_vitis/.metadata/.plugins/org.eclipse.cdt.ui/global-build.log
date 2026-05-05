@@ -1,0 +1,28 @@
+Nothing to build in platform 'ZoGolf_V2_wrapper'
+
+13:50:27 **** Incremental Build of configuration Debug for project ublaze_ZogGolf_V2 ****
+make all 
+'Building file: ../src/game_functions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_functions.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_vitis/ZoGolf_V2_wrapper/export/ZoGolf_V2_wrapper/sw/ZoGolf_V2_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game_functions.d" -MT"src/game_functions.o" -o "src/game_functions.o" "../src/game_functions.c"
+'Finished building: ../src/game_functions.c'
+' '
+'Building file: ../src/game_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_main.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_vitis/ZoGolf_V2_wrapper/export/ZoGolf_V2_wrapper/sw/ZoGolf_V2_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game_main.d" -MT"src/game_main.o" -o "src/game_main.o" "../src/game_main.c"
+'Finished building: ../src/game_main.c'
+' '
+'Building target: ublaze_ZogGolf_V2.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_vitis/ZoGolf_V2_wrapper/export/ZoGolf_V2_wrapper/sw/ZoGolf_V2_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ublaze_ZogGolf_V2.elf"  ./src/game_functions.o ./src/game_main.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ublaze_ZogGolf_V2.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ublaze_ZogGolf_V2.elf  |tee "ublaze_ZogGolf_V2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+   4723	     24	   3429	   8176	   1ff0	ublaze_ZogGolf_V2.elf
+'Finished building: ublaze_ZogGolf_V2.elf.size'
+' '
+13:50:30 **** Build of configuration Debug for project ublaze_ZogGolf_V2_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."

@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon May  4 20:16:20 2026
-# Process ID         : 42488
+# Start of session at: Tue May  5 13:21:33 2026
+# Process ID         : 36712
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/impl_1
 # Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/impl_1/design_1_wrapper.vdi
@@ -17,8 +17,8 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16442 MB
-# Swap memory        : 15809 MB
-# Total Virtual      : 32252 MB
-# Available Virtual  : 6542 MB
+# Swap memory        : 10407 MB
+# Total Virtual      : 26850 MB
+# Available Virtual  : 5489 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

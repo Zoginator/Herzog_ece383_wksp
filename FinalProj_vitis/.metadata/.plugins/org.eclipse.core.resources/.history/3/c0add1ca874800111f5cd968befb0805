@@ -1,0 +1,6 @@
+/*
+ * game_functions.c: supporting functions for ZoGolf
+ *
+ */
+#include <stdio.h>
+#include <stdlib.h>

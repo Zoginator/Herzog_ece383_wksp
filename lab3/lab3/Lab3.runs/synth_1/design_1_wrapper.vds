@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Mon May  4 20:05:56 2026
-# Process ID         : 34484
+# Start of session at: Tue May  5 13:07:19 2026
+# Process ID         : 33492
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/synth_1
 # Command line       : vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/synth_1/design_1_wrapper.vds
@@ -17,18 +17,19 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16442 MB
-# Swap memory        : 12852 MB
-# Total Virtual      : 29295 MB
-# Available Virtual  : 3447 MB
+# Swap memory        : 8101 MB
+# Total Virtual      : 24544 MB
+# Available Virtual  : 3404 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 439.664 ; gain = 126.801
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 438.598 ; gain = 127.289
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Lab3_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Counter_IP_1_0'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
-add_files: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 516.270 ; gain = 70.652
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 444.551 ; gain = 5.953
+add_files: Time (s): cpu = 00:00:09 ; elapsed = 00:00:31 . Memory (MB): peak = 515.141 ; gain = 70.590
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -41,9 +42,9 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13380
+INFO: [Synth 8-7075] Helper process launched with PID 34004
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1248.988 ; gain = 468.559
+Starting RTL Elaboration : Time (s): cpu = 00:00:19 ; elapsed = 00:00:32 . Memory (MB): peak = 1251.043 ; gain = 469.055
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_7/synth/bd_afc3_aroutsw_0.sv:94]
 WARNING: [Synth 8-10507] attribute 'X_INTERFACE_MODE' is already specified; last one will take precedence [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_8/synth/bd_afc3_routsw_0.sv:83]
@@ -65,10 +66,10 @@ INFO: [Synth 8-11241] undeclared symbol 'dbg_sel_po_incdec', assumed default net
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_inc', assumed default net type 'wire' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1264]
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_stg23_sel', assumed default net type 'wire' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1265]
 INFO: [Synth 8-11241] undeclared symbol 'dbg_po_f_dec', assumed default net type 'wire' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/rtl/design_1_mig_7series_0_0_mig.v:1266]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:188]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:327]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:188]
-WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:327]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:188]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:327]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:188]
+WARNING: [Synth 8-9112] actual for formal port 'rdaddr' is neither a static name nor a globally static expression [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:327]
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:45]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:531' bound to instance 'design_1_i' of component 'design_1' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:76]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:565]
@@ -76,18 +77,18 @@ INFO: [Synth 8-3491] module 'design_1_ZoGolf_DP_0_2' declared at 'c:/Users/C27So
 INFO: [Synth 8-638] synthesizing module 'design_1_ZoGolf_DP_0_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/synth/design_1_ZoGolf_DP_0_2.vhd:90]
 	Parameter C_S00_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S00_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'ZoGolf_DP' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP.vhd:5' bound to instance 'U0' of component 'ZoGolf_DP' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/synth/design_1_ZoGolf_DP_0_2.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'ZoGolf_DP' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP.vhd:57]
+INFO: [Synth 8-3491] module 'ZoGolf_DP' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP.vhd:5' bound to instance 'U0' of component 'ZoGolf_DP' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/synth/design_1_ZoGolf_DP_0_2.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'ZoGolf_DP' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP.vhd:57]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
-INFO: [Synth 8-3491] module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst' of component 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP.vhd:103]
-INFO: [Synth 8-638] synthesizing module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:95]
-INFO: [Synth 8-226] default block is never used [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:309]
-INFO: [Synth 8-3491] module 'ZoGolf_DataPath' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:41' bound to instance 'ZoGolf_DP_uut' of component 'ZoGolf_DataPath' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:687]
-INFO: [Synth 8-638] synthesizing module 'ZoGolf_DataPath' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:64]
-INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:117]
-INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:26]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:55]
+INFO: [Synth 8-3491] module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:5' bound to instance 'ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst' of component 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP.vhd:103]
+INFO: [Synth 8-638] synthesizing module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:95]
+INFO: [Synth 8-226] default block is never used [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:309]
+INFO: [Synth 8-3491] module 'ZoGolf_DataPath' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:41' bound to instance 'ZoGolf_DP_uut' of component 'ZoGolf_DataPath' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:687]
+INFO: [Synth 8-638] synthesizing module 'ZoGolf_DataPath' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:64]
+INFO: [Synth 8-3491] module 'video' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:11' bound to instance 'video_inst' of component 'video' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:117]
+INFO: [Synth 8-638] synthesizing module 'video' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:26]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.v:67' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:55]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.v:67]
 INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0_clk_wiz' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:75825]
@@ -98,54 +99,54 @@ INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2024.2/scripts
 INFO: [Synth 8-6155] done synthesizing module 'BUFG' (0#1) [C:/Xilinx/Vivado/2024.2/scripts/rt/data/unisim_comp.v:2676]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0_clk_wiz' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0_clk_wiz.v:67]
 INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.v:67]
-INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/vga_signal_generator.vhd:8' bound to instance 'Inst_vga_signal_gen' of component 'vga_signal_generator' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:66]
-INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/vga_signal_generator.vhd:8' bound to instance 'Inst_vga_signal_gen' of component 'vga_signal_generator' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:66]
+INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/vga_signal_generator.vhd:15]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:34' bound to instance 'h_counter' of component 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/vga_signal_generator.vhd:24]
-INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:46]
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:34' bound to instance 'h_counter' of component 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/vga_signal_generator.vhd:24]
+INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'counter' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:46]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 525 - type: integer 
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:34' bound to instance 'v_counter' of component 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/vga_signal_generator.vhd:39]
-INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/counter.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/vga_signal_generator.vhd:15]
-INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/color_mapper.vhd:11' bound to instance 'inst_color_mapper' of component 'color_mapper' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:74]
-INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/color_mapper.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/color_mapper.vhd:23]
-INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:31]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:56]
-INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/tdms.vhdl:22]
-INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/tdms.vhdl:22]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:57]
-INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:58]
+INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:34' bound to instance 'v_counter' of component 'counter' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/vga_signal_generator.vhd:39]
+INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/counter.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/vga_signal_generator.vhd:15]
+INFO: [Synth 8-3491] module 'color_mapper' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/color_mapper.vhd:11' bound to instance 'inst_color_mapper' of component 'color_mapper' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:74]
+INFO: [Synth 8-638] synthesizing module 'color_mapper' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/color_mapper.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/color_mapper.vhd:23]
+INFO: [Synth 8-638] synthesizing module 'dvid' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:31]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:56]
+INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/tdms.vhdl:22]
+INFO: [Synth 8-256] done synthesizing module 'TDMS_encoder' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/tdms.vhdl:22]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_green' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:57]
+INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/tdms.vhdl:14' bound to instance 'TDMS_encoder_blue' of component 'TDMS_encoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:58]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:60]
+INFO: [Synth 8-113] binding component instance 'ODDR2_red' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:60]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:63]
+INFO: [Synth 8-113] binding component instance 'ODDR2_green' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:63]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:66]
+INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:66]
 	Parameter DDR_ALIGNMENT bound to: C0 - type: string 
 	Parameter INIT bound to: 1'b0 
 	Parameter SRTYPE bound to: ASYNC - type: string 
-INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:69]
-INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/dvid.vhdl:31]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:109]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:111]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:113]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:115]
-INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/video.vhdl:26]
-INFO: [Synth 8-3491] module 'BRAM_Level_Selector' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/BRAM_Level_Selector.vhd:41' bound to instance 'level_selctor_inst' of component 'BRAM_Level_Selector' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:132]
-INFO: [Synth 8-638] synthesizing module 'BRAM_Level_Selector' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/BRAM_Level_Selector.vhd:49]
-INFO: [Synth 8-3491] module 'level0_BRAM_Pair' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:41' bound to instance 'inst_level0' of component 'level0_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/BRAM_Level_Selector.vhd:65]
-INFO: [Synth 8-638] synthesizing module 'level0_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:48]
+INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:69]
+INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/dvid.vhdl:31]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:109]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:111]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:113]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:115]
+INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/video.vhdl:26]
+INFO: [Synth 8-3491] module 'BRAM_Level_Selector' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/BRAM_Level_Selector.vhd:41' bound to instance 'level_selctor_inst' of component 'BRAM_Level_Selector' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:132]
+INFO: [Synth 8-638] synthesizing module 'BRAM_Level_Selector' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/BRAM_Level_Selector.vhd:49]
+INFO: [Synth 8-3491] module 'level0_BRAM_Pair' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:41' bound to instance 'inst_level0' of component 'level0_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/BRAM_Level_Selector.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'level0_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:48]
 	Parameter BRAM_SIZE bound to: 36Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -268,7 +269,7 @@ INFO: [Synth 8-638] synthesizing module 'level0_BRAM_Pair' [c:/Users/C27Soren.He
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 16'b0000000000000000 
 	Parameter WRITE_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'TopHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:61]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'TopHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -551,7 +552,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO' (0#1) [C:
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 16'b0000000000000000 
 	Parameter WRITE_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'BottomHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:200]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'BottomHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:200]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -712,9 +713,9 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0
 	Parameter WRITE_WIDTH_B bound to: 4 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram36_bl' to cell 'RAMB36E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2849]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized0' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'level0_BRAM_Pair' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level0_BRAM_Pair.vhd:48]
-INFO: [Synth 8-3491] module 'level1_BRAM_Pair' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:41' bound to instance 'inst_level1' of component 'level1_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/BRAM_Level_Selector.vhd:72]
-INFO: [Synth 8-638] synthesizing module 'level1_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'level0_BRAM_Pair' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level0_BRAM_Pair.vhd:48]
+INFO: [Synth 8-3491] module 'level1_BRAM_Pair' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:41' bound to instance 'inst_level1' of component 'level1_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/BRAM_Level_Selector.vhd:72]
+INFO: [Synth 8-638] synthesizing module 'level1_BRAM_Pair' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:48]
 	Parameter BRAM_SIZE bound to: 36Kb - type: string 
 	Parameter DEVICE bound to: 7SERIES - type: string 
 	Parameter DO_REG bound to: 0 - type: integer 
@@ -837,7 +838,7 @@ INFO: [Synth 8-638] synthesizing module 'level1_BRAM_Pair' [c:/Users/C27Soren.He
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 16'b0000000000000000 
 	Parameter WRITE_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'TopHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:61]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'TopHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:61]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -1120,7 +1121,7 @@ INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameter
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
 	Parameter SRVAL bound to: 16'b0000000000000000 
 	Parameter WRITE_WIDTH bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'BottomHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:200]
+INFO: [Synth 8-3491] module 'BRAM_SDP_MACRO' declared at 'C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:38' bound to instance 'BottomHalfMemory' of component 'BRAM_SDP_MACRO' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:200]
 INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
@@ -1281,138 +1282,138 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2
 	Parameter WRITE_WIDTH_B bound to: 4 - type: integer 
 INFO: [Synth 8-113] binding component instance 'ram36_bl' to cell 'RAMB36E1' [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:2849]
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
-INFO: [Synth 8-256] done synthesizing module 'level1_BRAM_Pair' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/level1_BRAM_Pair.vhd:48]
-INFO: [Synth 8-256] done synthesizing module 'BRAM_Level_Selector' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/BRAM_Level_Selector.vhd:49]
-INFO: [Synth 8-3491] module 'NES_Controller' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:33' bound to instance 'NES_inst' of component 'NES_Controller' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:140]
-INFO: [Synth 8-638] synthesizing module 'NES_Controller' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:42]
+INFO: [Synth 8-256] done synthesizing module 'level1_BRAM_Pair' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/level1_BRAM_Pair.vhd:48]
+INFO: [Synth 8-256] done synthesizing module 'BRAM_Level_Selector' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/BRAM_Level_Selector.vhd:49]
+INFO: [Synth 8-3491] module 'NES_Controller' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:33' bound to instance 'NES_inst' of component 'NES_Controller' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'NES_Controller' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:42]
 	Parameter hwbuild bound to: 8'b00000000 
 	Parameter interrupt_vector bound to: 12'b001111111111 
 	Parameter scratch_pad_memory_size bound to: 64 - type: integer 
-INFO: [Synth 8-3491] module 'kcpsm6' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:116]
-INFO: [Synth 8-638] synthesizing module 'kcpsm6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:111]
+INFO: [Synth 8-3491] module 'kcpsm6' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:87' bound to instance 'processor' of component 'kcpsm6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:116]
+INFO: [Synth 8-638] synthesizing module 'kcpsm6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:111]
 	Parameter INIT bound to: 64'b1111111111111111111101010101010100000000000000000000111011101110 
-INFO: [Synth 8-113] binding component instance 'reset_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:685]
-INFO: [Synth 8-113] binding component instance 'run_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:696]
-INFO: [Synth 8-113] binding component instance 'internal_reset_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:701]
-INFO: [Synth 8-113] binding component instance 'sync_sleep_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:706]
+INFO: [Synth 8-113] binding component instance 'reset_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:685]
+INFO: [Synth 8-113] binding component instance 'run_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:696]
+INFO: [Synth 8-113] binding component instance 'internal_reset_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:701]
+INFO: [Synth 8-113] binding component instance 'sync_sleep_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:706]
 	Parameter INIT bound to: 64'b0000000010000011000000000000101100000000110001000000000001001100 
-INFO: [Synth 8-113] binding component instance 't_state_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:711]
-INFO: [Synth 8-113] binding component instance 't_state1_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:722]
-INFO: [Synth 8-113] binding component instance 't_state2_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:727]
+INFO: [Synth 8-113] binding component instance 't_state_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:711]
+INFO: [Synth 8-113] binding component instance 't_state1_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:722]
+INFO: [Synth 8-113] binding component instance 't_state2_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:727]
 	Parameter INIT bound to: 64'b0000000000010000000000000000000000000000000000000000100000000000 
-INFO: [Synth 8-113] binding component instance 'int_enable_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:733]
+INFO: [Synth 8-113] binding component instance 'int_enable_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:733]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000001100101010101010 
-INFO: [Synth 8-113] binding component instance 'interrupt_enable_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:744]
-INFO: [Synth 8-113] binding component instance 'interrupt_enable_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:754]
-INFO: [Synth 8-113] binding component instance 'sync_interrupt_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:759]
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:744]
+INFO: [Synth 8-113] binding component instance 'interrupt_enable_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:754]
+INFO: [Synth 8-113] binding component instance 'sync_interrupt_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:759]
 	Parameter INIT bound to: 64'b1100110000110011111111110000000010000000100000001000000010000000 
-INFO: [Synth 8-113] binding component instance 'active_interrupt_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:764]
-INFO: [Synth 8-113] binding component instance 'active_interrupt_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:775]
-INFO: [Synth 8-113] binding component instance 'interrupt_ack_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:780]
+INFO: [Synth 8-113] binding component instance 'active_interrupt_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:764]
+INFO: [Synth 8-113] binding component instance 'active_interrupt_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:775]
+INFO: [Synth 8-113] binding component instance 'interrupt_ack_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:780]
 	Parameter INIT bound to: 64'b0101101000111100111111111111111100000000000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_move_is_valid_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:804]
+INFO: [Synth 8-113] binding component instance 'pc_move_is_valid_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:804]
 	Parameter INIT bound to: 64'b0111011101110111000000100111011100000000000000000000001000000000 
-INFO: [Synth 8-113] binding component instance 'move_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:814]
+INFO: [Synth 8-113] binding component instance 'move_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:814]
 	Parameter INIT bound to: 64'b0000000000000000111100000000000000000000000000000010001111111111 
-INFO: [Synth 8-113] binding component instance 'pc_mode1_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:825]
+INFO: [Synth 8-113] binding component instance 'pc_mode1_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:825]
 	Parameter INIT bound to: 64'b1111111111111111111111111111111100000000000001000000000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_mode2_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:836]
+INFO: [Synth 8-113] binding component instance 'pc_mode2_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:836]
 	Parameter INIT bound to: 64'b1111111111111111000100000000000000000000000000000010000000000000 
-INFO: [Synth 8-113] binding component instance 'push_pop_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:846]
+INFO: [Synth 8-113] binding component instance 'push_pop_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:846]
 	Parameter INIT bound to: 64'b0000001111001010000000000000000000000100001000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'alu_decode0_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:861]
-INFO: [Synth 8-113] binding component instance 'alu_mux_sel0_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:872]
+INFO: [Synth 8-113] binding component instance 'alu_decode0_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:861]
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel0_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:872]
 	Parameter INIT bound to: 64'b0111011100001000000000000000000000000000000000000000111100000000 
-INFO: [Synth 8-113] binding component instance 'alu_decode1_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:877]
-INFO: [Synth 8-113] binding component instance 'alu_mux_sel1_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:888]
+INFO: [Synth 8-113] binding component instance 'alu_decode1_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:877]
+INFO: [Synth 8-113] binding component instance 'alu_mux_sel1_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:888]
 	Parameter INIT bound to: 64'b1101000000000000000000000000000000000010000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'alu_decode2_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:894]
+INFO: [Synth 8-113] binding component instance 'alu_decode2_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:894]
 	Parameter INIT bound to: 64'b0000000000000001001111110011111100000000000100001111011111001110 
-INFO: [Synth 8-113] binding component instance 'register_enable_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:909]
+INFO: [Synth 8-113] binding component instance 'register_enable_type_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:909]
 	Parameter INIT bound to: 64'b1100000011001100000000000000000010100000101010100000000000000000 
-INFO: [Synth 8-113] binding component instance 'register_enable_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:920]
-INFO: [Synth 8-113] binding component instance 'flag_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:931]
-INFO: [Synth 8-113] binding component instance 'register_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:937]
+INFO: [Synth 8-113] binding component instance 'register_enable_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:920]
+INFO: [Synth 8-113] binding component instance 'flag_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:931]
+INFO: [Synth 8-113] binding component instance 'register_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:937]
 	Parameter INIT bound to: 64'b1000000000000000000000000000000000100000000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'spm_enable_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:943]
-INFO: [Synth 8-113] binding component instance 'k_write_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:954]
-INFO: [Synth 8-113] binding component instance 'spm_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:960]
+INFO: [Synth 8-113] binding component instance 'spm_enable_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:943]
+INFO: [Synth 8-113] binding component instance 'k_write_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:954]
+INFO: [Synth 8-113] binding component instance 'spm_enable_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:960]
 	Parameter INIT bound to: 64'b0100000000000000000000000000000000000001000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'read_strobe_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:966]
-INFO: [Synth 8-113] binding component instance 'write_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:977]
-INFO: [Synth 8-113] binding component instance 'read_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:983]
+INFO: [Synth 8-113] binding component instance 'read_strobe_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:966]
+INFO: [Synth 8-113] binding component instance 'write_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:977]
+INFO: [Synth 8-113] binding component instance 'read_strobe_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:983]
 	Parameter INIT bound to: 64'b0000000010000000000000100000000000000000000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'regbank_type_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1001]
+INFO: [Synth 8-113] binding component instance 'regbank_type_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1001]
 	Parameter INIT bound to: 64'b1010110010101100111111110000000011111111000000001111111100000000 
-INFO: [Synth 8-113] binding component instance 'bank_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1011]
-INFO: [Synth 8-113] binding component instance 'bank_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1021]
-INFO: [Synth 8-113] binding component instance 'sx_addr4_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1027]
-INFO: [Synth 8-113] binding component instance 'arith_carry_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1051]
-INFO: [Synth 8-113] binding component instance 'arith_carry_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1056]
+INFO: [Synth 8-113] binding component instance 'bank_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1011]
+INFO: [Synth 8-113] binding component instance 'bank_flop' to cell 'FDR' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1021]
+INFO: [Synth 8-113] binding component instance 'sx_addr4_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1027]
+INFO: [Synth 8-113] binding component instance 'arith_carry_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1051]
+INFO: [Synth 8-113] binding component instance 'arith_carry_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1056]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000010000111011110000000000000000000 
-INFO: [Synth 8-113] binding component instance 'lower_parity_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1061]
-INFO: [Synth 8-113] binding component instance 'parity_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1072]
+INFO: [Synth 8-113] binding component instance 'lower_parity_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1061]
+INFO: [Synth 8-113] binding component instance 'parity_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1072]
 	Parameter INIT bound to: 64'b0110100110010110100101100110100110010110011010010110100110010110 
-INFO: [Synth 8-113] binding component instance 'upper_parity_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1078]
-INFO: [Synth 8-113] binding component instance 'parity_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1088]
+INFO: [Synth 8-113] binding component instance 'upper_parity_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1078]
+INFO: [Synth 8-113] binding component instance 'parity_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1088]
 	Parameter INIT bound to: 64'b1111111111111111101010101100110011110000111100001111000011110000 
-INFO: [Synth 8-113] binding component instance 'shift_carry_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1093]
-INFO: [Synth 8-113] binding component instance 'shift_carry_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1103]
+INFO: [Synth 8-113] binding component instance 'shift_carry_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1093]
+INFO: [Synth 8-113] binding component instance 'shift_carry_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1103]
 	Parameter INIT bound to: 64'b0011001100110011101010101100110011110000101010100000000000000000 
-INFO: [Synth 8-113] binding component instance 'carry_flag_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1108]
-INFO: [Synth 8-113] binding component instance 'carry_flag_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1119]
-INFO: [Synth 8-113] binding component instance 'init_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1126]
+INFO: [Synth 8-113] binding component instance 'carry_flag_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1108]
+INFO: [Synth 8-113] binding component instance 'carry_flag_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1119]
+INFO: [Synth 8-113] binding component instance 'init_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1126]
 	Parameter INIT bound to: 64'b1010001010000000000000000000000000000000111100000000000011110000 
-INFO: [Synth 8-113] binding component instance 'use_zero_flag_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1132]
-INFO: [Synth 8-113] binding component instance 'use_zero_flag_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1143]
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1132]
+INFO: [Synth 8-113] binding component instance 'use_zero_flag_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1143]
 	Parameter INIT bound to: 64'b0000000000000000000000000000000000000000000000000000000000000001 
-INFO: [Synth 8-113] binding component instance 'lower_zero_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1148]
-INFO: [Synth 8-113] binding component instance 'lower_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1159]
+INFO: [Synth 8-113] binding component instance 'lower_zero_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1148]
+INFO: [Synth 8-113] binding component instance 'lower_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1159]
 	Parameter INIT bound to: 64'b0000000000000000000000000000110100000000000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'middle_zero_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1165]
-INFO: [Synth 8-113] binding component instance 'middle_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1176]
+INFO: [Synth 8-113] binding component instance 'middle_zero_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1165]
+INFO: [Synth 8-113] binding component instance 'middle_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1176]
 	Parameter INIT bound to: 64'b1111101111111111000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-113] binding component instance 'upper_zero_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1182]
-INFO: [Synth 8-113] binding component instance 'upper_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1192]
-INFO: [Synth 8-113] binding component instance 'zero_flag_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1198]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'upper_zero_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1182]
+INFO: [Synth 8-113] binding component instance 'upper_zero_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1192]
+INFO: [Synth 8-113] binding component instance 'zero_flag_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1198]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1264]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111100110011110011000000111100000000 
-INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1350]
-INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1366]
-INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1371]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1350]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1366]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1371]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1411]
-INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1426]
-INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1440]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1264]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1411]
-INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1426]
-INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1440]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1411]
-INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1426]
-INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1440]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
-INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1264]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_vector_mux_lut' to cell 'LUT6_2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1264]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
-INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1411]
-INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1426]
-INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1440]
-INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1249]
-INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:1309]
+INFO: [Synth 8-113] binding component instance 'pc_lut' to cell 'LUT6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1411]
+INFO: [Synth 8-113] binding component instance 'pc_xorcy' to cell 'XORCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1426]
+INFO: [Synth 8-113] binding component instance 'pc_muxcy' to cell 'MUXCY' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1440]
+INFO: [Synth 8-113] binding component instance 'return_vector_flop' to cell 'FD' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1249]
+INFO: [Synth 8-113] binding component instance 'pc_flop' to cell 'FDRE' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:1309]
 INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 	Parameter INIT bound to: 64'b0000000010101010000000001111111111001100110011001111000000000000 
 	Parameter INIT bound to: 64'b1111111100000000111100001111000011001100110011001010101010101010 
@@ -1482,12 +1483,12 @@ INFO: [Common 17-14] Message 'Synth 8-113' appears 100 times and further instanc
 	Parameter INIT_B bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_C bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_D bound to: 64'b0000000000000000000000000000000000000000000000000000000000000000 
-INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/kcpsm6.vhd:111]
+INFO: [Synth 8-256] done synthesizing module 'kcpsm6' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/kcpsm6.vhd:111]
 	Parameter C_FAMILY bound to: 7S - type: string 
 	Parameter C_RAM_SIZE_KWORDS bound to: 2 - type: integer 
-	Parameter C_JTAG_LOADER_ENABLE bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'NES_Controller_ROM' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:132' bound to instance 'program_rom' of component 'NES_Controller_ROM' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:135]
-INFO: [Synth 8-638] synthesizing module 'NES_Controller_ROM' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:143]
+	Parameter C_JTAG_LOADER_ENABLE bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'NES_Controller_ROM' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller_ROM.vhd:132' bound to instance 'program_rom' of component 'NES_Controller_ROM' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:135]
+INFO: [Synth 8-638] synthesizing module 'NES_Controller_ROM' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller_ROM.vhd:143]
 	Parameter DOA_REG bound to: 0 - type: integer 
 	Parameter DOB_REG bound to: 0 - type: integer 
 	Parameter EN_ECC_READ bound to: 0 - type: bool 
@@ -1655,39 +1656,29 @@ INFO: [Synth 8-638] synthesizing module 'NES_Controller_ROM' [c:/Users/C27Soren.
 	Parameter WRITE_MODE_B bound to: WRITE_FIRST - type: string 
 	Parameter WRITE_WIDTH_A bound to: 18 - type: integer 
 	Parameter WRITE_WIDTH_B bound to: 18 - type: integer 
-	Parameter C_JTAG_LOADER_ENABLE bound to: 1 - type: integer 
-	Parameter C_FAMILY bound to: 7S - type: string 
-	Parameter C_NUM_PICOBLAZE bound to: 1 - type: integer 
-	Parameter C_BRAM_MAX_ADDR_WIDTH bound to: 11 - type: integer 
-	Parameter C_ADDR_WIDTH_0 bound to: 11 - type: integer 
-INFO: [Synth 8-3491] module 'jtag_loader_6' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:2956' bound to instance 'jtag_loader_6_inst' of component 'jtag_loader_6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:2911]
-INFO: [Synth 8-638] synthesizing module 'jtag_loader_6' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:2987]
-	Parameter DISABLE_JTAG bound to: FALSE - type: string 
-	Parameter JTAG_CHAIN bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'jtag_loader_6' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:2987]
-INFO: [Synth 8-256] done synthesizing module 'NES_Controller_ROM' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller_ROM.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'NES_Controller' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:42]
-INFO: [Synth 8-3491] module 'PS2_mouse_decoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/PS2_mouse_decoder.vhd:36' bound to instance 'PS2_decoder_inst' of component 'PS2_mouse_decoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'PS2_mouse_decoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/PS2_mouse_decoder.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'NES_Controller_ROM' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller_ROM.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'NES_Controller' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:42]
+INFO: [Synth 8-3491] module 'PS2_mouse_decoder' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/PS2_mouse_decoder.vhd:36' bound to instance 'PS2_decoder_inst' of component 'PS2_mouse_decoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'PS2_mouse_decoder' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/PS2_mouse_decoder.vhd:46]
 	Parameter clk_freq bound to: 100000000 - type: integer 
-INFO: [Synth 8-3491] module 'ps2_mouse' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_mouse.vhd:26' bound to instance 'inst_PS2_mouse' of component 'ps2_mouse' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/PS2_mouse_decoder.vhd:87]
-INFO: [Synth 8-638] synthesizing module 'ps2_mouse' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_mouse.vhd:39]
+INFO: [Synth 8-3491] module 'ps2_mouse' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_mouse.vhd:26' bound to instance 'inst_PS2_mouse' of component 'ps2_mouse' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/PS2_mouse_decoder.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'ps2_mouse' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_mouse.vhd:39]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 	Parameter debounce_counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'ps2_transceiver' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_transceiver.vhd:26' bound to instance 'ps2_transceiver_0' of component 'ps2_transceiver' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_mouse.vhd:73]
-INFO: [Synth 8-638] synthesizing module 'ps2_transceiver' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_transceiver.vhd:44]
+INFO: [Synth 8-3491] module 'ps2_transceiver' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_transceiver.vhd:26' bound to instance 'ps2_transceiver_0' of component 'ps2_transceiver' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_mouse.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'ps2_transceiver' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_transceiver.vhd:44]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_transceiver.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/debounce.vhd:36]
-INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/debounce.vhd:36]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/debounce.vhd:27' bound to instance 'debounce_ps2_clk' of component 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_transceiver.vhd:77]
+INFO: [Synth 8-638] synthesizing module 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/debounce.vhd:36]
+INFO: [Synth 8-256] done synthesizing module 'debounce' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/debounce.vhd:36]
 	Parameter counter_size bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_transceiver.vhd:80]
-INFO: [Synth 8-256] done synthesizing module 'ps2_transceiver' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_transceiver.vhd:44]
-INFO: [Synth 8-256] done synthesizing module 'ps2_mouse' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ps2_mouse.vhd:39]
-INFO: [Synth 8-256] done synthesizing module 'PS2_mouse_decoder' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/PS2_mouse_decoder.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DataPath' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:64]
-INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:95]
-INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DP' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP.vhd:57]
+INFO: [Synth 8-3491] module 'debounce' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/debounce.vhd:27' bound to instance 'debounce_ps2_data' of component 'debounce' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_transceiver.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'ps2_transceiver' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_transceiver.vhd:44]
+INFO: [Synth 8-256] done synthesizing module 'ps2_mouse' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ps2_mouse.vhd:39]
+INFO: [Synth 8-256] done synthesizing module 'PS2_mouse_decoder' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/PS2_mouse_decoder.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DataPath' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:64]
+INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DP_slave_lite_v1_0_S00_AXI' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:95]
+INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DP' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP.vhd:57]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ZoGolf_DP_0_2' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/synth/design_1_ZoGolf_DP_0_2.vhd:90]
 INFO: [Synth 8-3491] module 'design_1_axi_smc_0' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53' bound to instance 'axi_smc' of component 'design_1_axi_smc_0' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:1301]
 INFO: [Synth 8-6157] synthesizing module 'design_1_axi_smc_0' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/synth/design_1_axi_smc_0.v:53]
@@ -2059,7 +2050,7 @@ INFO: [Synth 8-638] synthesizing module 'design_1_mdm_1_0' [c:/Users/C27Soren.He
 	Parameter C_FAMILY bound to: artix7 - type: string 
 	Parameter C_DEVICE bound to: xc7a200t - type: string 
 	Parameter C_REVISION bound to: (null) - type: string 
-	Parameter C_JTAG_CHAIN bound to: 3 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
 	Parameter C_BSCANID bound to: 76547328 - type: integer 
 	Parameter C_DEBUG_INTERFACE bound to: 0 - type: integer 
@@ -2094,11 +2085,11 @@ INFO: [Synth 8-3491] module 'MDM' declared at 'c:/Users/C27Soren.Herzog/ece383/H
 INFO: [Synth 8-638] synthesizing module 'MDM' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:14368]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
-	Parameter JTAG_CHAIN bound to: 3 - type: integer 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
 INFO: [Synth 8-3491] module 'MB_BSCANE2' declared at 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:330' bound to instance 'BSCAN_I' of component 'MB_BSCANE2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:15985]
 INFO: [Synth 8-638] synthesizing module 'MB_BSCANE2' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:354]
 	Parameter DISABLE_JTAG bound to: FALSE - type: string 
-	Parameter JTAG_CHAIN bound to: 3 - type: integer 
+	Parameter JTAG_CHAIN bound to: 2 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'MB_BSCANE2' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:354]
 	Parameter C_TARGET bound to: 2 - type: integer 
 	Parameter INIT bound to: 2'b10 
@@ -2111,7 +2102,7 @@ INFO: [Synth 8-3491] module 'MB_BUFG' declared at 'c:/Users/C27Soren.Herzog/ece3
 INFO: [Synth 8-638] synthesizing module 'MB_BUFG' [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:405]
 INFO: [Synth 8-256] done synthesizing module 'MB_BUFG' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/da3a/hdl/mdm_v3_2_vh_rfs.vhd:405]
 	Parameter C_TARGET bound to: 2 - type: integer 
-	Parameter C_JTAG_CHAIN bound to: 3 - type: integer 
+	Parameter C_JTAG_CHAIN bound to: 2 - type: integer 
 	Parameter C_USE_BSCAN bound to: 0 - type: integer 
 	Parameter C_USE_CONFIG_RESET bound to: 0 - type: integer 
 	Parameter C_USE_SRL16 bound to: yes - type: string 
@@ -2997,12 +2988,12 @@ INFO: [Synth 8-256] done synthesizing module 'util_ds_buf' (0#1) [c:/Users/C27So
 INFO: [Synth 8-256] done synthesizing module 'design_1_util_ds_buf_0_0' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/synth/design_1_util_ds_buf_0_0.vhd:63]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd:565]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:45]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'NES_inst'. This will prevent further optimization [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/ZoGolf_DataPath.vhd:140]
-WARNING: [Synth 8-3848] Net interrupt in module/entity NES_Controller does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:53]
-WARNING: [Synth 8-3848] Net kcpsm6_sleep in module/entity NES_Controller does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/src/NES_Controller.vhd:55]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:275]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:276]
-WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/e6b0/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:280]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'NES_inst'. This will prevent further optimization [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/ZoGolf_DataPath.vhd:140]
+WARNING: [Synth 8-3848] Net interrupt in module/entity NES_Controller does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:53]
+WARNING: [Synth 8-3848] Net kcpsm6_sleep in module/entity NES_Controller does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/src/NES_Controller.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg0_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:275]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg1_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:276]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg5_reg was removed.  [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ipshared/28fc/hdl/ZoGolf_DP_slave_lite_v1_0_S00_AXI.vhd:280]
 WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_5Y9LOC does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/bd_afc3.v:1118]
 WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_G6MO4E does not have driver. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/bd_a878.v:1074]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -3323,24 +3314,24 @@ WARNING: [Synth 8-7129] Port IBUFDS_GTME5_IB[0] in module util_ds_buf is either 
 WARNING: [Synth 8-7129] Port OBUFDS_GTME5_CEB[0] in module util_ds_buf is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:01:05 ; elapsed = 00:01:15 . Memory (MB): peak = 2276.680 ; gain = 1496.250
+Finished RTL Elaboration : Time (s): cpu = 00:01:16 ; elapsed = 00:02:10 . Memory (MB): peak = 2276.461 ; gain = 1494.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 2276.680 ; gain = 1496.250
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:18 ; elapsed = 00:02:13 . Memory (MB): peak = 2276.461 ; gain = 1494.473
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:06 ; elapsed = 00:01:17 . Memory (MB): peak = 2276.680 ; gain = 1496.250
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:01:18 ; elapsed = 00:02:13 . Memory (MB): peak = 2276.461 ; gain = 1494.473
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2543.973 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2547.074 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1313 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -3415,6 +3406,7 @@ Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/la
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Timing 38-2] Deriving generated clocks
+write_xdc: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 3200.637 ; gain = 125.223
 Parsing XDC File [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/constrs_1/imports/Desktop/FinalProj.xdc]
 Finished Parsing XDC File [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/constrs_1/imports/Desktop/FinalProj.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/constrs_1/imports/Desktop/FinalProj.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
@@ -3434,7 +3426,7 @@ Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wra
 INFO: [Project 1-1714] 113 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 3203.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.111 . Memory (MB): peak = 3200.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 777 instances were transformed.
   FD => FDRE: 48 instances
@@ -3454,18 +3446,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
   SRL16 => SRL16E: 6 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3203.160 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 3200.637 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Constraint Validation : Time (s): cpu = 00:02:42 ; elapsed = 00:04:21 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:02:17 ; elapsed = 00:02:33 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:42 ; elapsed = 00:04:21 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -3620,7 +3612,7 @@ Applied set_property KEEP = true for sys_clock. (constraint file  auto generated
 Applied set_property KEEP = true for usb_uart_rxd. (constraint file  auto generated constraint).
 Applied set_property KEEP = true for design_1_i/axi_uartlite_0/U0/UARTLITE_CORE_I/UARTLITE_TX_I/TX. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:18 ; elapsed = 00:02:34 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:42 ; elapsed = 00:04:22 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_transceiver'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'PS2_mouse_decoder'
@@ -4000,7 +3992,7 @@ INFO: [Synth 8-3898] No Re-encoding of one hot register 'tempmon_state_reg' in m
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'mig_7series_v4_2_axi_mc_r_channel'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:27 ; elapsed = 00:03:48 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:03:57 ; elapsed = 00:06:19 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -4098,7 +4090,7 @@ WARNING: [Synth 8-3332] Sequential element (BSR_OUT_DFF[0].FDRE_BSR) is unused a
 WARNING: [Synth 8-3332] Sequential element (ACTIVE_LOW_BSR_OUT_DFF[0].FDRE_BSR_N) is unused and will be removed from module proc_sys_reset__parameterized4.
 WARNING: [Synth 8-3332] Sequential element (PR_OUT_DFF[0].FDRE_PER) is unused and will be removed from module proc_sys_reset__parameterized4.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:25 ; elapsed = 00:08:05 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:07:56 ; elapsed = 00:11:22 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
@@ -4109,13 +4101,13 @@ WARNING: [Synth 8-3321] set_false_path : Empty through list for constraint at li
 INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clk_in1' to pin 'clkout1_buf/O'
 INFO: [Synth 8-5819] Moved 3 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:07:34 ; elapsed = 00:08:15 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:08:04 ; elapsed = 00:11:31 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:07:47 ; elapsed = 00:08:29 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Timing Optimization : Time (s): cpu = 00:08:17 ; elapsed = 00:11:45 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
@@ -4126,7 +4118,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[1]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 INFO: [Synth 8-3332] Sequential element (FSM_sequential_gen_endpoint.w_state_reg[0]) is unused and will be removed from module sc_mmu_v1_0_14_top__parameterized1.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:08:00 ; elapsed = 00:08:45 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Technology Mapping : Time (s): cpu = 00:08:29 ; elapsed = 00:11:59 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -4144,37 +4136,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:08:06 ; elapsed = 00:08:51 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished IO Insertion : Time (s): cpu = 00:08:35 ; elapsed = 00:12:05 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:08:06 ; elapsed = 00:08:51 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Renaming Generated Instances : Time (s): cpu = 00:08:35 ; elapsed = 00:12:05 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:09 ; elapsed = 00:08:55 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:08:38 ; elapsed = 00:12:09 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:08:10 ; elapsed = 00:08:55 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Renaming Generated Ports : Time (s): cpu = 00:08:39 ; elapsed = 00:12:09 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:08:10 ; elapsed = 00:08:56 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Handling Custom Attributes : Time (s): cpu = 00:08:39 ; elapsed = 00:12:10 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:08:11 ; elapsed = 00:08:56 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Renaming Generated Nets : Time (s): cpu = 00:08:40 ; elapsed = 00:12:10 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -4191,8 +4183,8 @@ Report Cell Usage:
 |      |Cell                           |Count |
 +------+-------------------------------+------+
 |1     |AND2B1L                        |    14|
-|2     |BSCANE2                        |     2|
-|3     |BUFG                           |    18|
+|2     |BSCANE2                        |     1|
+|3     |BUFG                           |    17|
 |4     |BUFH                           |     1|
 |5     |BUFIO                          |     1|
 |6     |CARRY4                         |   158|
@@ -4202,11 +4194,11 @@ Report Cell Usage:
 |10    |IN_FIFO                        |     2|
 |11    |ISERDESE2                      |    16|
 |12    |LUT1                           |   763|
-|13    |LUT2                           |  1173|
-|14    |LUT3                           |  2575|
-|15    |LUT4                           |  2048|
-|16    |LUT5                           |  2643|
-|17    |LUT6                           |  3976|
+|13    |LUT2                           |  1172|
+|14    |LUT3                           |  2573|
+|15    |LUT4                           |  2044|
+|16    |LUT5                           |  2641|
+|17    |LUT6                           |  3958|
 |19    |MMCME2_ADV                     |     3|
 |20    |MULT_AND                       |     1|
 |21    |MUXCY                          |   160|
@@ -4238,7 +4230,7 @@ Report Cell Usage:
 |58    |FDC                            |     1|
 |59    |FDPE                           |    82|
 |60    |FDR                            |   179|
-|61    |FDRE                           | 11395|
+|61    |FDRE                           | 11358|
 |63    |FDS                            |     1|
 |64    |FDSE                           |   447|
 |65    |IBUF                           |     6|
@@ -4250,26 +4242,26 @@ Report Cell Usage:
 |71    |OBUFT                          |     2|
 +------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:08:11 ; elapsed = 00:08:57 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Finished Writing Synthesis Report : Time (s): cpu = 00:08:40 ; elapsed = 00:12:10 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11417 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:06:05 ; elapsed = 00:07:55 . Memory (MB): peak = 3203.160 ; gain = 1496.250
-Synthesis Optimization Complete : Time (s): cpu = 00:08:11 ; elapsed = 00:08:58 . Memory (MB): peak = 3203.160 ; gain = 2422.730
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:11 ; elapsed = 00:10:23 . Memory (MB): peak = 3200.637 ; gain = 1494.473
+Synthesis Optimization Complete : Time (s): cpu = 00:08:40 ; elapsed = 00:12:11 . Memory (MB): peak = 3200.637 ; gain = 2418.648
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3203.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 3200.637 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 1704 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/ODDR2_red' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
-INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 WARNING: [Opt 31-32] Removing redundant IBUF since it is not being driven by a top-level port. design_1_i/clk_wiz_1/inst/clkin1_ibufg 
 Resolution: The tool has removed redundant IBUF. To resolve this warning, check for redundant IBUF in the input design.
 INFO: [Opt 31-138] Pushed 2 inverter(s) to 16 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 3203.160 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 3200.637 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 765 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 98 instances
@@ -4291,12 +4283,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
   SRL16 => SRL16E: 6 instances
 
-Synth Design complete | Checksum: 5c86e7ce
+Synth Design complete | Checksum: ea8eec0d
 INFO: [Common 17-83] Releasing license: Synthesis
-727 Infos, 478 Warnings, 0 Critical Warnings and 0 Errors encountered.
+724 Infos, 478 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:08:26 ; elapsed = 00:09:22 . Memory (MB): peak = 3203.160 ; gain = 2661.133
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 3203.160 ; gain = 0.000
+synth_design: Time (s): cpu = 00:08:56 ; elapsed = 00:13:04 . Memory (MB): peak = 3200.637 ; gain = 2658.746
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 3200.637 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon May  4 20:16:09 2026...
+INFO: [Common 17-206] Exiting Vivado at Tue May  5 13:21:24 2026...

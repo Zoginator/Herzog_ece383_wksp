@@ -1,0 +1,72 @@
+/******************************************************************************
+* Copyright (C) 2023 Advanced Micro Devices, Inc. All Rights Reserved.
+* SPDX-License-Identifier: MIT
+******************************************************************************/
+/*
+ * game_main.c: main logic and loop for ZoGolf
+ *
+ * This application configures UART 16550 to baud rate 9600.
+ * PS7 UART (Zynq) is not initialized by this application, since
+ * bootrom/bsp configures it to baud rate 115200
+ *
+ * ------------------------------------------------
+ * | UART TYPE   BAUD RATE                        |
+ * ------------------------------------------------
+ *   uartns550   9600
+ *   uartlite    Configurable only in HW design
+ *   ps7_uart    115200 (configured by bootrom/bsp)
+ */
+
+#include "xparameters.h"
+#include "stdio.h"
+#include "xstatus.h"
+#include "stdbool.h"
+
+#include "platform.h"
+#include "xil_printf.h"
+#include <xuartlite_l.h>					// Contains XUartLite_RecvByte
+#include <xil_io.h>							// Contains Xil_Out8 and its variations
+
+#include "game_functions.h"
+
+
+/************************** Function Prototypes ****************************/
+void myISR(void);
+
+
+int main(void){
+	/************************** Variable Declarations ****************************/
+
+	bool NES[8] = {false, false, false, false,
+				   false, false, false, false};
+
+	int mouse_x;
+	int mouse_y;
+	int ball_x = 600;
+	int ball_y = 480;
+	/************************** END Variable Declarations ****************************/
+	init_platform();
+
+	print("Welcome to ZoGolf_V1\n\r");
+
+    microblaze_register_handler((XInterruptHandler) myISR, (void *) 0);
+    microblaze_enable_interrupts();
+
+    Xil_Out8(flagClear, 0x01);					// Clear the flag and then you MUST
+	Xil_Out8(flagClear, 0x00);					// allow the flag to be reset later
+
+	/************************** Main Game Loop ****************************/
+	while(1){
+
+		// check NES Buttons
+
+
+	} // end main game loop
+    return 0;
+} //end main
+
+void myISR(void) {
+	//isrCount = isrCount + 1;
+	Xil_Out8(clear_flag, 0x01);					// Clear the flag and then you MUST
+	Xil_Out8(clear_flag, 0x00);					// allow the flag to be reset later
+}

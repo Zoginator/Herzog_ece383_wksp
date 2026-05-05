@@ -1,1 +1,7 @@
 1777949188571	Delete resource 'ZoGolf_V1_wrapper/hw/drivers'
+1778000305196	Delete resource 'ZoGolf_V1_wrapper/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/ZoGolf_DP_v1_0'
+1778000331745	Delete resource 'ZoGolf_V1_wrapper/hw/drivers/ZoGolf_DP_v1_0'
+1778009621067	Delete resource 'ZoGolf_V1_wrapper'
+1778009627760	Delete resource 'ublaze_ZoGolf_V1_system'
+1778009896744	Delete resource 'ZoGolf_V2_wrapper/hw/drivers'
+1778009932120	Delete resource 'ZoGolf_V2_wrapper/microblaze_0/standalone_microblaze_0/bsp/microblaze_0/libsrc/ZoGolf_DP_v1_0'

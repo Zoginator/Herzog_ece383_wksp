@@ -550,7 +550,7 @@
             "value": "32"
           },
           "C_JTAG_CHAIN": {
-            "value": "3"
+            "value": "2"
           },
           "C_M_AXI_ADDR_WIDTH": {
             "value": "32"
@@ -862,7 +862,7 @@
       },
       "ZoGolf_DP_0": {
         "vlnv": "xilinx.com:user:ZoGolf_DP:1.0",
-        "ip_revision": "4",
+        "ip_revision": "7",
         "xci_name": "design_1_ZoGolf_DP_0_2",
         "xci_path": "ip\\design_1_ZoGolf_DP_0_2\\design_1_ZoGolf_DP_0_2.xci",
         "inst_hier_path": "ZoGolf_DP_0"

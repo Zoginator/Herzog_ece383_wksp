@@ -1,0 +1,15 @@
+/*
+ * game_functions.c: supporting functions for ZoGolf
+ *
+ */
+#include "stdio.h"
+#include "stdlib.h"
+#include "game_functions.h"
+
+#include "xparameters.h"
+#include "xstatus.h"
+
+#include "platform.h"
+#include "xil_printf.h"
+#include <xuartlite_l.h>					// Contains XUartLite_RecvByte
+#include <xil_io.h>							// Contains Xil_Out8 and its variations
