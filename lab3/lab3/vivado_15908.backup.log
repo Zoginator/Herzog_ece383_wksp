@@ -1,0 +1,313 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May  4 19:45:46 2026
+# Process ID         : 15908
+# Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent10760 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab3\lab3\Lab3.xpr
+# Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/vivado.log
+# Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3\vivado.jou
+# Running On         : C27-5CG3121G96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 12852 MB
+# Total Virtual      : 29295 MB
+# Available Virtual  : 5991 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_mig_7series_0_0/mig_a.prj'.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_microblaze_0_0/design_ZoGolf_1_microblaze_0_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_dlmb_v10_0/design_ZoGolf_1_dlmb_v10_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_ilmb_v10_0/design_ZoGolf_1_ilmb_v10_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_dlmb_bram_if_cntlr_0/design_ZoGolf_1_dlmb_bram_if_cntlr_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_ilmb_bram_if_cntlr_0/design_ZoGolf_1_ilmb_bram_if_cntlr_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_lmb_bram_0/design_ZoGolf_1_lmb_bram_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_clk_wiz_1_0/design_ZoGolf_1_clk_wiz_1_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_rst_clk_wiz_1_100M_0/design_ZoGolf_1_rst_clk_wiz_1_100M_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_mig_7series_0_0/design_ZoGolf_1_mig_7series_0_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_axi_uartlite_0_0/design_ZoGolf_1_axi_uartlite_0_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_axi_smc_0/design_ZoGolf_1_axi_smc_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_util_ds_buf_0_0/design_ZoGolf_1_util_ds_buf_0_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_axi_smc_1_0/design_ZoGolf_1_axi_smc_1_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_rst_mig_7series_0_100M_0/design_ZoGolf_1_rst_mig_7series_0_100M_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+WARNING: [BD 41-2576] File 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_ZoGolf_DP_0_0/design_ZoGolf_1_ZoGolf_DP_0_0.xci' referenced by design 'design_ZoGolf_1' could not be found.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Lab3_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Counter_IP_1_0'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1489.148 ; gain = 396.227
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding component instance block -- xilinx.com:user:ZoGolf_DP:1.0 - ZoGolf_DP_0
+Successfully read diagram <design_1> from block design file <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:12 . Memory (MB): peak = 1640.477 ; gain = 128.414
+startgroup
+set_property CONFIG.C_JTAG_CHAIN {3} [get_bd_cells mdm_1]
+endgroup
+open_bd_design {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/design_ZoGolf_1.bd}
+Reading block design file <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/design_ZoGolf_1.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_microblaze_0_0 
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_dlmb_v10_0 
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_ilmb_v10_0 
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_dlmb_bram_if_cntlr_0 
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_ilmb_bram_if_cntlr_0 
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_lmb_bram_0 
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_clk_wiz_1_0 
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+10.000
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+can't read "c_m_max": no such variable
+can't read "c_m_min": no such variable
+can't read "c_d_max": no such variable
+can't read "c_d_min": no such variable
+can't read "c_o_max": no such variable
+can't read "c_o_min": no such variable
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'NUM_OUT_CLKS' from '1' to '2' has been ignored for IP 'clk_wiz_1'
+ERROR: [IP_Flow 19-3461] Value 'reset' is out of the range for parameter 'RESET BOARD INTERFACE(RESET_BOARD_INTERFACE)' for BD Cell 'clk_wiz_1' . Valid values are - Custom
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_rst_clk_wiz_1_100M_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_design_ZoGolf_1_rst_clk_wiz_1_100M_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object rst_clk_wiz_1_100M
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_rst_clk_wiz_1_100M_0'. Failed to customize IP instance 'design_ZoGolf_1_rst_clk_wiz_1_100M_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <rst_clk_wiz_1_100M>
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_mig_7series_0_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_design_ZoGolf_1_mig_7series_0_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object mig_7series_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_mig_7series_0_0'. Failed to customize IP instance 'design_ZoGolf_1_mig_7series_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <mig_7series_0>
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_axi_uartlite_0_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_xilinx_com_ip_axi_uartlite_2_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object axi_uartlite_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_axi_uartlite_0_0'. Failed to customize IP instance 'design_ZoGolf_1_axi_uartlite_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <axi_uartlite_0>
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_axi_smc_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_xilinx_com_ip_smartconnect_1_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object axi_smc
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_axi_smc_0'. Failed to customize IP instance 'design_ZoGolf_1_axi_smc_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <axi_smc>
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_util_ds_buf_0_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_xilinx_com_ip_util_ds_buf_2_2_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object util_ds_buf_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_util_ds_buf_0_0'. Failed to customize IP instance 'design_ZoGolf_1_util_ds_buf_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <util_ds_buf_0>
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_axi_smc_1_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_xilinx_com_ip_smartconnect_1_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object axi_smc_1
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_axi_smc_1_0'. Failed to customize IP instance 'design_ZoGolf_1_axi_smc_1_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <axi_smc_1>
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_rst_mig_7series_0_100M_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_design_ZoGolf_1_rst_mig_7series_0_100M_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object rst_mig_7series_0_100M
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_rst_mig_7series_0_100M_0'. Failed to customize IP instance 'design_ZoGolf_1_rst_mig_7series_0_100M_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <rst_mig_7series_0_100M>
+Adding component instance block -- xilinx.com:user:ZoGolf_DP:1.0 - ZoGolf_DP_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: design_ZoGolf_1_ZoGolf_DP_0_0 
+ERROR: [IP_Flow 19-883] Failed to create TCL scope '::ipgui_Lab3_xilinx_com_user_ZoGolf_DP_1_0_0' for IP GUI
+ERROR: [IP_Flow 19-3428] Failed to create Customization object ZoGolf_DP_0
+CRITICAL WARNING: [IP_Flow 19-5622] Failed to create IP instance 'design_ZoGolf_1_ZoGolf_DP_0_0'. Failed to customize IP instance 'design_ZoGolf_1_ZoGolf_DP_0_0'. Failed to load customization data
+ERROR: [BD 41-1712] Create IP failed with errors
+ERROR: [BD 41-595] Failed to add ip repository block <ZoGolf_DP_0>
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc_1> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <mig_7series_0> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_uartlite_0> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <ZoGolf_DP_0> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_uartlite_0> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc_1> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <axi_smc_1> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2160] Unable to find cell <mig_7series_0> while setting up interface connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2162] Unable to find pin <clk_out2> in cell <clk_wiz_1> while setting up net connections during loading of BD file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2162] Unable to find pin <locked> in cell <clk_wiz_1> while setting up net connections during loading of BD file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2162] Unable to find pin <clk_out1> in cell <clk_wiz_1> while setting up net connections during loading of BD file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_smc> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_uartlite_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_smc_1> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_mig_7series_0_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_smc_1> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_mig_7series_0_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_mig_7series_0_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2162] Unable to find pin <resetn> in cell <clk_wiz_1> while setting up net connections during loading of BD file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_clk_wiz_1_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_uartlite_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_smc> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <axi_smc_1> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <ZoGolf_DP_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <rst_mig_7series_0_100M> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <util_ds_buf_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <util_ds_buf_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2164] Unable to find cell <mig_7series_0> while setting up net connections during loading of block design file.
+CRITICAL WARNING: [BD 41-2162] Unable to find pin <clk_in1> in cell <clk_wiz_1> while setting up net connections during loading of BD file.
+WARNING: [BD 41-705] Could not load assignment of slave segment '/axi_uartlite_0/S_AXI/Reg' into address space '/microblaze_0/Data'
+WARNING: [BD 41-705] Could not load assignment of slave segment '/mig_7series_0/memmap/memaddr' into address space '/microblaze_0/Data'
+WARNING: [BD 41-705] Could not load assignment of slave segment '/mig_7series_0/memmap/memaddr' into address space '/microblaze_0/Instruction'
+INFO: [BD 41-1808] Open Block Design has been cancelled.
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 1972.453 ; gain = 286.164
+INFO: [Common 17-344] 'open_bd_design' was cancelled
+export_ip_user_files -of_objects  [get_files C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/design_ZoGolf_1.bd] -no_script -reset -force -quiet
+remove_files  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/design_ZoGolf_1.bd
+reset_target all [get_files  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd]
+reset_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2009.848 ; gain = 21.676
+export_ip_user_files -of_objects  [get_files  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/design_1.bd] -sync -no_script -force -quiet
+save_bd_design
+Wrote  : <C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab3\lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+INFO: [Project 1-1161] Replacing file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp with file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.runs/synth_1/design_1_wrapper.dcp
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [BD 5-943] Reserving offset range <0x4060_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x44A0_0000 [ 64K ]> from slave interface '/axi_smc/S00_AXI' to master interface '/axi_smc/M01_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_0: SmartConnect design_1_axi_smc_0 is in Low-Area Mode.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 512M ]> from slave interface '/axi_smc_1/S00_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [BD 5-943] Reserving offset range <0x8000_0000 [ 512M ]> from slave interface '/axi_smc_1/S01_AXI' to master interface '/axi_smc_1/M00_AXI'. This will be used by smartconnect on path for routing.
+INFO: [xilinx.com:ip:smartconnect:1.0-1] design_1_axi_smc_1_0: SmartConnect design_1_axi_smc_1_0 is in High-performance Mode.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /clk_wiz_1 clk_wiz propagate
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting D-cache cacheable area base address C_DCACHE_BASEADDR to 0x80000000 and high address C_DCACHE_HIGHADDR to 0x9FFFFFFF.
+INFO: [xilinx.com:ip:microblaze:11.0-16] /microblaze_0: Setting I-cache cacheable area base address C_ICACHE_BASEADDR to 0x80000000 and high address C_ICACHE_HIGHADDR to 0x9FFFFFFF.
+INFO: [xilinx.com:ip:microblaze:11.0-9] /microblaze_0: Setting C_BASE_VECTORS to 0x00000000.
+Wrote  : <C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\lab3\lab3\Lab3.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_v10 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/dlmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/ilmb_bram_if_cntlr .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block microblaze_0_local_memory/lmb_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block mdm_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_clk_wiz_1_100M .
+error renaming "c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/_tmp/design_1_mig_7series_0_0" to "c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0": permission denied
+CRITICAL WARNING: [IP_Flow 19-1747] Failed to deliver file 'c:/Xilinx/Vivado/2024.2/data/ip/xilinx/mig_7series_v4_2/xit/vlog_sim_rpr.xit': error renaming "c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/_tmp/design_1_mig_7series_0_0" to "c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0": permission denied
+ERROR: [IP_Flow 19-167] Failed to deliver one or more file(s).
+INFO: [IP_Flow 19-3500] Reset failed 'Simulation' target for IP 'mig_7series_0'.
+ERROR: [IP_Flow 19-3505] IP Generation error: Failed to generate IP 'mig_7series_0'. Failed to generate 'VHDL Simulation Wrapper' outputs: 
+ERROR: [IP_Flow 19-98] Generation of the IP CORE failed.
+Failed to generate IP 'mig_7series_0'. Failed to generate 'VHDL Simulation Wrapper' outputs: 
+ERROR: [BD 41-1030] Generation failed for the IP Integrator block mig_7series_0 
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_uartlite_0 .
+WARNING: [IP_Flow 19-5160] IP 'design_1_axi_smc_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Verilog' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'bd_afc3_one_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Verilog' outputs instead.
+Exporting to file c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/hw_handoff/design_1_axi_smc_0.hwh
+Generated Hardware Definition File c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/synth/design_1_axi_smc_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_ds_buf_0 .
+WARNING: [IP_Flow 19-5160] IP 'design_1_axi_smc_1_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Verilog' outputs instead.
+WARNING: [IP_Flow 19-5160] IP 'bd_a878_one_0' detected simulation language mismatch. Simulation type 'rtl' does not support 'VHDL' outputs (see project's "simulator_language" property), delivering 'Verilog' outputs instead.
+Exporting to file c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/hw_handoff/design_1_axi_smc_1_0.hwh
+Generated Hardware Definition File c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/synth/design_1_axi_smc_1_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_smc_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_mig_7series_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZoGolf_DP_0 .
+Exporting to file c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.gen/sources_1/bd/design_1/synth/design_1.hwdef
+ERROR: [Vivado 12-4756] Launch of runs aborted due to earlier errors while preparing sub-designs for run execution.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 19:54:22 2026...

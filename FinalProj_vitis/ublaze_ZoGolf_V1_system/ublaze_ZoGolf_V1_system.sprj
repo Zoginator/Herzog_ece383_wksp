@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="ublaze_ZoGolf_V1_system" platform="C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_vitis/ZoGolf_V1_wrapper/export/ZoGolf_V1_wrapper/ZoGolf_V1_wrapper.xpfm" platformUID="xilinx:nexys_video::0.0(custom)" sysConfig="ZoGolf_V1_wrapper" runtime="cpp" rootFSLocation="" linuxImage="" sysroot="">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.2133753040">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="ublaze_ZoGolf_V1" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1917422076">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="ublaze_ZoGolf_V1" domainName="standalone_microblaze_0" domainPrettyName="standalone_microblaze_0" appBuildConfig="Release"/>
+      <options xsi:type="sdkproject:SdkOptions" generateSdCard="true"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri May  1 12:34:46 2026
+| Date         : Mon May  4 12:33:37 2026
 | Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file ZoGolf_DataPath_methodology_drc_routed.rpt -pb ZoGolf_DataPath_methodology_drc_routed.pb -rpx ZoGolf_DataPath_methodology_drc_routed.rpx
 | Design       : ZoGolf_DataPath
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max checks: <unlimited>
-             Checks found: 299
+             Checks found: 303
 +-----------+------------------+-------------------------------------------+--------+
 | Rule      | Severity         | Description                               | Checks |
 +-----------+------------------+-------------------------------------------+--------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell               | 298    |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell               | 302    |
 | TIMING-27 | Critical Warning | Invalid primary clock on hierarchical pin | 1      |
 +-----------+------------------+-------------------------------------------+--------+
 
@@ -1505,20 +1505,40 @@ Related violations: <none>
 
 TIMING-17#295 Critical Warning
 Non-clocked sequential cell  
-The clock pin level_selctor_inst/inst_level1/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+The clock pin level_selctor_inst/inst_level0/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#296 Critical Warning
 Non-clocked sequential cell  
-The clock pin level_selctor_inst/inst_level1/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
+The clock pin level_selctor_inst/inst_level0/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#297 Critical Warning
 Non-clocked sequential cell  
-The clock pin level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+The clock pin level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#298 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#299 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level1/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#300 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level1/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#301 Critical Warning
+Non-clocked sequential cell  
+The clock pin level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKARDCLK is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#302 Critical Warning
 Non-clocked sequential cell  
 The clock pin level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl/CLKBWRCLK is not reached by a timing clock
 Related violations: <none>

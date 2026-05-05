@@ -1,80 +1,10 @@
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="22548" HostCore="16" HostMemory="016442740736">
+    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="1124" HostCore="16" HostMemory="016442740736">
     </Process>
 </ProcessHandle>
 <?xml version="1.0"?>
 <ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="18160" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="25096" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="19108" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="16672" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="35060" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="34580" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="29368" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="4244" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="34076" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="33644" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="36208" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="35488" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="16744" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="36868" HostCore="16" HostMemory="016442740736">
-    </Process>
-</ProcessHandle>
-<?xml version="1.0"?>
-<ProcessHandle Version="1" Minor="0">
-    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="16668" HostCore="16" HostMemory="016442740736">
+    <Process Command="vivado.bat" Owner="C27Soren.Herzog" Host="C27-5CG3121G96" Pid="23828" HostCore="16" HostMemory="016442740736">
     </Process>
 </ProcessHandle>

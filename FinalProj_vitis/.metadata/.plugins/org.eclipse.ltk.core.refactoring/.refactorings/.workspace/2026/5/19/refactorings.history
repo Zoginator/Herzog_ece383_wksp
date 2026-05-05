@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;ZoGolf_V1_wrapper/hw/drivers&apos;" deleteContents="false" description="Delete resource &apos;ZoGolf_V1_wrapper/hw/drivers&apos;" element1="/ZoGolf_V1_wrapper/hw/drivers" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1777949188571"/>
+</session>

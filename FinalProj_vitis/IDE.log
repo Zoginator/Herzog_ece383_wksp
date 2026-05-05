@@ -1,0 +1,14 @@
+20:30:52 DEBUG : Logs will be stored at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_vitis/IDE.log'.
+20:32:09 INFO  : Platform repository initialization has completed.
+20:32:09 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj_vitis\temp_xsdb_launch_script.tcl
+20:32:09 INFO  : Registering command handlers for Vitis TCF services
+20:32:17 INFO  : XSCT server has started successfully.
+20:32:17 INFO  : Successfully done setting XSCT server connection channel  
+20:32:17 INFO  : plnx-install-location is set to ''
+20:32:24 INFO  : Successfully done setting workspace for the tool. 
+20:32:24 INFO  : Successfully done query RDI_DATADIR 
+20:37:01 INFO  : Result from executing command 'getProjects': ZoGolf_V1_wrapper
+20:37:01 INFO  : Result from executing command 'getPlatforms': 
+20:37:01 WARN  : An unexpected exception occurred in the module 'platform project logging'
+20:37:01 INFO  : Platform 'ZoGolf_V1_wrapper' is added to custom repositories.
+20:37:05 INFO  : Platform 'ZoGolf_V1_wrapper' is added to custom repositories.

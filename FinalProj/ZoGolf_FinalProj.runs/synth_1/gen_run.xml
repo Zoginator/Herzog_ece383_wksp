@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1777660240" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ZoGolf_DataPath.dcp">
-  <File Type="PA-TCL" Name="ZoGolf_DataPath.tcl"/>
+<GenRun Id="synth_1" LaunchPart="xc7a200tsbg484-1" LaunchTime="1777919374" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/ZoGolf_DataPath.dcp">
   <File Type="REPORTS-TCL" Name="ZoGolf_DataPath_reports.tcl"/>
-  <File Type="RDS-RDS" Name="ZoGolf_DataPath.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="ZoGolf_DataPath_drc_synth.rpt"/>
   <File Type="RDS-UTIL" Name="ZoGolf_DataPath_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="ZoGolf_DataPath_utilization_synth.pb"/>
+  <File Type="PA-TCL" Name="ZoGolf_DataPath.tcl"/>
+  <File Type="RDS-RDS" Name="ZoGolf_DataPath.vds"/>
   <File Type="RDS-DCP" Name="ZoGolf_DataPath.dcp"/>
-  <File Type="VDS-TIMINGSUMMARY" Name="ZoGolf_DataPath_timing_summary_synth.rpt"/>
-  <File Type="VDS-TIMING-PB" Name="ZoGolf_DataPath_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/imports/code/video components/ece383_pkg.vhd">

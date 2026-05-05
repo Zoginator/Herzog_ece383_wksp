@@ -3,8 +3,8 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Fri May  1 12:30:46 2026
-# Process ID         : 10528
+# Start of session at: Mon May  4 12:29:44 2026
+# Process ID         : 40488
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1
 # Command line       : vivado.exe -log ZoGolf_DataPath.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ZoGolf_DataPath.tcl
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/ZoGolf_DataPath.vds
@@ -17,12 +17,11 @@
 # CPU Physical cores : 8
 # CPU Logical cores  : 16
 # Host memory        : 16442 MB
-# Swap memory        : 15275 MB
-# Total Virtual      : 31718 MB
-# Available Virtual  : 5646 MB
+# Swap memory        : 8924 MB
+# Total Virtual      : 25367 MB
+# Available Virtual  : 4985 MB
 #-----------------------------------------------------------
 source ZoGolf_DataPath.tcl -notrace
-create_project: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 439.910 ; gain = 128.629
 Command: read_checkpoint -auto_incremental -incremental C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/utils_1/imports/synth_1/ZoGolf_DataPath.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/utils_1/imports/synth_1/ZoGolf_DataPath.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -35,16 +34,16 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 37252
+INFO: [Synth 8-7075] Helper process launched with PID 26060
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1160.246 ; gain = 469.379
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1160.977 ; gain = 469.801
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'ZoGolf_DataPath' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:61]
-INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:112]
-INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:25]
-INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/.Xil/Vivado-10528-C27-5CG3121G96/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:54]
-INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/.Xil/Vivado-10528-C27-5CG3121G96/realtime/clk_wiz_0_stub.vhdl:19]
-INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/vga_signal_generator.vhd:8' bound to instance 'Inst_vga_signal_gen' of component 'vga_signal_generator' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:65]
+INFO: [Synth 8-638] synthesizing module 'ZoGolf_DataPath' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:62]
+INFO: [Synth 8-3491] module 'video' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:11' bound to instance 'video_inst' of component 'video' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:114]
+INFO: [Synth 8-638] synthesizing module 'video' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:26]
+INFO: [Synth 8-3491] module 'clk_wiz_0' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/.Xil/Vivado-40488-C27-5CG3121G96/realtime/clk_wiz_0_stub.vhdl:6' bound to instance 'mmcm_adv_inst_display_clocks' of component 'clk_wiz_0' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:55]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/.Xil/Vivado-40488-C27-5CG3121G96/realtime/clk_wiz_0_stub.vhdl:19]
+INFO: [Synth 8-3491] module 'vga_signal_generator' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/vga_signal_generator.vhd:8' bound to instance 'Inst_vga_signal_gen' of component 'vga_signal_generator' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:66]
 INFO: [Synth 8-638] synthesizing module 'vga_signal_generator' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/vga_signal_generator.vhd:15]
 	Parameter num_bits bound to: 10 - type: integer 
 	Parameter max_value bound to: 799 - type: integer 
@@ -61,9 +60,9 @@ INFO: [Synth 8-638] synthesizing module 'counter__parameterized1' [C:/Users/C27S
 	Parameter max_value bound to: 525 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'counter__parameterized1' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/video components/counter.vhd:46]
 INFO: [Synth 8-256] done synthesizing module 'vga_signal_generator' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/vga_signal_generator.vhd:15]
-INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:11' bound to instance 'inst_color_mapper' of component 'color_mapper' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:73]
-INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:22]
-INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:22]
+INFO: [Synth 8-3491] module 'color_mapper' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:11' bound to instance 'inst_color_mapper' of component 'color_mapper' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:74]
+INFO: [Synth 8-638] synthesizing module 'color_mapper' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'color_mapper' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/color_mapper.vhd:23]
 INFO: [Synth 8-638] synthesizing module 'dvid' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/dvid.vhdl:31]
 INFO: [Synth 8-3491] module 'TDMS_encoder' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/tdms.vhdl:14' bound to instance 'TDMS_encoder_red' of component 'TDMS_encoder' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/dvid.vhdl:56]
 INFO: [Synth 8-638] synthesizing module 'TDMS_encoder' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/tdms.vhdl:22]
@@ -87,12 +86,12 @@ INFO: [Synth 8-113] binding component instance 'ODDR2_blue' to cell 'ODDR2' [C:/
 	Parameter SRTYPE bound to: ASYNC - type: string 
 INFO: [Synth 8-113] binding component instance 'ODDR2_clock' to cell 'ODDR2' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/dvid.vhdl:69]
 INFO: [Synth 8-256] done synthesizing module 'dvid' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/dvid.vhdl:31]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:107]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:109]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:111]
-INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:113]
-INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:25]
-INFO: [Synth 8-3491] module 'BRAM_Level_Selector' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd:41' bound to instance 'level_selctor_inst' of component 'BRAM_Level_Selector' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:126]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_blue' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:109]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_red' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:111]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_green' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:113]
+INFO: [Synth 8-113] binding component instance 'OBUFDS_clock' to cell 'OBUFDS' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:115]
+INFO: [Synth 8-256] done synthesizing module 'video' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/code/video components/video.vhdl:26]
+INFO: [Synth 8-3491] module 'BRAM_Level_Selector' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd:41' bound to instance 'level_selctor_inst' of component 'BRAM_Level_Selector' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:129]
 INFO: [Synth 8-638] synthesizing module 'BRAM_Level_Selector' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd:49]
 INFO: [Synth 8-3491] module 'level0_BRAM_Pair' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level0_BRAM_Pair.vhd:41' bound to instance 'inst_level0' of component 'level0_BRAM_Pair' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd:65]
 INFO: [Synth 8-638] synthesizing module 'level0_BRAM_Pair' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level0_BRAM_Pair.vhd:48]
@@ -1091,7 +1090,7 @@ INFO: [Synth 8-638] synthesizing module 'level1_BRAM_Pair' [C:/Users/C27Soren.He
 	Parameter INIT_6D bound to: 256'b0011001100110011001100110011001100110011001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6E bound to: 256'b0011001100110011001100110011001100110011001100110010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6F bound to: 256'b0011001100110011001100110011001100110011001100110011001100110011001100110010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
-	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011 
+	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011001100110011001100110011001100110011001100110011001100110011001100110011001000100010001000110011001100110011001100110011 
 	Parameter INIT_FILE bound to: NONE - type: string 
 	Parameter READ_WIDTH bound to: 4 - type: integer 
 	Parameter SIM_COLLISION_CHECK bound to: NONE - type: string 
@@ -1230,7 +1229,7 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1
 	Parameter INIT_6D bound to: 256'b0011001100110011001100110011001100110011001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6E bound to: 256'b0011001100110011001100110011001100110011001100110010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6F bound to: 256'b0011001100110011001100110011001100110011001100110011001100110011001100110010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
-	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011 
+	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011001100110011001100110011001100110011001100110011001100110011001100110011001000100010001000110011001100110011001100110011 
 	Parameter INIT_71 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_72 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_73 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -1384,7 +1383,7 @@ INFO: [Synth 8-638] synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized1
 	Parameter INIT_6D bound to: 256'b0011001100110011001100110011001100110011001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6E bound to: 256'b0011001100110011001100110011001100110011001100110010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011001100110011001100110011001100110011 
 	Parameter INIT_6F bound to: 256'b0011001100110011001100110011001100110011001100110011001100110011001100110010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001000100010001100110011001100110011001100110011001100110011001100110011001100110011001100110011 
-	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000011001100110011001100110011001100110011001100110011001100110011001100110011001100100010001000100011001100110011001100110011 
+	Parameter INIT_70 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110011001100110011001100110011001100110011001100110011001100110011001100110011001000100010001000110011001100110011001100110011 
 	Parameter INIT_71 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_72 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
 	Parameter INIT_73 bound to: 256'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
@@ -1853,7 +1852,7 @@ INFO: [Synth 8-113] binding component instance 'ram36_bl' to cell 'RAMB36E1' [C:
 INFO: [Synth 8-256] done synthesizing module 'unimacro_BRAM_SDP_MACRO__parameterized2' (0#1) [C:/Xilinx/Vivado/2024.2/data/vhdl/src/unimacro/BRAM_SDP_MACRO.vhd:217]
 INFO: [Synth 8-256] done synthesizing module 'level1_BRAM_Pair' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/level1_BRAM_Pair.vhd:48]
 INFO: [Synth 8-256] done synthesizing module 'BRAM_Level_Selector' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/BRAM_Level_Selector.vhd:49]
-INFO: [Synth 8-3491] module 'NES_Controller' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:33' bound to instance 'NES_inst' of component 'NES_Controller' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:134]
+INFO: [Synth 8-3491] module 'NES_Controller' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:33' bound to instance 'NES_inst' of component 'NES_Controller' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:137]
 INFO: [Synth 8-638] synthesizing module 'NES_Controller' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:42]
 	Parameter hwbuild bound to: 8'b00000000 
 	Parameter interrupt_vector bound to: 12'b001111111111 
@@ -2257,7 +2256,7 @@ INFO: [Synth 8-638] synthesizing module 'jtag_loader_6' [C:/Users/C27Soren.Herzo
 INFO: [Synth 8-256] done synthesizing module 'jtag_loader_6' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/KCPSM6/NES_Controller_ROM.vhd:2987]
 INFO: [Synth 8-256] done synthesizing module 'NES_Controller_ROM' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/imports/KCPSM6/NES_Controller_ROM.vhd:143]
 INFO: [Synth 8-256] done synthesizing module 'NES_Controller' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:42]
-INFO: [Synth 8-3491] module 'PS2_mouse_decoder' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:36' bound to instance 'PS2_decoder_inst' of component 'PS2_mouse_decoder' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:145]
+INFO: [Synth 8-3491] module 'PS2_mouse_decoder' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:36' bound to instance 'PS2_decoder_inst' of component 'PS2_mouse_decoder' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:148]
 INFO: [Synth 8-638] synthesizing module 'PS2_mouse_decoder' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:46]
 	Parameter clk_freq bound to: 100000000 - type: integer 
 INFO: [Synth 8-3491] module 'ps2_mouse' declared at 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_mouse.vhd:26' bound to instance 'inst_PS2_mouse' of component 'ps2_mouse' [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:87]
@@ -2280,8 +2279,8 @@ INFO: [Synth 8-3491] module 'debounce' declared at 'C:/Users/C27Soren.Herzog/ece
 INFO: [Synth 8-256] done synthesizing module 'ps2_transceiver' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_transceiver.vhd:44]
 INFO: [Synth 8-256] done synthesizing module 'ps2_mouse' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/PS2_Mouse_HowTo/ps2_mouse.vhd:39]
 INFO: [Synth 8-256] done synthesizing module 'PS2_mouse_decoder' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:46]
-INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DataPath' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:61]
-INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'NES_inst'. This will prevent further optimization [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:134]
+INFO: [Synth 8-256] done synthesizing module 'ZoGolf_DataPath' (0#1) [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:62]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'NES_inst'. This will prevent further optimization [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/ZoGolf_DataPath.vhd:137]
 WARNING: [Synth 8-3848] Net interrupt in module/entity NES_Controller does not have driver. [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:53]
 WARNING: [Synth 8-3848] Net kcpsm6_sleep in module/entity NES_Controller does not have driver. [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/imports/sources_1/new/NES_Controller.vhd:55]
 WARNING: [Synth 8-7129] Port reset_n in module NES_Controller is either unconnected or has no load
@@ -2290,18 +2289,18 @@ WARNING: [Synth 8-7129] Port level_select[2] in module color_mapper is either un
 WARNING: [Synth 8-7129] Port level_select[1] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-7129] Port level_select[0] in module color_mapper is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.359 ; gain = 598.492
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1292.918 ; gain = 601.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.359 ; gain = 598.492
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1292.918 ; gain = 601.742
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1289.359 ; gain = 598.492
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1292.918 ; gain = 601.742
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 1289.359 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1292.918 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 193 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_n' that is connected to this pin will not be connected to the replacement instance.
@@ -2320,7 +2319,7 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/ZoGolf_DataPath_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1355.801 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1359.008 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 132 instances were transformed.
   FD => FDRE: 48 instances
@@ -2331,18 +2330,18 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1355.801 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1359.008 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:21 . Memory (MB): peak = 1355.801 ; gain = 664.934
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1359.008 ; gain = 667.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a200tsbg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1355.801 ; gain = 664.934
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1359.008 ; gain = 667.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -2352,7 +2351,7 @@ Applied set_property CLOCK_BUFFER_TYPE = NONE for clk. (constraint file  c:/User
 Applied set_property MARK_DEBUG = true for PS2_decoder_inst/PS2_mouse_data_new. (constraint file  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/constrs_1/imports/code/FinalProj.xdc, line 308).
 Applied set_property KEEP_HIERARCHY = SOFT for video_inst/mmcm_adv_inst_display_clocks. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 1355.801 ; gain = 664.934
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:20 . Memory (MB): peak = 1359.008 ; gain = 667.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'ps2_transceiver'
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'inst_PS2_mouse'. This will prevent further optimization [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.srcs/sources_1/new/PS2_mouse_decoder.vhd:87]
@@ -2375,7 +2374,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'PS2_mouse_decoder'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1355.801 ; gain = 664.934
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 1359.008 ; gain = 667.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -2411,8 +2410,8 @@ Detailed RTL Component Info :
 	                2 Bit    Registers := 4     
 	                1 Bit    Registers := 23    
 +---Muxes : 
+	   8 Input   24 Bit        Muxes := 2     
 	   2 Input   24 Bit        Muxes := 2     
-	   8 Input   24 Bit        Muxes := 1     
 	   2 Input   18 Bit        Muxes := 9     
 	   2 Input   14 Bit        Muxes := 2     
 	   4 Input   14 Bit        Muxes := 1     
@@ -2452,35 +2451,35 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 WARNING: [Synth 8-7129] Port reset_n in module NES_Controller is either unconnected or has no load
-WARNING: [Synth 8-7129] Port level_select[3] in module video is either unconnected or has no load
-WARNING: [Synth 8-7129] Port level_select[2] in module video is either unconnected or has no load
-WARNING: [Synth 8-7129] Port level_select[1] in module video is either unconnected or has no load
-WARNING: [Synth 8-7129] Port level_select[0] in module video is either unconnected or has no load
+WARNING: [Synth 8-7129] Port level_select[3] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port level_select[2] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port level_select[1] in module color_mapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port level_select[0] in module color_mapper is either unconnected or has no load
 WARNING: [Synth 8-3332] Sequential element (processor/sync_sleep_flop) is unused and will be removed from module NES_Controller.
 WARNING: [Synth 8-3332] Sequential element (processor/sync_interrupt_flop) is unused and will be removed from module NES_Controller.
 WARNING: [Synth 8-3332] Sequential element (processor/interrupt_ack_flop) is unused and will be removed from module NES_Controller.
 WARNING: [Synth 8-3332] Sequential element (processor/k_write_strobe_flop) is unused and will be removed from module NES_Controller.
 WARNING: [Synth 8-3332] Sequential element (processor/read_strobe_flop) is unused and will be removed from module NES_Controller.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:39 . Memory (MB): peak = 1547.492 ; gain = 856.625
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 1498.430 ; gain = 807.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 1547.492 ; gain = 856.625
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:00:50 . Memory (MB): peak = 1498.430 ; gain = 807.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:45 ; elapsed = 00:00:50 . Memory (MB): peak = 1608.543 ; gain = 917.676
+Finished Timing Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:01:04 . Memory (MB): peak = 1822.895 ; gain = 1131.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:51 . Memory (MB): peak = 1619.156 ; gain = 928.289
+Finished Technology Mapping : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 1828.441 ; gain = 1137.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -2498,37 +2497,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -2550,38 +2549,37 @@ Report Cell Usage:
 |3     |BUFG           |     1|
 |4     |CARRY4         |    22|
 |5     |LUT1           |    21|
-|6     |LUT2           |   108|
-|7     |LUT3           |    77|
-|8     |LUT4           |    77|
-|9     |LUT5           |    70|
-|10    |LUT6           |   258|
+|6     |LUT2           |   137|
+|7     |LUT3           |    82|
+|8     |LUT4           |   107|
+|9     |LUT5           |    95|
+|10    |LUT6           |   342|
 |12    |MUXCY          |    29|
-|13    |MUXF7          |     1|
-|14    |ODDR2          |     4|
-|15    |RAM32M         |     4|
-|16    |RAM64M         |     2|
-|17    |RAMB36E1       |     3|
-|20    |XORCY          |    27|
-|21    |FD             |    45|
-|22    |FDCE           |    32|
-|23    |FDPE           |     2|
-|24    |FDR            |    18|
-|25    |FDRE           |   273|
-|26    |FDSE           |    17|
-|27    |IBUF           |     2|
-|28    |IOBUF          |     2|
-|29    |OBUF           |     2|
-|30    |OBUFDS         |     4|
+|13    |ODDR2          |     4|
+|14    |RAM32M         |     4|
+|15    |RAM64M         |     2|
+|16    |RAMB36E1       |     5|
+|21    |XORCY          |    27|
+|22    |FD             |    45|
+|23    |FDCE           |    32|
+|24    |FDPE           |     2|
+|25    |FDR            |    18|
+|26    |FDRE           |   276|
+|27    |FDSE           |    14|
+|28    |IBUF           |     2|
+|29    |IOBUF          |     2|
+|30    |OBUF           |     2|
+|31    |OBUFDS         |     4|
 +------+---------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:51 . Memory (MB): peak = 1766.062 ; gain = 1008.754
-Synthesis Optimization Complete : Time (s): cpu = 00:00:49 ; elapsed = 00:00:55 . Memory (MB): peak = 1766.062 ; gain = 1075.195
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:01:06 . Memory (MB): peak = 1896.926 ; gain = 1139.660
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 1896.926 ; gain = 1205.750
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1771.285 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 211 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1902.070 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 212 Unisim elements for replacement
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'video_inst/inst_dvid/ODDR2_blue' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'video_inst/inst_dvid/ODDR2_clock' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
 WARNING: [Netlist 29-151] Pin 'C1' on instance 'video_inst/inst_dvid/ODDR2_green' of cell type 'ODDR2' does not have an equivalent function on the new cell type 'ODDR'. Net 'clk_out3' that is connected to this pin will not be connected to the replacement instance.
@@ -2590,7 +2588,7 @@ INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1781.598 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1912.379 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 139 instances were transformed.
   (MUXCY,XORCY) => CARRY4: 10 instances
@@ -2603,12 +2601,12 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 4 instances
   RAM64M => RAM64M (RAMD64E(x4)): 2 instances
 
-Synth Design complete | Checksum: 69ec219e
+Synth Design complete | Checksum: 2d08a3d3
 INFO: [Common 17-83] Releasing license: Synthesis
 203 Infos, 26 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:01:27 . Memory (MB): peak = 1781.598 ; gain = 1327.652
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1781.598 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:10 ; elapsed = 00:01:18 . Memory (MB): peak = 1912.379 ; gain = 1458.785
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1912.379 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/ZoGolf_FinalProj.runs/synth_1/ZoGolf_DataPath.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file ZoGolf_DataPath_utilization_synth.rpt -pb ZoGolf_DataPath_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri May  1 12:32:40 2026...
+INFO: [Common 17-206] Exiting Vivado at Mon May  4 12:31:16 2026...

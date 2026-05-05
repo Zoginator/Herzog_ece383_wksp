@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
-| Date         : Fri May  1 12:34:48 2026
+| Date         : Mon May  4 12:33:39 2026
 | Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
 | Command      : report_clock_utilization -file ZoGolf_DataPath_clock_utilization_routed.rpt
 | Design       : ZoGolf_DataPath
@@ -49,7 +49,7 @@ Table of Contents
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
 | Global Id | Source Id | Driver Type/Pin | Constraint | Site          | Clock Region | Load Clock Region | Clock Loads | Non-Clock Loads | Clock Period | Clock              | Driver Pin                                                                                | Net                                                                  |
 +-----------+-----------+-----------------+------------+---------------+--------------+-------------------+-------------+-----------------+--------------+--------------------+-------------------------------------------------------------------------------------------+----------------------------------------------------------------------+
-| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |         225 |               0 |              |                    | clk_IBUF_BUFG_inst/O                                                                      | clk_IBUF_BUFG                                                        |
+| g0        | src0      | BUFG/O          | None       | BUFGCTRL_X0Y1 | n/a          |                 2 |         227 |               0 |              |                    | clk_IBUF_BUFG_inst/O                                                                      | clk_IBUF_BUFG                                                        |
 | g1        | src1      | BUFG/O          | None       | BUFGCTRL_X0Y2 | n/a          |                 1 |          93 |               0 |       40.000 | clk_out1_clk_wiz_0 | video_inst/mmcm_adv_inst_display_clocks/inst/clkout1_buf/O                                | video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |
 | g2        | src2      | BUFG/O          | None       | BUFGCTRL_X0Y0 | n/a          |                 1 |          44 |               0 |        8.000 | clk_out2_clk_wiz_0 | video_inst/mmcm_adv_inst_display_clocks/inst/clkout2_buf/O                                | video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2                |
 | g3        | src3      | BUFG/O          | None       | BUFGCTRL_X0Y3 | n/a          |                 1 |          32 |               0 |              |                    | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/jtag_loader_gen.upload_clock/O | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk |
@@ -88,7 +88,7 @@ Table of Contents
 | X0Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4200 |    0 |  1400 |    0 |   100 |    0 |    50 |    0 |   100 |
 | X1Y1              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4000 |    0 |  1400 |    0 |    80 |    0 |    40 |    0 |    80 |
 | X0Y2              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3600 |    0 |  1400 |    0 |   100 |    0 |    50 |    0 |   100 |
-| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 |  380 |  4000 |  109 |  1400 |    0 |    80 |    3 |    40 |    0 |    80 |
+| X1Y2              |    4 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    4 |    50 |  380 |  4000 |  150 |  1400 |    0 |    80 |    5 |    40 |    0 |    80 |
 | X0Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  3600 |    0 |  1400 |    0 |   100 |    0 |    50 |    0 |   100 |
 | X1Y3              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     0 |    0 |     0 |    0 |    50 |    0 |    50 |    0 |  4000 |    0 |  1400 |    0 |    80 |    0 |    40 |    0 |    80 |
 | X0Y4              |    0 |    12 |    0 |     4 |    0 |     2 |    0 |     4 |    0 |     1 |    0 |     1 |    0 |     4 |    0 |     1 |    0 |    50 |    0 |    50 |    0 |  2550 |    0 |   750 |    0 |    50 |    0 |    25 |    0 |    60 |
@@ -118,7 +118,7 @@ All Modules
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 | Global Id | Driver Type/Pin | Driver Region (D) | Clock | Period (ns) | Waveform (ns) | Slice Loads | IO Loads | Clocking Loads | GT Loads | Net           |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
-| g0        | BUFG/O          | n/a               |       |             |               |         218 |        0 |              1 |        0 | clk_IBUF_BUFG |
+| g0        | BUFG/O          | n/a               |       |             |               |         220 |        0 |              1 |        0 | clk_IBUF_BUFG |
 +-----------+-----------------+-------------------+-------+-------------+---------------+-------------+----------+----------------+----------+---------------+
 * Slice Loads column represents load cell count of all cell types other than IO, GT and clock resources
 ** IO Loads column represents load cell count of IO types
@@ -131,7 +131,7 @@ All Modules
 +----+----+------+-----------------------+
 | Y4 |  0 |    0 |                     - |
 | Y3 |  0 |    0 |                     - |
-| Y2 |  0 |  218 |                     0 |
+| Y2 |  0 |  220 |                     0 |
 | Y1 |  0 |    0 |                     - |
 | Y0 |  0 |    1 |                     0 |
 +----+----+------+-----------------------+
@@ -257,7 +257,7 @@ All Modules
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
 | Global Id | Track | Driver Type/Pin | Constraint | Clock Loads | Non-Clock Loads | FF  | Memory LUTs | RAMB | DSP | GT | MMCM | PLL | Hard IP | Net                                                                  |
 +-----------+-------+-----------------+------------+-------------+-----------------+-----+-------------+------+-----+----+------+-----+---------+----------------------------------------------------------------------+
-| g0        | n/a   | BUFG/O          | None       |         218 |               0 | 215 |           0 |    3 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG                                                        |
+| g0        | n/a   | BUFG/O          | None       |         220 |               0 | 215 |           0 |    5 |   0 |  0 |    0 |   0 |       0 | clk_IBUF_BUFG                                                        |
 | g1        | n/a   | BUFG/O          | None       |          93 |               0 |  93 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1                |
 | g2        | n/a   | BUFG/O          | None       |          44 |               0 |  40 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | video_inst/mmcm_adv_inst_display_clocks/inst/clk_out2                |
 | g3        | n/a   | BUFG/O          | None       |          32 |               0 |  32 |           0 |    0 |   0 |  0 |    0 |   0 |       0 | NES_inst/program_rom/instantiate_loader.jtag_loader_6_inst/shift_clk |
