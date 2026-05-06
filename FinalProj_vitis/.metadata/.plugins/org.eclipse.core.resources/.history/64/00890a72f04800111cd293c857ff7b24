@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <stdint.h>
+
+#ifndef DATA_H
+#define DATA_H
+
+// 'extern' tells other files the array is defined elsewhere
+extern uint8_t levels[1][14400];
+
+#endif

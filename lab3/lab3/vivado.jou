@@ -45,3 +45,6 @@ reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
 write_hw_platform -fixed -include_bit -force -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/ZoGolf_V2_wrapper.xsa
+ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/lab3/lab3/Lab3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
+update_compile_order -fileset sources_1
+close_project

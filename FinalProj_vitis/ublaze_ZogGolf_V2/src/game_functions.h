@@ -7,8 +7,12 @@
 
 #include "xparameters.h"
 #include "stdio.h"
+#include "stdlib.h"
+#include "stdint.h"
+#include "math.h"
 #include "xstatus.h"
 #include "stdbool.h"
+#include "level_data.h"
 
 #include "platform.h"
 #include "xil_printf.h"
@@ -32,6 +36,39 @@
 #define frame_flag	countBase+0x14	// using the LSB of slv reg 5
 #define clear_flag 	countBase+0x18	// using the LSB of slv reg 6
 #define show_win	countBase+0x1c	// using the bottom 11 bits slv reg 7 #fix later, this should be 4
+
+//NES controller buttons
+#define LEFT	0
+#define RIGHT	1
+#define DOWN	2
+#define UP		3
+#define START	4
+#define SELECT	5
+#define B_B		6
+#define B_A		7
+
+#define HOLE	1
+#define WALL	2
+
+
+//current highest level
+#define LEVEL_MAX 1
+
+/************************** FSM States ****************************/
+typedef enum {
+    STATE_TITLE,
+    STATE_WAIT_SHOT,
+	STATE_LOAD_LEVEL,
+    STATE_LEVEL_NEXT,
+	STATE_LEVEL_PREV,
+	STATE_MOVE_BALL,
+	STATE_CHECK_WALL,
+	STATE_CHECK_HOLE,
+	STATE_FRICTION,
+	STATE_CHECK_BALL_VEL,
+	STATE_WAIT_ANIM,
+	STATE_WIN
+} FSMstate;
 
 
 /************************** Function Prototypes ****************************/
@@ -69,5 +106,27 @@ void update_level(int level);
  */
 void update_win(bool win);
 
+/**
+ * @brief calculate ball velocity when ball is hit
+ * @param mouse and ball coords
+ * @return integer with velocity value
+ */
+float velocity_vector_ball(int ball_vec, int mouse_x);
+
+/**
+ * @brief floors negative values, ceilings positive values
+ */
+int absoluteCeil(float val);
+
+/**
+ * @brief functions to handle wall collision calculations
+ */
+float check_collision_x(int ball_x, int ball_y, float vel_x, int level);
+float check_collision_y(int ball_x, int ball_y, float vel_y, int level);
+
+/**
+ * @brief functions to check if ball is in hole
+ */
+bool check_hole(int ball_x, int ball_y, int level);
 
 #endif
