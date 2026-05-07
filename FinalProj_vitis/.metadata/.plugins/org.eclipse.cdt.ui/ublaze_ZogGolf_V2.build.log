@@ -1,4 +1,4 @@
-20:11:26 **** Incremental Build of configuration Debug for project ublaze_ZogGolf_V2 ****
+19:41:28 **** Incremental Build of configuration Debug for project ublaze_ZogGolf_V2 ****
 make all 
 'Building file: ../src/game_main.c'
 'Invoking: MicroBlaze gcc compiler'
@@ -13,9 +13,9 @@ mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/C27Soren.Herzog/ece383/Herzog_ece
 'Invoking: MicroBlaze Print Size'
 mb-size ublaze_ZogGolf_V2.elf  |tee "ublaze_ZogGolf_V2.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  24000	  14440	   3432	  41872	   a390	ublaze_ZogGolf_V2.elf
+  24032	  14456	   3432	  41920	   a3c0	ublaze_ZogGolf_V2.elf
 'Finished building: ublaze_ZogGolf_V2.elf.size'
 ' '
 
-20:11:28 Build Finished (took 1s.591ms)
+19:41:29 Build Finished (took 1s.551ms)
 

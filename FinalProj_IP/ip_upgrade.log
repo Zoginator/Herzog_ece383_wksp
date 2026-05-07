@@ -1,0 +1,58 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May  7 00:50:21 2026
+| Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ZoGolf_DP_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ZoGolf_DP_0_2 (xilinx.com:user:ZoGolf_DP:1.0) from (Rev. 9) to (Rev. 10)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May  7 00:26:52 2026
+| Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ZoGolf_DP_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ZoGolf_DP_0_2 (xilinx.com:user:ZoGolf_DP:1.0) from (Rev. 8) to (Rev. 9)
+
+
+
+
+
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Thu May  7 00:23:37 2026
+| Host         : C27-5CG3121G96 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7a200tsbg484-1
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_ZoGolf_DP_0_2'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_ZoGolf_DP_0_2 (xilinx.com:user:ZoGolf_DP:1.0) from (Rev. 7) to (Rev. 8)
+

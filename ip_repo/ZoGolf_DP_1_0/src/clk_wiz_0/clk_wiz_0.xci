@@ -5,7 +5,7 @@
     "cell_name": "ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks",
     "component_reference": "xilinx.com:ip:clk_wiz:6.0",
     "ip_revision": "15",
-    "gen_directory": "../../../../../../../../users/c27soren.herzog/ece383/herzog_ece383_wksp/lab3/lab3/lab3.tmp/zogolf_dp_v1_0_project/ZoGolf_DP_v1_0_project.gen/sources_1/ip/clk_wiz_0",
+    "gen_directory": "../../../../../../../../users/c27soren.herzog/ece383/herzog_ece383_wksp/finalproj_ip/design_zogolf_v3.tmp/zogolf_dp_v1_0_project/ZoGolf_DP_v1_0_project.gen/sources_1/ip/clk_wiz_0",
     "parameters": {
       "component_parameters": {
         "Component_Name": [ { "value": "clk_wiz_0", "resolve_type": "user", "usage": "all" } ],
@@ -600,7 +600,7 @@
         "IPCONTEXT": [ { "value": "IP_Flow" } ],
         "IPREVISION": [ { "value": "15" } ],
         "MANAGED": [ { "value": "TRUE" } ],
-        "OUTPUTDIR": [ { "value": "../../../../../../../../users/c27soren.herzog/ece383/herzog_ece383_wksp/lab3/lab3/lab3.tmp/zogolf_dp_v1_0_project/ZoGolf_DP_v1_0_project.gen/sources_1/ip/clk_wiz_0" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../../../users/c27soren.herzog/ece383/herzog_ece383_wksp/finalproj_ip/design_zogolf_v3.tmp/zogolf_dp_v1_0_project/ZoGolf_DP_v1_0_project.gen/sources_1/ip/clk_wiz_0" } ],
         "SELECTEDSIMMODEL": [ { "value": "" } ],
         "SHAREDDIR": [ { "value": "." } ],
         "SWVERSION": [ { "value": "2024.2" } ],
