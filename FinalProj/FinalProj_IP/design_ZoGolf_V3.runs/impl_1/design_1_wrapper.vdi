@@ -1,0 +1,1442 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May  7 23:05:44 2026
+# Process ID         : 23688
+# Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1
+# Command line       : vivado.exe -log design_1_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+# Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.vdi
+# Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1\vivado.jou
+# Running On         : C27-5CG3121G96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 26643 MB
+# Available Virtual  : 8301 MB
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:13 . Memory (MB): peak = 439.051 ; gain = 128.074
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Lab3_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Counter_IP_1_0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:02 ; elapsed = 00:00:05 . Memory (MB): peak = 445.320 ; gain = 6.270
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.cache/ip 
+add_files: Time (s): cpu = 00:00:17 ; elapsed = 00:00:36 . Memory (MB): peak = 542.449 ; gain = 97.129
+Command: link_design -top design_1_wrapper -part xc7a200tsbg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.874 . Memory (MB): peak = 870.289 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1084 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/design_1_microblaze_0_0.xdc] for cell 'design_1_i/microblaze_0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0_board.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:54]
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc:54]
+get_clocks: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1707.672 ; gain = 578.000
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_clk_wiz_1_0/design_1_clk_wiz_1_0.xdc] for cell 'design_1_i/clk_wiz_1/inst'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0_board.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc:50]
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_clk_wiz_1_100M_0/design_1_rst_clk_wiz_1_100M_0.xdc] for cell 'design_1_i/rst_clk_wiz_1_100M/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0/user_design/constraints/design_1_mig_7series_0_0.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0_board.xdc] for cell 'design_1_i/mig_7series_0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mig_7series_0_0/design_1_mig_7series_0_0_board.xdc] for cell 'design_1_i/mig_7series_0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0_board.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_uartlite_0_0/design_1_axi_uartlite_0_0.xdc] for cell 'design_1_i/axi_uartlite_0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_0/smartconnect.xdc] for cell 'design_1_i/axi_smc/inst'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_board.xdc] for cell 'design_1_i/util_ds_buf_0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr0_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr0_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr0_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr0/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_1/bd_a878_psr0_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr0/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_2/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_2/bd_a878_psr_aclk_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_2/bd_a878_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_2/bd_a878_psr_aclk_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_3/bd_a878_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_3/bd_a878_psr_aclk1_0_board.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_3/bd_a878_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk1/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/bd_0/ip/ip_3/bd_a878_psr_aclk1_0.xdc] for cell 'design_1_i/axi_smc_1/inst/clk_map/psr_aclk1/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc] for cell 'design_1_i/axi_smc_1/inst'
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:2]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:3]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:4]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:5]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:6]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:7]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:8]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:9]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:10]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:11]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:12]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:14]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:15]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:17]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:18]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:19]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:20]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:21]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:22]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:23]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:24]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:26]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:28]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:29]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:30]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:31]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:32]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:33]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:34]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:35]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:36]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:37]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:38]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:39]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-2' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:40]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:41]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:42]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-10' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:43]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:44]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:45]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-4' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:46]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:47]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-13' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc:48]
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_axi_smc_1_0/smartconnect.xdc] for cell 'design_1_i/axi_smc_1/inst'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0_board.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-11' -to list should not be empty. [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc:50]
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_rst_mig_7series_0_100M_0/design_1_rst_mig_7series_0_100M_0.xdc] for cell 'design_1_i/rst_mig_7series_0_100M/U0'
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst'
+INFO: [Timing 38-2] Deriving generated clocks [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.xdc:54]
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_ZoGolf_DP_0_2/src/clk_wiz_0/clk_wiz_0.xdc] for cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst'
+Parsing XDC File [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/constrs_1/imports/Desktop/FinalProj.xdc]
+Finished Parsing XDC File [C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/constrs_1/imports/Desktop/FinalProj.xdc]
+Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+Finished Parsing XDC File [c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_mdm_1_0/design_1_mdm_1_0.xdc] for cell 'design_1_i/mdm_1/U0'
+INFO: [Project 1-1714] 104 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Generating merged BMM file for the design top 'design_1_wrapper'...
+INFO: [Memdata 28-144] Successfully populated the BRAM INIT strings from the following elf files: c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.gen/sources_1/bd/design_1/ip/design_1_microblaze_0_0/data/mb_bootloop_le.elf 
+INFO: [Project 1-1687] 50 scoped IP constraints or related sub-commands were skipped due to synthesis logic optimizations usually triggered by constant connectivity or unconnected output pins. To review the skipped constraints and messages, run the command 'set_param netlist.IPMsgFiltering false' before opening the design.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1707.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 429 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+  IOBUFDS_DIFF_OUT_INTERMDISABLE => IOBUFDS_DIFF_OUT_INTERMDISABLE (IBUFDS_INTERMDISABLE_INT(x2), INV, OBUFTDS(x2)): 2 instances
+  IOBUF_INTERMDISABLE => IOBUF_INTERMDISABLE (IBUF_INTERMDISABLE, OBUFT): 16 instances
+  LUT6_2 => LUT6_2 (LUT5, LUT6): 138 instances
+  OBUFDS => OBUFDS: 4 instances
+  OBUFDS => OBUFDS_DUAL_BUF (INV, OBUFDS(x2)): 1 instance 
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 225 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 38 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 2 instances
+
+18 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:51 . Memory (MB): peak = 1707.672 ; gain = 1165.223
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 1707.672 ; gain = 0.000
+
+Starting Cache Timing Information Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Cache Timing Information Task | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1707.672 ; gain = 0.000
+
+Starting Logic Optimization Task
+
+Phase 1 Initialization
+
+Phase 1.1 Core Generation And Design Setup
+Phase 1.1 Core Generation And Design Setup | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Phase 1.2 Setup Constraints And Sort Netlist
+Phase 1.2 Setup Constraints And Sort Netlist | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.078 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Phase 1 Initialization | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.082 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Phase 2 Timer Update And Timing Data Collection
+
+Phase 2.1 Timer Update
+Phase 2.1 Timer Update | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.623 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Phase 2.2 Timing Data Collection
+Phase 2.2 Timing Data Collection | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.723 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Phase 2 Timer Update And Timing Data Collection | Checksum: 1b4643d31
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.727 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Phase 3 Retarget
+INFO: [Opt 31-1851] Number of loadless carry chains removed were: 0
+INFO: [Opt 31-1834] Total Chains To Be Transformed Were: 0 AND Number of Transformed insts Created are: 0
+INFO: [Opt 31-1566] Pulled 12 inverters resulting in an inversion of 148 pins
+INFO: [Opt 31-138] Pushed 27 inverter(s) to 160 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 3 Retarget | Checksum: 198234bf8
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Retarget | Checksum: 198234bf8
+INFO: [Opt 31-389] Phase Retarget created 36 cells and removed 122 cells
+INFO: [Opt 31-1021] In phase Retarget, 144 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 4 Constant propagation | Checksum: 1bc211c03
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Constant propagation | Checksum: 1bc211c03
+INFO: [Opt 31-389] Phase Constant propagation created 51 cells and removed 119 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 124 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 5 Sweep
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2098.328 ; gain = 0.000
+INFO: [Constraints 18-11670] Building netlist checker database with flags, 0x8
+Done building netlist checker database: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Phase 5 Sweep | Checksum: 1efc03c05
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Sweep | Checksum: 1efc03c05
+INFO: [Opt 31-389] Phase Sweep created 4 cells and removed 238 cells
+INFO: [Opt 31-1021] In phase Sweep, 164 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 6 BUFG optimization
+INFO: [Opt 31-194] Inserted BUFG design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG_inst to drive 40 load(s) on clock net design_1_i/mdm_1/U0/Use_E2.BSCAN_I/Dbg_Update_0_BUFG
+INFO: [Opt 31-193] Inserted 1 BUFG(s) on clock nets
+Phase 6 BUFG optimization | Checksum: 1b57c0c24
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2098.328 ; gain = 0.000
+BUFG optimization | Checksum: 1b57c0c24
+INFO: [Opt 31-662] Phase BUFG optimization created 1 cells of which 1 are BUFGs and removed 0 cells.
+
+Phase 7 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 7 Shift Register Optimization | Checksum: 1b57c0c24
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Shift Register Optimization | Checksum: 1b57c0c24
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 8 Post Processing Netlist
+Phase 8 Post Processing Netlist | Checksum: 1b57c0c24
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Post Processing Netlist | Checksum: 1b57c0c24
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 139 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 9 Finalization
+
+Phase 9.1 Finalizing Design Cores and Updating Shapes
+Phase 9.1 Finalizing Design Cores and Updating Shapes | Checksum: 20973a919
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Phase 9.2 Verifying Netlist Connectivity
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Phase 9.2 Verifying Netlist Connectivity | Checksum: 20973a919
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Phase 9 Finalization | Checksum: 20973a919
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2098.328 ; gain = 0.000
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |              36  |             122  |                                            144  |
+|  Constant propagation         |              51  |             119  |                                            124  |
+|  Sweep                        |               4  |             238  |                                            164  |
+|  BUFG optimization            |               1  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                            139  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+Ending Logic Optimization Task | Checksum: 20973a919
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 2098.328 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 0 BRAM(s) out of a total of 43 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Pwropt 34-201] Structural ODC has moved 4 WE to EN ports
+Number of BRAM Ports augmented: 9 newly gated: 8 Total Ports: 86
+Number of Flops added for Enable Generation: 3
+
+Ending PowerOpt Patch Enables Task | Checksum: 248f00600
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.291 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 248f00600
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2380.059 ; gain = 281.730
+
+Starting Final Cleanup Task
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Ending Logic Optimization Task | Checksum: 246209760
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Ending Final Cleanup Task | Checksum: 246209760
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Ending Netlist Obfuscation Task | Checksum: 246209760
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+52 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:28 . Memory (MB): peak = 2380.059 ; gain = 672.387
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+Command: report_drc -file design_1_wrapper_drc_opted.rpt -pb design_1_wrapper_drc_opted.pb -rpx design_1_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_drc_opted.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.059 ; gain = 0.000
+generate_parallel_reports: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Wrote PlaceDB: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.042 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Writing XDEF routing.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.079 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.087 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.162 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-83] Releasing license: Implementation
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Starting Placer Task
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: 19beefe16
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 20642de0a
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 14333d319
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 14333d319
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 14333d319
+
+Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 2315e7045
+
+Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 211a0a8e4
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: 138e3fca7
+
+Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2.4 Global Place Phase1
+Phase 2.4 Global Place Phase1 | Checksum: 183d635fd
+
+Time (s): cpu = 00:00:31 ; elapsed = 00:00:27 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2.5 Global Place Phase2
+
+Phase 2.5.1 UpdateTiming Before Physical Synthesis
+Phase 2.5.1 UpdateTiming Before Physical Synthesis | Checksum: 1bfdff338
+
+Time (s): cpu = 00:00:32 ; elapsed = 00:00:29 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 2.5.2 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 49 LUTNM shape to break, 1123 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 7, two critical 42, total 49, new lutff created 4
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 541 nets or LUTs. Breaked 49 LUTs, combined 492 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1401] No candidate cells found for Shift Register optimization.
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |           49  |            492  |                   541  |           0  |           1  |  00:00:01  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |           49  |            492  |                   541  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.5.2 Physical Synthesis In Placer | Checksum: 25078994d
+
+Time (s): cpu = 00:00:35 ; elapsed = 00:00:31 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 2.5 Global Place Phase2 | Checksum: 1e78e6fb7
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 2 Global Placement | Checksum: 1e78e6fb7
+
+Time (s): cpu = 00:00:36 ; elapsed = 00:00:32 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 21db0c81f
+
+Time (s): cpu = 00:00:37 ; elapsed = 00:00:33 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 2945f2737
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:35 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 2ccc28faf
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 1edad25e1
+
+Time (s): cpu = 00:00:39 ; elapsed = 00:00:36 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 1ddc48537
+
+Time (s): cpu = 00:00:43 ; elapsed = 00:00:41 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 2b52ff983
+
+Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 266e06da5
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:51 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 23b3853f0
+
+Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3.9 Fast Optimization
+Phase 3.9 Fast Optimization | Checksum: 237f9debb
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:01:01 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 237f9debb
+
+Time (s): cpu = 00:00:57 ; elapsed = 00:01:01 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 23ea7d29a
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-1.654 | TNS=-26.076 |
+Phase 1 Physical Synthesis Initialization | Checksum: 16549686e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.915 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Place 46-56] BUFG insertion identified 0 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 0, Skipped due to Timing Degradation: 0, Skipped due to netlist editing failed: 0.
+Ending Physical Synthesis Task | Checksum: 24047ca0e
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 4.1.1.1 BUFG Insertion | Checksum: 23ea7d29a
+
+Time (s): cpu = 00:01:05 ; elapsed = 00:01:09 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=-0.550. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: e00d49e6
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: e00d49e6
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: e00d49e6
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:44 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                1x1|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                1x1|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: e00d49e6
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 4.3 Placer Reporting | Checksum: e00d49e6
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: f7fb0601
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Ending Placer Task | Checksum: e9ec3ef8
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:45 . Memory (MB): peak = 2380.059 ; gain = 0.000
+95 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:01:39 ; elapsed = 00:01:50 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_control_sets, report_io, report_utilization" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_io -file design_1_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.128 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_control_sets -verbose -file design_1_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.158 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_utilization -file design_1_wrapper_utilization_placed.rpt -pb design_1_wrapper_utilization_placed.pb
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.142 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Command: phys_opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+
+Starting Initial Update Timing Task
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Vivado_Tcl 4-1435] PhysOpt_Tcl_Interface Runtime Before Starting Physical Synthesis Task | CPU: 5.00s |  WALL: 4.51s
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.550 | TNS=-11.088 |
+Phase 1 Physical Synthesis Initialization | Checksum: 19ce4c283
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.550 | TNS=-11.088 |
+
+Phase 2 DSP Register Optimization
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Phase 2 DSP Register Optimization | Checksum: 19ce4c283
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 3 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.550 | TNS=-11.088 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_blue/Q[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_4_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.536 | TNS=-10.933 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_4__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[2]_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.512 | TNS=-10.864 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/dc_bias_reg[3]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias_reg[0]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_17__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.507 | TNS=-10.818 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_blue/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_2_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_blue/dc_bias_reg[1]_1. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_blue/dc_bias_reg[1]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.503 | TNS=-10.820 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_blue/dc_bias_reg[1]_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.476 | TNS=-10.793 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[8]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/buttons_reg[7]_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/buttons_reg[7]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.460 | TNS=-10.730 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[4]_i_3__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_6. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.437 | TNS=-10.586 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/slv_reg2_reg[1]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/slv_reg2_reg[1]_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/encoded[2]_i_3__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_15. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.420 | TNS=-10.565 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_red/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias_reg[0]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_4. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[0]_i_2__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.411 | TNS=-10.472 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_7__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_17_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[8]_2. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[9]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[9]_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/dc_bias[3]_i_9__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.409 | TNS=-10.390 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/Q[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[1]_i_4_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[1]_i_13_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.408 | TNS=-10.388 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_9_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[3]_i_2_n_0. Replicated 2 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[3]_i_2_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.390 | TNS=-10.250 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[3]_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.384 | TNS=-10.261 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[9]_2.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/encoded[4]_i_7
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[9]_2. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.375 | TNS=-10.244 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 20 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level7/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.370 | TNS=-9.931 |
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.367 | TNS=-9.922 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_0_repN. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[3]_i_3_replica_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/buttons_reg[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.344 | TNS=-9.699 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/dc_bias_reg[0]_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/dc_bias_reg[0]_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/dc_bias[3]_i_18_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/slv_reg4_reg[0]_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.339 | TNS=-9.694 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry__0_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[10].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_i_3__0
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[10]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.339 | TNS=-9.575 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 12 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_20_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.327 | TNS=-9.563 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_7.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/dc_bias[3]_i_23__0_comp
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.326 | TNS=-9.518 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_3_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_11_n_0.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_11
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_11_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.318 | TNS=-9.510 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_11_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]_1. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 5 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[8]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.318 | TNS=-9.493 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/encoded[0]_i_6__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level0/TopHalfMemory/encoded[0]_i_13
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level0/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.315 | TNS=-8.986 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/RDADDR[7].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_i_6
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/RDADDR[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.306 | TNS=-8.798 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/DOADO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[9]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_4__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.281 | TNS=-8.616 |
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_5. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.277 | TNS=-8.364 |
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0_4. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.276 | TNS=-7.556 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_i_2__0
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.274 | TNS=-7.529 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 6 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/buttons_reg[7]_0_repN. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.270 | TNS=-7.525 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[1]_i_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[2]_i_4__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[2]_i_4__0_n_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/encoded[2]_i_4__0_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.262 | TNS=-7.512 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level0/minusOp[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level0/minusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/ADDRARDADDR[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_2__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/coords_to_BRAM_address1[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/coords_to_BRAM_address1__25_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[4]_6[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/processQ_reg[6][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/coords_to_BRAM_address1_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[2]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[12].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__2
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[12]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.261 | TNS=-7.429 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/processQ_reg[9]_0. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/h_counter/dc_bias[3]_i_9__1_comp_1.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_7. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.258 | TNS=-7.378 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[0]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_13__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.258 | TNS=-7.219 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry__1_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/RDADDR[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21_n_0.  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.256 | TNS=-7.128 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry_n_5. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[6].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_i_7__0
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.256 | TNS=-6.872 |
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_5. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_5. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.252 | TNS=-6.871 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 5 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_5_repN_1. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.251 | TNS=-6.845 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[0]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_10_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-6.754 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/encoded[0]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/D[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/DOADO[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[9].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0__0_i_1
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[9]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-6.403 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[10]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_3__2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-6.066 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_9
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-6.014 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_9_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-5.792 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[2]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_11__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-5.629 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[8]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_5__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-5.435 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[2]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_8_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_21_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-4.749 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[8].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0__0_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-4.741 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 21 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[6]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-4.401 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[12]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-4.297 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[3]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_10__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.989 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[3].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0__0_i_7
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.894 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level3/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level3/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level3/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_0[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[11]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_2__2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.453 |
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[7]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_6__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.271 |
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_4. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_4. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.183 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/position[row][0].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[0]
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/position[row][0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.178 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[7].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0__0_i_3
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.158 |
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[1].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0__0_i_9
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-3.113 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_4_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/P[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[7]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[7]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.975 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_4__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/encoded[0]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/D[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/DOADO[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[0]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.965 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 15 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[2]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.865 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/DOADO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_15__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/ADDRARDADDR[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/coords_to_BRAM_address1[10]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[4]_6[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/processQ_reg[6][1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[2]_4[2]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[1]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[1].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[2]
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.784 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry__1_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/RDADDR[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[8].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_2
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.764 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.764 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.041 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 3 Critical Path Optimization | Checksum: 12a287d1a
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2380.059 ; gain = 0.000
+
+Phase 4 Critical Path Optimization
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.764 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_4__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-134] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Rewiring did not optimize the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/encoded[0]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/D[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/DOADO[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[6]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-81] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]. Replicated 1 times.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.639 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry__1_n_7. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/minusOp_carry_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_score_BRAM/BottomHalfMemory/RDADDR[12]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-663] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1].  Re-placed instance design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_9_comp
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[1]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.604 |
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-614] Property 'READ_WIDTH_B' on BRAM cell 'design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl' Port 'B' is 0. Skip BRAM Register Optimization on the port
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level4/BottomHalfMemory/DOADO[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/minusOp_carry__1[1]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_12__1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/sdp_bl.ramb36_dp_bl.ram36_bl_i_1__1_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.463 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[9]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[9]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_1_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_19_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.349 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 8 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[3]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.344 |
+INFO: [Physopt 32-608] Optimized 1 net.  Swapped 14 pins.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[8]. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.288 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[8]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-710] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/A[8]. Critical path length was reduced through logic transformation on cell design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_2_comp.
+INFO: [Physopt 32-735] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/detail_to_BRAM_address0_i_19_n_0. Optimization improves timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.169 |
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_dvid/TDMS_encoder_green/Q[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/clk_wiz_1/inst/clk_out1_design_1_clk_wiz_1_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[3]_i_2__0_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/dc_bias[2]_i_4__1_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/slv_reg4_reg[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/processQ_reg[9]_11. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level1/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/sdp_bl.ramb36_dp_bl.ram36_bl_3. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level9/TopHalfMemory/encoded[0]_i_21_n_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/D[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/level_selctor_inst/inst_level8/TopHalfMemory/DOADO[3]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/bottom_BRAM_out[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/mmcm_adv_inst_display_clocks/inst/clk_out1_clk_wiz_0. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/minusOp_carry__0_n_4. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_2[0]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_legend_BRAM/BottomHalfMemory/RDADDR[11]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_6[7]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/inst_color_mapper/detail_to_BRAM_address0__0_0[5]. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-702] Processed net design_1_i/ZoGolf_DP_0/U0/ZoGolf_DP_slave_lite_v1_0_S00_AXI_inst/ZoGolf_DP_uut/video_inst/Inst_vga_signal_gen/v_counter/processQ_reg[9]_1[4]_repN. Optimizations did not improve timing on the net.
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.250 | TNS=-2.169 |
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Phase 4 Critical Path Optimization | Checksum: 12a287d1a
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Physopt 32-603] Post Physical Optimization Timing Summary | WNS=-0.250 | TNS=-2.169 |
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization   |  WNS Gain (ns)  |  TNS Gain (ns)  |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+|  DSP Register   |          0.000  |          0.000  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Critical Path  |          0.300  |          8.919  |           11  |              0  |                    69  |           0  |           2  |  00:00:23  |
+|  Total          |          0.300  |          8.919  |           11  |              0  |                    69  |           0  |           3  |  00:00:23  |
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Ending Physical Synthesis Task | Checksum: 257d8950d
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:26 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+495 Infos, 46 Warnings, 0 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.127 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.056 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.062 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2380.059 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 2380.059 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 9f8ad1c5 ConstDB: 0 ShapeSum: 353abb53 RouteDB: 981aeb64
+Post Restoration Checksum: NetGraph: fdb0cd31 | NumContArr: 26674a15 | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 2a96a0c80
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:11 . Memory (MB): peak = 2540.270 ; gain = 160.211
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 2a96a0c80
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:12 . Memory (MB): peak = 2540.777 ; gain = 160.719
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 2a96a0c80
+
+Time (s): cpu = 00:01:24 ; elapsed = 00:01:12 . Memory (MB): peak = 2540.777 ; gain = 160.719
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 273d0934d
+
+Time (s): cpu = 00:01:32 ; elapsed = 00:01:20 . Memory (MB): peak = 2629.633 ; gain = 249.574
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.169 | TNS=-0.768 | WHS=-0.369 | THS=-270.886|
+
+
+Phase 2.4 Update Timing for Bus Skew
+
+Phase 2.4.1 Update Timing
+Phase 2.4.1 Update Timing | Checksum: 25a2d556b
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:26 . Memory (MB): peak = 2640.332 ; gain = 260.273
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.169 | TNS=-2.217 | WHS=-0.295 | THS=-4.521 |
+
+Phase 2.4 Update Timing for Bus Skew | Checksum: 25a2d556b
+
+Time (s): cpu = 00:01:38 ; elapsed = 00:01:26 . Memory (MB): peak = 2645.824 ; gain = 265.766
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.000870533 %
+  Global Horizontal Routing Utilization  = 0.00181758 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 22111
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 22110
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 25d93d305
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:27 . Memory (MB): peak = 2662.199 ; gain = 282.141
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 25d93d305
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:01:27 . Memory (MB): peak = 2662.199 ; gain = 282.141
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 22acfec04
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:35 . Memory (MB): peak = 2669.094 ; gain = 289.035
+Phase 4 Initial Routing | Checksum: 22acfec04
+
+Time (s): cpu = 00:01:51 ; elapsed = 00:01:35 . Memory (MB): peak = 2669.094 ; gain = 289.035
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 2093
+ Number of Nodes with overlaps = 358
+ Number of Nodes with overlaps = 151
+ Number of Nodes with overlaps = 52
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 19
+ Number of Nodes with overlaps = 7
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.986 | TNS=-11.543| WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 28a171759
+
+Time (s): cpu = 00:02:19 ; elapsed = 00:02:06 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 5.2 Global Iteration 1
+ Number of Nodes with overlaps = 544
+ Number of Nodes with overlaps = 179
+ Number of Nodes with overlaps = 42
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-1.310 | TNS=-12.588| WHS=N/A    | THS=N/A    |
+
+Phase 5.2 Global Iteration 1 | Checksum: 24e6d7b4d
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:25 . Memory (MB): peak = 2692.965 ; gain = 312.906
+Phase 5 Rip-up And Reroute | Checksum: 24e6d7b4d
+
+Time (s): cpu = 00:02:38 ; elapsed = 00:02:25 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 2762febd0
+
+Time (s): cpu = 00:02:39 ; elapsed = 00:02:26 . Memory (MB): peak = 2692.965 ; gain = 312.906
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.986 | TNS=-11.543| WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 6.1 Delay CleanUp | Checksum: 18722507b
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:02:28 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 18722507b
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:02:28 . Memory (MB): peak = 2692.965 ; gain = 312.906
+Phase 6 Delay and Skew Optimization | Checksum: 18722507b
+
+Time (s): cpu = 00:02:42 ; elapsed = 00:02:28 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.986 | TNS=-10.941| WHS=0.013  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 208a105a0
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:29 . Memory (MB): peak = 2692.965 ; gain = 312.906
+Phase 7 Post Hold Fix | Checksum: 208a105a0
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:29 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 1.73953 %
+  Global Horizontal Routing Utilization  = 2.5001 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+
+--GLOBAL Congestion:
+Utilization threshold used for congestion level computation: 0.85
+Congestion Report
+North Dir 1x1 Area, Max Cong = 55.8559%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 58.5586%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 73.5294%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 60.2941%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 208a105a0
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:29 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 208a105a0
+
+Time (s): cpu = 00:02:43 ; elapsed = 00:02:30 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 2b2c1d29d
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:31 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 2b2c1d29d
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:32 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=-0.986 | TNS=-10.941| WHS=0.013  | THS=0.000  |
+
+WARNING: [Route 35-328] Router estimated timing not met.
+Resolution: For a complete and accurate timing signoff, report_timing_summary must be run after route_design. Alternatively, route_design can be run with the -timing_summary option to enable a complete timing signoff at the end of route_design.
+Phase 12 Post Router Timing | Checksum: 2b2c1d29d
+
+Time (s): cpu = 00:02:45 ; elapsed = 00:02:32 . Memory (MB): peak = 2692.965 ; gain = 312.906
+Total Elapsed time in route_design: 151.651 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: e176d8d9
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:02:32 . Memory (MB): peak = 2692.965 ; gain = 312.906
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: e176d8d9
+
+Time (s): cpu = 00:02:46 ; elapsed = 00:02:32 . Memory (MB): peak = 2692.965 ; gain = 312.906
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+511 Infos, 47 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:02:48 ; elapsed = 00:02:34 . Memory (MB): peak = 2692.965 ; gain = 312.906
+INFO: [Vivado 12-24828] Executing command : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+Command: report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 2692.965 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_1_wrapper_methodology_drc_routed.rpt -pb design_1_wrapper_methodology_drc_routed.pb -rpx design_1_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 2692.965 ; gain = 0.000
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+report_timing_summary: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2692.965 ; gain = 0.000
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file design_1_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file design_1_wrapper_route_status.rpt -pb design_1_wrapper_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Command: report_power -file design_1_wrapper_power_routed.rpt -pb design_1_wrapper_power_summary_routed.pb -rpx design_1_wrapper_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+528 Infos, 49 Warnings, 1 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 2721.160 ; gain = 28.195
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file design_1_wrapper_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file design_1_wrapper_bus_skew_routed.rpt -pb design_1_wrapper_bus_skew_routed.pb -rpx design_1_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:48 ; elapsed = 00:00:34 . Memory (MB): peak = 2725.102 ; gain = 32.137
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.113 . Memory (MB): peak = 2755.172 ; gain = 12.152
+Wrote PlaceDB: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2766.102 ; gain = 23.082
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2766.102 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.340 . Memory (MB): peak = 2766.102 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 2766.102 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 2766.102 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:07 ; elapsed = 00:00:03 . Memory (MB): peak = 2766.102 ; gain = 23.082
+INFO: [Common 17-1381] The checkpoint 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 2766.102 ; gain = 41.000
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s01_nodes/s01_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s01_nodes/s01_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s00_nodes/s00_w_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s00_nodes/s00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s00_nodes/s00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/s00_nodes/s00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[0].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_w_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_r_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_b_node/inst/inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_aw_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+INFO: [Memdata 28-167] Found XPM memory block design_1_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to distributed. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the design_1_i/axi_smc_1/inst/m00_nodes/m00_ar_node/inst/inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory/xpm_memory_base_inst block.
+Command: write_bitstream -force design_1_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a200t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./design_1_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+557 Infos, 49 Warnings, 1 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:54 ; elapsed = 00:00:36 . Memory (MB): peak = 3329.137 ; gain = 563.035
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 23:14:53 2026...

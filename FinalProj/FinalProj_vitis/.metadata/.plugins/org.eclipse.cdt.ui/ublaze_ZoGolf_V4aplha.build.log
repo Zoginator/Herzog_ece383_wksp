@@ -1,0 +1,7 @@
+21:42:08 **** Clean-only build of configuration Debug for project ublaze_ZoGolf_V4aplha ****
+make clean 
+rm -rf  ./src/game_functions.o ./src/game_main.o ./src/level_data.o ./src/platform.o  ./src/game_functions.d ./src/game_main.d ./src/level_data.d ./src/platform.d  ublaze_ZoGolf_V4aplha.elf.size  ublaze_ZoGolf_V4aplha.elf
+' '
+
+21:42:08 Build Finished (took 278ms)
+

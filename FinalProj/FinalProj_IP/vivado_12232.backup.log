@@ -1,0 +1,154 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Thu May  7 07:35:05 2026
+# Process ID         : 12232
+# Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent17932 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj_IP\design_ZoGolf_V3.xpr
+# Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/vivado.log
+# Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP\vivado.jou
+# Running On         : C27-5CG3121G96
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 7 PRO 6850U with Radeon Graphics     
+# CPU Frequency      : 2695 MHz
+# CPU Physical cores : 8
+# CPU Logical cores  : 16
+# Host memory        : 16442 MB
+# Swap memory        : 10200 MB
+# Total Virtual      : 26643 MB
+# Available Virtual  : 16449 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_V3.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_1/ip/design_ZoGolf_1_mig_7series_0_0/mig_a.prj'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Lab3_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Counter_IP_1_0'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+INFO: [Project 1-5579] Found utility IPs instantiated in one or more block designs which have equivalent inline hdl with improved performance and reduced diskspace. It is recommended to migrate these utility IPs to inline hdl using the command upgrade_project -migrate_to_inline_hdl. The utility IPs may be deprecated in future releases. More information on inline hdl is available in UG994.
+open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:45 . Memory (MB): peak = 1406.508 ; gain = 322.324
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:microblaze:11.0 - microblaze_0
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - dlmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - ilmb_bram_if_cntlr
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding component instance block -- xilinx.com:ip:mdm:3.2 - mdm_1
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+Adding component instance block -- xilinx.com:ip:mig_7series:4.2 - mig_7series_0
+Adding component instance block -- xilinx.com:ip:axi_uartlite:2.0 - axi_uartlite_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc
+Adding component instance block -- xilinx.com:ip:util_ds_buf:2.2 - util_ds_buf_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - axi_smc_1
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - rst_mig_7series_0_100M
+Adding component instance block -- xilinx.com:user:ZoGolf_DP:1.0 - ZoGolf_DP_0
+Successfully read diagram <design_1> from block design file <C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 1550.949 ; gain = 131.484
+ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'c:/users/c27soren.herzog/ece383/herzog_ece383_wksp/finalproj_ip/design_zogolf_v3.tmp/zogolf_dp_v1_0_project'
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2024.2/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/2.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190:part0:3.3 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190/production/3.3/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.0/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.1/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vck190_newl:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vck190_newl/production/1.2/board.xml as part xcvc1902-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:2.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/2.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180:part0:3.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180/production/3.2/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.0/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vmk180_newl:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vmk180_newl/production/1.1/board.xml as part xcvm1802-vsva2197-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.0 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.1 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120:part0:1.2 available at C:/Xilinx/Vivado/2024.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/production/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s specified in board_part file is either invalid or not available
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1571.531 ; gain = 5.492
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Lab3_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/C27Soren.Herzog/Downloads/ece383_code-main/ece383_code-main/ip_repo/My_Counter_IP_1_0'.
+INFO: [IP_Flow 19-795] Syncing license key meta-data
+INFO: [Device 21-403] Loading part xc7a200tsbg484-1
+ipx::edit_ip_in_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 1846.734 ; gain = 280.695
+update_compile_order -fileset sources_1
+current_project design_ZoGolf_V3
+close_project
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\ZoGolf_DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\hdl\ZoGolf_DP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\ZoGolf_DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\hdl\ZoGolf_DP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\ZoGolf_DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\hdl\ZoGolf_DP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\ZoGolf_DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\hdl\ZoGolf_DP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\video.vhdl:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\ZoGolf_DataPath.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\hdl\ZoGolf_DP.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\color_mapper.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\BRAM_Level_Selector.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level1_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [c:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\ip_repo\ZoGolf_DP_1_0\src\level2_BRAM_Pair.vhd:]
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu May  7 09:09:48 2026...

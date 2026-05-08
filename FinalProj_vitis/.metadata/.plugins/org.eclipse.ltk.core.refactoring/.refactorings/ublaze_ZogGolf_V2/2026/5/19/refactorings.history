@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename resource &apos;ublaze_ZogGolf_V2/src/helloworld.c&apos; to &apos;game_main.c&apos;" description="Rename resource &apos;helloworld.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/helloworld.c" name="game_main.c" stamp="1778009968894" updateReferences="true"/>
-</session>

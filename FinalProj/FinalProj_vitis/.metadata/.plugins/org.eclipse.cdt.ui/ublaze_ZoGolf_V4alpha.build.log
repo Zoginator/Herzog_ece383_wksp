@@ -1,0 +1,36 @@
+21:55:06 **** Build of configuration Debug for project ublaze_ZoGolf_V4alpha ****
+make all 
+'Building file: ../src/game_functions.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_functions.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V4alpha_wrapper/export/ZoGolf_V4alpha_wrapper/sw/ZoGolf_V4alpha_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game_functions.d" -MT"src/game_functions.o" -o "src/game_functions.o" "../src/game_functions.c"
+'Finished building: ../src/game_functions.c'
+' '
+'Building file: ../src/game_main.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/game_main.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V4alpha_wrapper/export/ZoGolf_V4alpha_wrapper/sw/ZoGolf_V4alpha_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/game_main.d" -MT"src/game_main.o" -o "src/game_main.o" "../src/game_main.c"
+'Finished building: ../src/game_main.c'
+' '
+'Building file: ../src/level_data.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/level_data.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V4alpha_wrapper/export/ZoGolf_V4alpha_wrapper/sw/ZoGolf_V4alpha_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/level_data.d" -MT"src/level_data.o" -o "src/level_data.o" "../src/level_data.c"
+'Finished building: ../src/level_data.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: MicroBlaze gcc compiler'
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -IC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V4alpha_wrapper/export/ZoGolf_V4alpha_wrapper/sw/ZoGolf_V4alpha_wrapper/standalone_microblaze_0/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building target: ublaze_ZoGolf_V4alpha.elf'
+'Invoking: MicroBlaze gcc linker'
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V4alpha_wrapper/export/ZoGolf_V4alpha_wrapper/sw/ZoGolf_V4alpha_wrapper/standalone_microblaze_0/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "ublaze_ZoGolf_V4alpha.elf"  ./src/game_functions.o ./src/game_main.o ./src/level_data.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: ublaze_ZoGolf_V4alpha.elf'
+' '
+'Invoking: MicroBlaze Print Size'
+mb-size ublaze_ZoGolf_V4alpha.elf  |tee "ublaze_ZoGolf_V4alpha.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  24640	 129704	   3432	 157776	  26850	ublaze_ZoGolf_V4alpha.elf
+'Finished building: ublaze_ZoGolf_V4alpha.elf.size'
+' '
+
+21:55:11 Build Finished (took 4s.526ms)
+
