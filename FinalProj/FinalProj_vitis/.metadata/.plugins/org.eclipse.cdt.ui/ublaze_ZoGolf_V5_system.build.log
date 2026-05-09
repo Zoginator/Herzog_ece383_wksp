@@ -1,0 +1,6 @@
+21:14:43 **** Build of configuration Debug for project ublaze_ZoGolf_V5_system ****
+make all 
+Skipping SD card image generation. Reason: "The system project only has applications for microblaze processors."
+
+21:14:44 Build Finished (took 399ms)
+

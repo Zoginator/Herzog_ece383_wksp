@@ -3,10 +3,10 @@
 # SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
 # IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
 # SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
-# Start of session at: Thu May  7 19:40:23 2026
-# Process ID         : 27068
+# Start of session at: Fri May  8 20:45:14 2026
+# Process ID         : 20976
 # Current directory  : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP
-# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent33088 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_IP\design_ZoGolf_V3.xpr
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent26448 C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_IP\design_ZoGolf_V3.xpr
 # Log file           : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/vivado.log
 # Journal file       : C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP\vivado.jou
 # Running On         : C27-5CG3121G96
@@ -19,107 +19,55 @@
 # Host memory        : 16442 MB
 # Swap memory        : 10200 MB
 # Total Virtual      : 26643 MB
-# Available Virtual  : 8197 MB
+# Available Virtual  : 7821 MB
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.xpr
 update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
 open_bd_design {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/bd/design_1/design_1.bd}
 ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
 update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 15 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:ZoGolf_DP:1.0 [get_ips  design_1_ZoGolf_DP_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_ZoGolf_DP_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
+close_project
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+updatemem -force --meminfo your_design.mmi --data your_software.elf --bit input.bit --proc dummy --out output_with_elf.bit
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+export_ip_user_files -of_objects  [get_files C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/imports/Debug/ublaze_ZoGolf_V5.elf] -no_script -reset -force -quiet
+remove_files  C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/imports/Debug/ublaze_ZoGolf_V5.elf
+import_files -force -norecurse C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+set_property SCOPED_TO_REF design_1 [get_files -all -of_objects [get_fileset sources_1] {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/imports/Debug/ublaze_ZoGolf_V5.elf}]
+set_property SCOPED_TO_CELLS { microblaze_0 } [get_files -all -of_objects [get_fileset sources_1] {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.srcs/sources_1/imports/Debug/ublaze_ZoGolf_V5.elf}]
+reset_run impl_1 -prev_step 
 launch_runs impl_1 -to_step write_bitstream -jobs 8
 wait_on_run impl_1
-ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 16 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:ZoGolf_DP:1.0 [get_ips  design_1_ZoGolf_DP_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_ZoGolf_DP_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 17 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:ZoGolf_DP:1.0 [get_ips  design_1_ZoGolf_DP_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_ZoGolf_DP_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-write_hw_platform -fixed -include_bit -force -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/ZoGolf_V4alpha_wrapper.xsa
-ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 18 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -scan_changes
-report_ip_status -name ip_status
-upgrade_ip -vlnv xilinx.com:user:ZoGolf_DP:1.0 [get_ips  design_1_ZoGolf_DP_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_ZoGolf_DP_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-write_hw_platform -fixed -include_bit -force -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/ZoGolf_V5_wrapper.xsa
-ipx::edit_ip_in_project -upgrade true -name ZoGolf_DP_v1_0_project -directory C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.tmp/ZoGolf_DP_v1_0_project c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0/component.xml
-update_compile_order -fileset sources_1
-ipx::merge_project_changes files [ipx::current_core]
-set_property core_revision 19 [ipx::current_core]
-ipx::update_source_project_archive -component [ipx::current_core]
-ipx::create_xgui_files [ipx::current_core]
-ipx::update_checksums [ipx::current_core]
-ipx::check_integrity [ipx::current_core]
-ipx::save_core [ipx::current_core]
-ipx::move_temp_component_back -component [ipx::current_core]
-close_project -delete
-update_ip_catalog -rebuild -repo_path c:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/ip_repo/ZoGolf_DP_1_0
-report_ip_status -name ip_status 
-upgrade_ip -vlnv xilinx.com:user:ZoGolf_DP:1.0 [get_ips  design_1_ZoGolf_DP_0_2] -log ip_upgrade.log
-export_ip_user_files -of_objects [get_ips design_1_ZoGolf_DP_0_2] -no_script -sync -force -quiet
-report_ip_status -name ip_status 
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-write_hw_platform -fixed -include_bit -force -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/ZoGolf_V5_wrapper.xsa
+set_property PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_IP/design_ZoGolf_V3.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]

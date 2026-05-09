@@ -1,4 +1,4 @@
-2026-05-07T23:23:39.442654200255-23:23:39 **** Build of project ZoGolf_V5_wrapper ****
+2026-05-08T21:14:20.000934300255-21:14:20 **** Build of project ZoGolf_V5_wrapper ****
 000-buildplatform.bat 53752 ZoGolf_V5_wrapper  
 000-
 000-****** Software Commandline Tool (XSCT) v2024.2.0
@@ -11,7 +11,7 @@
 000-We recommend using the new Python command-line tool for project management and debugging:
 000-- Run "vitis -i" for interactive mode.
 000-- Run "vitis -s <script>" for script mode.
-000-XSDB Server Channel: tcfchan#13
+000-XSDB Server Channel: tcfchan#22
 000-Building the BSP Library for domain  - standalone_microblaze_0 on processor microblaze_0
 000-make --no-print-directory seq_libs
 000-
@@ -101,5 +101,5 @@
 000-'Finished building libraries'
 000-
 00255-
-23:23:53 Build Finished (took 14s.290ms)
+21:14:35 Build Finished (took 15s.577ms)
 

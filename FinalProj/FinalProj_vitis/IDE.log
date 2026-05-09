@@ -309,3 +309,230 @@ con
 ----------------End of Script----------------
 
 23:24:37 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+20:54:03 INFO  : Disconnected from the channel tcfchan#14.
+20:54:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:54:03 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+20:54:03 INFO  : 'jtag frequency' command is executed.
+20:54:03 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+20:54:09 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+20:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+20:54:09 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+20:54:09 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:54:09 INFO  : Context for processor 'microblaze_0' is selected.
+20:54:09 INFO  : System reset is completed.
+20:54:12 INFO  : 'after 3000' command is executed.
+20:54:12 INFO  : Context for processor 'microblaze_0' is selected.
+20:54:13 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+20:54:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+20:54:13 INFO  : Context for processor 'microblaze_0' is selected.
+20:54:13 INFO  : 'con' command is executed.
+20:54:13 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:54:13 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+20:56:34 INFO  : Disconnected from the channel tcfchan#15.
+20:56:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:56:35 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+20:56:35 INFO  : 'jtag frequency' command is executed.
+20:56:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+20:56:40 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+20:56:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:41 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+20:56:41 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:56:41 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:41 INFO  : System reset is completed.
+20:56:44 INFO  : 'after 3000' command is executed.
+20:56:44 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:44 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+20:56:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+20:56:45 INFO  : Context for processor 'microblaze_0' is selected.
+20:56:45 INFO  : 'con' command is executed.
+20:56:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:56:45 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+20:57:24 INFO  : Checking for BSP changes to sync application flags for project 'ublaze_ZoGolf_V5'...
+20:57:29 INFO  : Disconnected from the channel tcfchan#16.
+20:57:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:57:29 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+20:57:29 INFO  : 'jtag frequency' command is executed.
+20:57:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+20:57:35 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+20:57:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:35 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+20:57:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+20:57:35 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:35 INFO  : System reset is completed.
+20:57:38 INFO  : 'after 3000' command is executed.
+20:57:38 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:39 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+20:57:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+20:57:39 INFO  : Context for processor 'microblaze_0' is selected.
+20:57:39 INFO  : 'con' command is executed.
+20:57:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+20:57:39 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+21:02:34 INFO  : Disconnected from the channel tcfchan#17.
+21:02:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:02:34 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+21:02:34 INFO  : 'jtag frequency' command is executed.
+21:02:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+21:02:40 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+21:02:40 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:40 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+21:02:40 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:02:40 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:40 INFO  : System reset is completed.
+21:02:43 INFO  : 'after 3000' command is executed.
+21:02:43 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:44 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+21:02:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+21:02:44 INFO  : Context for processor 'microblaze_0' is selected.
+21:02:44 INFO  : 'con' command is executed.
+21:02:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:02:44 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+21:03:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:12 INFO  : Disconnected from the channel tcfchan#18.
+21:03:12 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:03:12 ERROR : Invalid target. Use "connect" command to connect to hw_server/TCF agent
+21:03:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:03:18 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+21:03:18 INFO  : 'jtag frequency' command is executed.
+21:03:19 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+21:03:24 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+21:03:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:25 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+21:03:25 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:03:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:25 INFO  : System reset is completed.
+21:03:28 INFO  : 'after 3000' command is executed.
+21:03:28 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:29 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+21:03:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+21:03:29 INFO  : Context for processor 'microblaze_0' is selected.
+21:03:29 INFO  : 'con' command is executed.
+21:03:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:03:29 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+21:05:14 INFO  : Disconnected from the channel tcfchan#19.
+21:05:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:05:15 INFO  : Jtag cable 'Digilent Nexys Video 210276B817F4B' is selected.
+21:05:15 INFO  : 'jtag frequency' command is executed.
+21:05:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}' command is executed.
+21:05:20 INFO  : Device configured successfully with "C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit"
+21:05:20 INFO  : Context for processor 'microblaze_0' is selected.
+21:05:21 INFO  : Hardware design and registers information is loaded from 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa'.
+21:05:21 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+21:05:21 INFO  : Context for processor 'microblaze_0' is selected.
+21:05:21 INFO  : System reset is completed.
+21:05:24 INFO  : 'after 3000' command is executed.
+21:05:24 INFO  : Context for processor 'microblaze_0' is selected.
+21:05:24 INFO  : The application 'C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf' is downloaded to processor 'microblaze_0'.
+21:05:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -filter {jtag_cable_name =~ "Digilent Nexys Video 210276B817F4B" && level==0 && jtag_device_ctx=="jsn-Nexys Video-210276B817F4B-13636093-0"}
+fpga -file C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/_ide/bitstream/ZoGolf_V5_wrapper.bit
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+loadhw -hw C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ZoGolf_V5_wrapper/export/ZoGolf_V5_wrapper/hw/ZoGolf_V5_wrapper.xsa -regs
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+dow C:/Users/C27Soren.Herzog/ece383/Herzog_ece383_wksp/FinalProj/FinalProj_vitis/ublaze_ZoGolf_V5/Debug/ublaze_ZoGolf_V5.elf
+----------------End of Script----------------
+
+21:05:25 INFO  : Context for processor 'microblaze_0' is selected.
+21:05:25 INFO  : 'con' command is executed.
+21:05:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2" }
+con
+----------------End of Script----------------
+
+21:05:25 INFO  : Launch script is exported to file 'C:\Users\C27Soren.Herzog\ece383\Herzog_ece383_wksp\FinalProj\FinalProj_vitis\ublaze_ZoGolf_V5_system\_ide\scripts\systemdebugger_ublaze_zogolf_v5_system_standalone.tcl'
+21:14:07 INFO  : Result from executing command 'removePlatformRepo': 
+21:14:35 INFO  : Result from executing command 'getProjects': ZoGolf_V5_wrapper
+21:14:35 INFO  : Result from executing command 'getPlatforms': 
+21:14:35 INFO  : Checking for BSP changes to sync application flags for project 'ublaze_ZoGolf_V5'...

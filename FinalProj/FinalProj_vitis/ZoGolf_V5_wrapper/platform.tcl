@@ -18,3 +18,5 @@ platform generate -domains
 platform write
 platform generate -quick
 platform generate
+platform clean
+platform generate
