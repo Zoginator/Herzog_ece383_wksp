@@ -17,6 +17,7 @@ The AXI_Lite module and slave register system allows the BASYS board hardware an
 
 Graphics for the Title screen and 9 levels will be stored in BRAM. A 3-bit color system will be used to conserve memory and encode the 8 color values used for the levels:
 ![Color code](images/color_map.png)
+
 Levels are designed with 120x120 grid for actual level components which are then upscaled to the 480x480 pixel section of the video signal. Each level is stored in separate BRAM pairs whose output is controled by the MUX in the BRAM_selector component.
 
 The Graphical Map in the BRAM will have a corresponding “software map” within the microblaze which will be an array of characters representing the walls, greens, bunkers, and hole locations within the level. This array will be used for calculations involving the ball when it is in motion.
@@ -24,6 +25,7 @@ The Graphical Map in the BRAM will have a corresponding “software map” withi
 ### Software Subsystem
 Below is the FSM and output table for game logic and hardware control:
 ![Color code](images/FSM.png)
+
 The game will start on a title screen (level 0). When the user pushes START on the NES controller, the FSM loads the first level of the game and then waits for the user to align their shot using the PS2 mouse. When the user is ready to take their shot, the FSM enters an action loop that continues to move the ball along its current velocity, bouncing off of walls and applying friction, until the ball either has no more velocity or hits the hole. If the ball hits the hole, the FSM tells the color mapper to display the win message and prompt the user to move to the next level by pressing B on the NES controller. If the ball reaches a velocity of 0 without hitting the hole, the game will wait for another shot. The game will add 1 to the score_hits tracker upon the ball hitting the hole successfully or stopping.
 
 The "friction" state applies friction to the ball depending on if it it touching a GREEN or SAND zone. sand will apply a higher degree of friction, slowing down the ball more rapidly.
@@ -35,6 +37,7 @@ During the wait_shot state, the user can use the NES Left and Right buttons on t
 ### calculations/Analysis/drawings
 Below is the video signal layout for the game
 ![video signal layout](images/video_layout.png)
+
 The ball_position and mouse_pos registers are each a size of 16 bits with 8 bits each dedicated to x and y values. we will keep the ball and mouse cursor within the 480x480 play space, limited to only a 120x120 grid of possible positions.
 
 Below are the rough sketches of the 9 levels of the game. the red circle indicates the balls starting position, blue circle indicates the hole, and purple represents bunker zones. The actual levels varied slightly from this plan, but are mostly the same. level 4 and level 2 are swapped in the actual implementation.
@@ -66,9 +69,11 @@ A level functionality was partially achieved in ZoGolf_V5 on the morning of May 
 ## test results
 The first major testing for milestone I involved getting the NES controller, HDMI video output, and PS2 mouse working properly. The test output is shown below:
 ![image of hardware test](images/HW_test.jpg)
+
 The 8 red pixel chunks in the bottom left of the screen turn blue to indicate the NES controller buttons being pressed. The Blue cursor in the white area of the screen takes live PS2 mouse input and moves around that area. Lastly, the white screen is being loaded from BRAM memory. At the time, this BRAM was actually not working as intended (shown below), which was discovered when actual images were input into the BRAM. These bugs were related to a faulty function that converted pixel coordinates into BRAM memory addresses. These bugs were quickly addressed when the first images were encoded into BRAM.
 ![images of the “minor scaling issue”](images/ScaleBug1.JPG)
 ![images of the “minor scaling issue”](images/ScaleBug2.JPG)
+
 For milestone 2, the main goal was to integrate a MicroBlaze into the system and ensure that values were being passed correctly through the slave registers. The biggest obstacle during this phase was the PicoBlaze component in the NES controller hardware was trying to occupy the same JTAG space as the MicroBlaze Debugging Module, which prevented the bitstream from generating for the hardware implementation. With the help of Col. Trimble, the JTAG register was able to be disabled in the PicoBlaze. After getting over that hiccup, a very basic hardware test and some functions for handling communication with the slave registers was coded in the MicroBlaze. The NES controller values were being passed, the ball and mouse cursor were linked with a slight offset, and the limits of the functions were tested to ensure no invalid values were sent to the slave registers. Testing was very quick and successful for this Milestone.
 
 Required functionality just involved C coding, no hardware modifications or testing was needed
