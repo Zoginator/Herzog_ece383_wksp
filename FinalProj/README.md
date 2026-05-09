@@ -16,6 +16,7 @@ The AXI_Lite module and slave register system allows the BASYS board hardware an
 ![slave registers](images/reg_map.png)
 
 Graphics for the Title screen and 9 levels will be stored in BRAM. A 3-bit color system will be used to conserve memory and encode the 8 color values used for the levels:
+
 ![Color code](images/color_map.png)
 
 Levels are designed with 120x120 grid for actual level components which are then upscaled to the 480x480 pixel section of the video signal. Each level is stored in separate BRAM pairs whose output is controled by the MUX in the BRAM_selector component.
@@ -34,7 +35,7 @@ Within the action loop, the Wait_anim state waits for a 5 frames before doing th
 
 During the wait_shot state, the user can use the NES Left and Right buttons on the D_pad to navigate levels, or go to the menu and reset the game by pressing SELECT.
 
-### calculations/Analysis/drawings
+### Calculations/Analysis/Drawings
 Below is the video signal layout for the game
 ![video signal layout](images/video_layout.png)
 
@@ -59,14 +60,14 @@ Title screen and multiple levels with selection added to the game. Levels can be
 A-Level Functionality: 
 A method for keeping track of score (which is displayed to the player) added to the game. Additionally a ray is drawn from the cursor to the ball to indicate the direction it will be hit towards. 
 
-## functionality
+## Functionality
 Required functionality was achieved in ZoGolf_V2 on May 5th. The title screen and Level 1 were fully functional with a win condition for hitting the hole, ball vector logic, logic for handling bounces off of walls, and the ability to navigate between levels (though no others existed yet). At this time there was a bug where the ball would always travel at 45 degrees.
 
 B level functionality was fully achieved in ZoGolf_V2 on the morning of May 7th. The 45 degree angle bug was caused by an oversight in the ball movement logic and was fixed. 8 more levels and an indicator for which one was selected were added, and the ability to navigate between them was confirmed during testing. Differing friction between sand bunkers and green was implemented at this stage.
 
 A level functionality was partially achieved in ZoGolf_V5 on the morning of May 7th. A level selection register and hashmark system was add to the game to track the first 25 hits the player attempts. Though no sprite system was added, more BRAM modules were utilized in the hardware to display labels for the level selection and score of the game. A legend for the controls for the game was also added using a BRAM module. These “sprite” were able to be used with the same design as the level BRAM components since they were in a 120x120 format regulated to the scoreboard side of the display. The ray visual between the cursor and ball was scrapped due to time constraints and overall scope of the project.
 
-## test results
+## Testing and Results
 The first major testing for milestone I involved getting the NES controller, HDMI video output, and PS2 mouse working properly. The test output is shown below:
 ![image of hardware test](images/HW_test.jpg)
 
@@ -82,7 +83,7 @@ Below are images of the title screen and level 9 of the fully functional game: Z
 ![image of level 0](images/level_0.JPG)
 ![image of level 9](images/level_9.JPG)
 
-## conclusion
+## Conclusion
 This project was a blast to do. Implementing the hardware, especially the Microblaze, took a lot of debugging and testing to get working properly. Once that was accomplished, the coding for the game went quickly. I learned how to utilize documentation and schematics for hardware in an efficient matter due to the time constraint on this Final Project. I am super excitd to see ZoGolf running on the ECE departments arcade cabinet in the future!
 
 # Appendix
